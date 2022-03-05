@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Event from "./components/Event";
 import Registration from "./components/Registration";
 import Rules from "./components/Rules";
+import Program from "./components/Program";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Event />
       <Registration />
       <Rules />
+      <Program />
     </div>
   );
 }

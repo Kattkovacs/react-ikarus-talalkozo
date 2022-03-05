@@ -6,7 +6,6 @@
   padding: 0;
 }
 
-/* background-image: url("outline.png"); */
 body {
   font-family: 'Nunito', sans-serif;
   font-size: 16px;
@@ -36,7 +35,7 @@ ul {
 }
 
 .navbar {
-  background: #295ba7;
+  background: #005c99;
   color: #fff;
   height: 60px;
 }
@@ -54,7 +53,7 @@ ul {
 }
 
 .navbar p:hover {
-  color: lightblue;
+  color: #e1edff;
 }
 
 .navbar .container {
@@ -73,25 +72,37 @@ ul {
 }
 
 .header {
-  background-color: #005c99;
   color: #fff;
-  min-height: 400px;
+  min-height: 500px;
 }
 
 .header h1 {
   font-size: 3rem;
   font-weight: bold;
   line-height: 1.2;
-}
-
-.header img {
-  max-width: 400px;
+  margin-top: 300px;
 }
 
 .header .container {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.18)), url("ikarus-main-s.jpg");
+  background-repeat: no-repeat;
+  background-color: #e1edff;
+  background-position: 0% 45%;
+  background-size: cover;
+  min-height: 500px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.event h1 {
+  color: #005c99;
+  padding-top: 15px;
+}
+
+.event .container {
+  background-color: #fff;
+  padding-bottom: 15px;
 }
 
 .boxes .container {
@@ -156,5 +167,9 @@ label {
   .boxes .container {
     display: block;
     text-align: center;
+  }
+
+  .header .container {
+    background-position: 35% 45%;
   }
 }

@@ -95,6 +95,24 @@ ul {
   justify-content: space-between;
 }
 
+.footer {
+  background: #005c99;
+  color: #fff;
+  height: 180px;
+}
+
+.footer .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0 0 30px;
+
+}
+
+.rights {
+  text-align: center;
+}
+
 .event h1 {
   color: #005c99;
   padding-top: 15px;
@@ -103,6 +121,15 @@ ul {
 .event .container {
   background-color: #fff;
   padding-bottom: 15px;
+}
+
+.program h4 {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: table;
+  padding: 2px 5px 0 5px;
+  background-color:#005c99;
+  color:#fff;
 }
 
 .boxes .container {

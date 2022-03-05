@@ -8,6 +8,7 @@ import Program from "./components/Program";
 import Approach from "./components/Approach";
 import Prices from "./components/Prices";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Approach />
       <Prices />
       <Contact />
+      <Footer />
     </div>
   );
 }

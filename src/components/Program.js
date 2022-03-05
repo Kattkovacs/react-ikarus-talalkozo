@@ -4,12 +4,13 @@ const Program = () => {
   return (
     <section className="event">
       <div className="container">
+      <div className="program">
         <h1>Programok</h1>
-        <h2>6:30-8:30</h2>
+        <h4>6:30-8:30</h4>
         <p>Autóbuszok érkezése, beállítása</p>
-        <h2>9:00</h2>
+        <h4>9:00</h4>
         <p>Megnyitó</p>
-        <h2>9:30-14:00</h2>
+        <h4>9:30-14:00</h4>
         <p>
           Városi nosztalgia járatok közlekednek, melyekre a Köztársaság téri
           kijelölt autóbusz megállóhelyen lehet felszállni előre megváltott
@@ -20,7 +21,7 @@ const Program = () => {
         </p>
         <p>A járatok az alábbi útvonalon közlekednek:</p>
         <p>Térképen:</p>
-        <h2>14:30</h2>
+        <h4>14:30</h4>
         <p>Felvonulás</p>
         <p>
           Felvonulás az összes jármű részvételével a a festői szépségű
@@ -29,10 +30,11 @@ const Program = () => {
           útvonalon:
         </p>
         <p>Térképen:</p>
-        <h2>16:20</h2>
+        <h4>16:20</h4>
         <p>Tombola sorsolás, zenés est</p>
-        <h2>23:00</h2>
+        <h4>23:00</h4>
         <p>A rendezvény zárása, járművek kiállása</p>
+        </div>
       </div>
     </section>
   );

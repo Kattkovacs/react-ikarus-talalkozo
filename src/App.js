@@ -6,6 +6,8 @@ import Registration from "./components/Registration";
 import Rules from "./components/Rules";
 import Program from "./components/Program";
 import Approach from "./components/Approach";
+import Prices from "./components/Prices";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
       <Rules />
       <Program />
       <Approach />
+      <Prices />
+      <Contact />
     </div>
   );
 }

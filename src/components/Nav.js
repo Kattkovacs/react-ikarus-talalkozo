@@ -34,7 +34,7 @@ const Nav = () => {
                 handleOnclick();
               }}
             >
-              <img src={enFlag} alt="language"/>
+              <img src={enFlag} alt="language" />
             </button>
           </li>
         </ul>

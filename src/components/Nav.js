@@ -2,13 +2,17 @@ import React, { useState } from "react";
 import hunFlag from "../001-hungary.png";
 import enFlag from "../001-united-kingdom.png";
 import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { language } from "../actions";
+import { useSelector } from "react-redux";
 
 const Nav = () => {
-  const [language, setLanguage] = useState("hu");
+  const dispatch = useDispatch();
+  const currentLanguage = useSelector((state) => state.language);
 
   const handleOnclick = (e) => {
     e.preventDefault();
-    setLanguage(e.target.value);
+    dispatch(language(e.currentTarget.value));
   };
   return (
     <nav className="navbar">
@@ -16,25 +20,25 @@ const Nav = () => {
         <div className="logo">Ikarus Találkozó</div>
         <ul className="nav">
           <li>
-            <p>Programok</p>
+            <p>{currentLanguage === "hu" ? "Programok" : "Programmes"}</p>
           </li>
           <li>
-            <p>Megközelítés</p>
+            <p>{currentLanguage === "hu" ? "Megközelítés" : "Approach"}</p>
           </li>
           <li>
-            <p>Árak</p>
+            <p>{currentLanguage === "hu" ? "Árak" : "Prices"}</p>
           </li>
           <li>
-            <p>Kapcsolat</p>
+            <p>{currentLanguage === "hu" ? "Kapcsolat" : "Contact"}</p>
           </li>
           <li>
             <button
-              value={language === "en" ? "hu" : "en"}
-              onClick={() => {
-                handleOnclick();
+              value={currentLanguage === "hu" ? "en" : "hu"}
+              onClick={(e) => {
+                handleOnclick(e);
               }}
             >
-              <img src={enFlag} alt="language" />
+              <img src={currentLanguage === "hu" ? hunFlag : enFlag} alt="language" />
             </button>
           </li>
         </ul>

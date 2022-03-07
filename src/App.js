@@ -9,8 +9,11 @@ import Approach from "./components/Approach";
 import Prices from "./components/Prices";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import { useSelector } from "react-redux";
 
 function App() {
+  const currentLanguage = useSelector((state) => state.language);
+
   return (
     <div>
       <Nav />
@@ -22,7 +25,7 @@ function App() {
       <Approach />
       <Prices />
       <Contact />
-      <Footer />
+      <Footer currentLanguage={currentLanguage} />
     </div>
   );
 }

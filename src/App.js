@@ -16,15 +16,15 @@ function App() {
 
   return (
     <div>
-      <Nav />
-      <Header />
-      <Event />
-      <Registration />
-      <Rules />
-      <Program />
-      <Approach />
-      <Prices />
-      <Contact />
+      <Nav currentLanguage={currentLanguage} />
+      <Header currentLanguage={currentLanguage} />
+      <Event currentLanguage={currentLanguage} />
+      <Registration currentLanguage={currentLanguage} />
+      <Rules currentLanguage={currentLanguage} />
+      <Program currentLanguage={currentLanguage} />
+      <Approach currentLanguage={currentLanguage} />
+      <Prices currentLanguage={currentLanguage} />
+      <Contact currentLanguage={currentLanguage} />
       <Footer currentLanguage={currentLanguage} />
     </div>
   );

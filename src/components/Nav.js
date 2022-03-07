@@ -1,14 +1,12 @@
 import React, { useState } from "react";
-import hunFlag from "../001-hungary.png";
+import huFlag from "../001-hungary.png";
 import enFlag from "../001-united-kingdom.png";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { language } from "../actions";
-import { useSelector } from "react-redux";
 
-const Nav = () => {
+const Nav = ({ currentLanguage }) => {
   const dispatch = useDispatch();
-  const currentLanguage = useSelector((state) => state.language);
 
   const handleOnclick = (e) => {
     e.preventDefault();
@@ -38,7 +36,10 @@ const Nav = () => {
                 handleOnclick(e);
               }}
             >
-              <img src={currentLanguage === "hu" ? hunFlag : enFlag} alt="language" />
+              <img
+                src={currentLanguage === "hu" ? enFlag : huFlag}
+                alt="language"
+              />
             </button>
           </li>
         </ul>

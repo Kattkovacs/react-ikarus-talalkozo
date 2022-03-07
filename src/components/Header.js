@@ -1,14 +1,23 @@
 import React from "react";
 
-const Header = () => {
+const Header = ({ currentLanguage }) => {
   return (
     <header className="header">
-      <div className="container">
-        <div>
-          <h1>Ikarus Találkozó Tapolca</h1>
-          <h3>2022. május 7.</h3>
+      {currentLanguage === "hu" ? (
+        <div className="container">
+          <div>
+            <h1>Ikarus Találkozó Tapolca</h1>
+            <h3>2022. május 7.</h3>
+          </div>
         </div>
-      </div>
+      ) : (
+        <div className="container">
+          <div>
+            <h1>Ikarus Meeting Tapolca</h1>
+            <h3>7. May 2022</h3>
+          </div>
+        </div>
+      )}
     </header>
   );
 };

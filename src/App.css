@@ -23,10 +23,28 @@ ul {
   list-style-type: none;
 }
 
+button {
+  background-color: #005c99;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  padding: 5px 10px;
+  font-size: larger;
+  margin: 10px;
+}
+
+button:hover{
+  color:#c3d4ee;
+}
+
+td {
+  padding: 3px;
+}
+
 .container {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 70px;
 }
 
 .navbar {
@@ -86,7 +104,17 @@ ul {
   font-size: 3rem;
   font-weight: bold;
   line-height: 1.2;
-  margin-top: 300px;
+  margin-top: 280px;
+  margin-bottom: 0px;
+}
+
+.header small{
+  opacity: 0.7;
+  font-weight: lighter;
+}
+
+.header h3{
+  margin-bottom: 45px;
 }
 
 .header .container {
@@ -101,6 +129,12 @@ ul {
   justify-content: space-between;
 }
 
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .footer {
   background: #005c99;
   color: #fff;
@@ -112,7 +146,6 @@ ul {
   align-items: center;
   justify-content: space-between;
   padding: 20px 0 0 30px;
-
 }
 
 .rights {
@@ -191,19 +224,45 @@ label {
 }
 
 @media (max-width: 768px) {
+  .container {
+    padding: 0 30px;
+  }
+
   .header .container {
     flex-direction: column;
     padding-top: 20px;
     text-align: center;
+    background-position: 35% 45%;
+    min-height: 450px;
+  }
+
+  .header{
+    min-height: 450px;
+  }
+
+  .header h1{
+    margin-bottom: 10px;
+    line-height: 110%;
+    margin-top: 180px;
+  }
+  
+  .header h3{
+    margin-bottom: 10px;
+  }
+
+  .header small{
+    font-size: x-small;
+  }
+
+  h1 {
+    display: flex;
+    align-self: center;
+    justify-content: center;
   }
 
   .boxes .container {
     display: block;
     text-align: center;
-  }
-
-  .header .container {
-    background-position: 35% 45%;
   }
 }
 

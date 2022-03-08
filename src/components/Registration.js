@@ -11,6 +11,9 @@ const Registration = ({ currentLanguage }) => {
             garantálni a helyet. Kérjük, aki autóbusszal érkezik, itt
             regisztrálhat:
           </p>
+          <div className="center">
+            <button>Regisztráció</button>
+          </div>
           <p>A rendezvényen mindenki saját felelősségére vesz részt!</p>
           <p>
             A balesetek elkerülése érdekében kérjük a mozgó járművek között
@@ -31,6 +34,9 @@ const Registration = ({ currentLanguage }) => {
             If you want to demonstrate your vehicle on our event please
             registrate here:
           </p>
+          <div className="center">
+            <button>Registration</button>
+          </div>
           <p>Participate the event at your own responsibility!</p>
           <p>
             To avoid any possible accidents or injuries please be extremely

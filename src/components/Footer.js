@@ -1,23 +1,23 @@
 import React from "react";
 
-const Footer = ({currentLanguage}) => {
+const Footer = ({ currentLanguage }) => {
   return (
     <section className="footer">
       <footer>
         <div className="container">
           {currentLanguage === "hu" ? (
             <div>
-              <p>Kapcsolat</p>
-              <p>Megjelenések</p>
-              <p>Árak</p>
-              <p>Busz regisztráció</p>
+              <a href="/#program">Programok</a>
+              <a href="/#media">Megjelenések</a>
+              <a href="/#prices">Árak</a>
+              <a href="/#registration">Busz regisztráció</a>
             </div>
           ) : (
             <div>
-              <p>Contact</p>
-              <p>Media</p>
-              <p>Prices</p>
-              <p>Bus registration</p>
+              <a href="/#program">Programmes</a>
+              <a href="/#media">Media</a>
+              <a href="/#prices">Prices</a>
+              <a href="/#registration">Bus registration</a>
             </div>
           )}
         </div>

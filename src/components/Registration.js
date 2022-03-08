@@ -2,7 +2,7 @@ import React from "react";
 
 const Registration = ({ currentLanguage }) => {
   return (
-    <section className="event">
+    <section className="event" id="registration">
       {currentLanguage === "hu" ? (
         <div className="container">
           <h1>REGISZTRÁCIÓ</h1>

@@ -2,7 +2,7 @@ import React from "react";
 
 const Prices = ({ currentLanguage }) => {
   return (
-    <section className="event">
+    <section className="event" id="prices">
       {currentLanguage === "hu" ? (
         <div className="container">
           <h1>ÁRAK</h1>

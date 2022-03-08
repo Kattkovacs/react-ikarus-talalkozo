@@ -2,7 +2,7 @@ import React from "react";
 
 const Approach = ({ currentLanguage }) => {
   return (
-    <section className="event">
+    <section className="event" id="approach">
       {currentLanguage === "hu" ? (
         <div className="container">
           <h1>MEGKÖZELÍTÉS</h1>

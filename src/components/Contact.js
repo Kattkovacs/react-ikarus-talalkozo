@@ -2,7 +2,7 @@ import React from "react";
 
 const Contact = ({ currentLanguage }) => {
   return (
-    <section className="event">
+    <section className="event" id="contact">
       {currentLanguage === "hu" ? (
         <div className="container">
           <h1>KAPCSOLAT</h1>

@@ -8,6 +8,7 @@ const Header = ({ currentLanguage }) => {
           <div>
             <h1>Ikarus Találkozó Tapolca</h1>
             <h3>2022. május 7.</h3>
+            <small>Fotó: Józsa László</small>
           </div>
         </div>
       ) : (
@@ -16,6 +17,7 @@ const Header = ({ currentLanguage }) => {
             <h1>Ikarus Meeting Tapolca</h1>
             <h3>7. May 2022</h3>
           </div>
+          <small>Photo: László Józsa</small>
         </div>
       )}
     </header>

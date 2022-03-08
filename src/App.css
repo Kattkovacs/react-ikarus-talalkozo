@@ -151,6 +151,11 @@ td {
 
 .rights {
   text-align: center;
+  font-size: x-small;
+}
+
+.tableWidth{
+  width:13%;
 }
 
 .event h1 {

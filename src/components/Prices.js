@@ -6,14 +6,41 @@ const Prices = ({ currentLanguage }) => {
       {currentLanguage === "hu" ? (
         <div className="container">
           <h1>ÁRAK</h1>
-          <p>Belépés a rendezvényre: INGYENES</p>
-          <p>Városi nosztalgia körjáratok: 800 Ft/fő (6 éves korig ingyenes)</p>
-          <p>
-            Balaton-parti Káli-medencei felvonulás: Ingyenes (az autóbuszokon
-            becsületkassza üzemel, amellyel a járművek tulajdonosait
-            támogathatják, hogy megjelentek a rendezvényen)
-          </p>
-          <p>Tombola sorsjegy: 400 Ft/db</p>
+          <table>
+            <tbody>
+              <td>
+                <strong>Belépés a rendezvényre</strong>
+              </td>
+              <td>INGYENES</td>
+            </tbody>
+            <tbody>
+              <td>
+                <strong>Városi nosztalgia körjáratok</strong>
+              </td>
+              <td>800 Ft/fő (6 éves korig ingyenes)</td>
+            </tbody>
+            <tbody>
+              <td>
+                <strong>Balaton-parti Káli-medencei busz felvonulás</strong>
+              </td>
+              <td>INGYENES</td>
+            </tbody>
+            <tbody>
+              <td colspan="2">
+                <small>
+                  (az autóbuszokon becsületkassza üzemel, amellyel a járművek
+                  tulajdonosait támogathatják, hogy megjelentek a rendezvényen)
+                </small>
+              </td>
+            </tbody>
+
+            <tbody>
+              <td>
+                <strong>Tombola sorsjegy</strong>
+              </td>
+              <td>400 Ft/db</td>
+            </tbody>
+          </table>
         </div>
       ) : (
         <div className="container">

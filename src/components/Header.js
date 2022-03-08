@@ -9,15 +9,15 @@ const Header = ({ currentLanguage }) => {
             <h1>Ikarus Találkozó Tapolca</h1>
             <h3>2022. május 7.</h3>
             <small>Fotó: Józsa László</small>
-          </div>
+          </div>          
         </div>
       ) : (
         <div className="container">
           <div>
             <h1>Ikarus Meeting Tapolca</h1>
             <h3>7. May 2022</h3>
-          </div>
-          <small>Photo: László Józsa</small>
+            <small>Photo: László Józsa</small>
+          </div>          
         </div>
       )}
     </header>

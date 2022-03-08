@@ -8,55 +8,82 @@ const Prices = ({ currentLanguage }) => {
           <h1>ÁRAK</h1>
           <table>
             <tbody>
-              <td>
-                <strong>Belépés a rendezvényre</strong>
-              </td>
-              <td>INGYENES</td>
-            </tbody>
-            <tbody>
-              <td>
-                <strong>Városi nosztalgia körjáratok</strong>
-              </td>
-              <td>800 Ft/fő (6 éves korig ingyenes)</td>
-            </tbody>
-            <tbody>
-              <td>
-                <strong>Balaton-parti Káli-medencei busz felvonulás</strong>
-              </td>
-              <td>INGYENES</td>
-            </tbody>
-            <tbody>
-              <td colspan="2">
-                <small>
-                  (az autóbuszokon becsületkassza üzemel, amellyel a járművek
-                  tulajdonosait támogathatják, hogy megjelentek a rendezvényen)
-                </small>
-              </td>
-            </tbody>
-
-            <tbody>
-              <td>
-                <strong>Tombola sorsjegy</strong>
-              </td>
-              <td>400 Ft/db</td>
+              <tr>
+                <td>
+                  <strong>Belépés a rendezvényre</strong>
+                </td>
+                <td>INGYENES</td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Városi nosztalgia körjáratok</strong>
+                </td>
+                <td>800 Ft/fő (6 éves korig ingyenes)</td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Balaton-parti Káli-medencei busz felvonulás</strong>
+                </td>
+                <td>INGYENES</td>
+              </tr>
+              <tr>
+                <td colSpan="2">
+                  <small>
+                    (az autóbuszokon becsületkassza üzemel, amellyel a járművek
+                    tulajdonosait támogathatják, hogy megjelentek a
+                    rendezvényen)
+                  </small>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Tombola sorsjegy</strong>
+                </td>
+                <td>400 Ft/db</td>
+              </tr>
             </tbody>
           </table>
         </div>
       ) : (
         <div className="container">
           <h1>PRICES</h1>
-          <p>Admission: FREE</p>
-          <p>
-            Nostalgic city-bus services: 800 HUF/person/round (free up to the
-            age of 6)
-          </p>
-          <p>
-            Old timer bus parade in the Káli-basin: Free (On the attending buses
-            there will be an „honesty jar”. Money gathered in this „jar”
-            supports the owner of the vehicle as thanks for displaying it on the
-            event.)
-          </p>
-          <p>Tombola ticket: 400 HUF/piece</p>
+          <table>
+            <tbody>
+              <tr>
+                <td>
+                  <strong>Admission</strong>
+                </td>
+                <td>FREE</td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Nostalgic city-bus services</strong>
+                </td>
+                <td>800 HUF/person/round (free up to the age of 6)</td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Old timer bus parade in the Káli-basin</strong>
+                </td>
+                <td>FREE</td>
+              </tr>
+              <tr>
+                <td colSpan="2">
+                  <small>
+                    (On the attending buses there will be an „honesty jar”.
+                    Money gathered in this „jar” supports the owner of the
+                    vehicle as thanks for displaying it on the event.)
+                  </small>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Tombola ticket</strong>
+                </td>
+                <td>400 HUF/piece</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       )}
     </section>

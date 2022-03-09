@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.ce3870f8.css",
-    "main.js": "/static/js/main.2f0385d7.js",
+    "main.css": "/static/css/main.a3d742ce.css",
+    "main.js": "/static/js/main.b839b65c.js",
     "static/js/787.e99d95a1.chunk.js": "/static/js/787.e99d95a1.chunk.js",
     "static/media/ikarus-main-s.jpg": "/static/media/ikarus-main-s.b1c2244763b5976803f4.jpg",
     "index.html": "/index.html",
-    "main.ce3870f8.css.map": "/static/css/main.ce3870f8.css.map",
-    "main.2f0385d7.js.map": "/static/js/main.2f0385d7.js.map",
+    "main.a3d742ce.css.map": "/static/css/main.a3d742ce.css.map",
+    "main.b839b65c.js.map": "/static/js/main.b839b65c.js.map",
     "787.e99d95a1.chunk.js.map": "/static/js/787.e99d95a1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ce3870f8.css",
-    "static/js/main.2f0385d7.js"
+    "static/css/main.a3d742ce.css",
+    "static/js/main.b839b65c.js"
   ]
 }

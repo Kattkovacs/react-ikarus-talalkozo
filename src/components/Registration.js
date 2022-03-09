@@ -5,14 +5,14 @@ const Registration = ({ currentLanguage }) => {
     <section className="event" id="registration">
       {currentLanguage === "hu" ? (
         <div className="container">
-          <h1>REGISZTRÁCIÓ</h1>
+          <h1>BUSZ REGISZTRÁCIÓ</h1>
           <p>
             A kiállítóknak kötelező regisztráció van, ennek hiányában nem tudjuk
             garantálni a helyet. Kérjük, aki autóbusszal érkezik, itt
             regisztrálhat:
           </p>
           <div className="center">
-            <button>Regisztráció</button>
+            <button>Busz regisztráció</button>
           </div>
           <p>A rendezvényen mindenki saját felelősségére vesz részt!</p>
           <p>
@@ -35,7 +35,7 @@ const Registration = ({ currentLanguage }) => {
             registrate here:
           </p>
           <div className="center">
-            <button>Registration</button>
+            <button>Bus registration</button>
           </div>
           <p>Participate the event at your own responsibility!</p>
           <p>

@@ -8,7 +8,8 @@ const Contact = ({ currentLanguage }) => {
           <h1>KAPCSOLAT</h1>
           <p>
             A találkozóval kapcsolatban bármilyen további információval a
-            következő elérhetőségeink bármelyikén állunk rendelkezésére:
+            következő elérhetőségen állunk rendelkezésére:
+            ikarustapolca@gmail.com
           </p>
           <p>Facebook esemény</p>
         </div>
@@ -17,7 +18,7 @@ const Contact = ({ currentLanguage }) => {
           <h1>CONTACT</h1>
           <p>
             If you need further information about the event, feel free to
-            contact us on any of the following ways:
+            contact us on mail: ikarustapolca@gmail.com
           </p>
           <p>Facebook event</p>
         </div>

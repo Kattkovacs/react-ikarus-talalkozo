@@ -33,8 +33,13 @@ button {
   margin: 10px;
 }
 
-button:hover{
+button a:hover{
   color:#c3d4ee;
+}
+
+button a {
+  text-decoration: none;
+  color: #fff;
 }
 
 td {

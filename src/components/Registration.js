@@ -12,7 +12,15 @@ const Registration = ({ currentLanguage }) => {
             regisztrálhat:
           </p>
           <div className="center">
-            <button>Busz regisztráció</button>
+            <button>
+              <a
+                href="https://forms.gle/xqf7vPkppVxGwt6c6"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Busz regisztráció
+              </a>
+            </button>
           </div>
           <p>A rendezvényen mindenki saját felelősségére vesz részt!</p>
           <p>
@@ -35,7 +43,15 @@ const Registration = ({ currentLanguage }) => {
             registrate here:
           </p>
           <div className="center">
-            <button>Bus registration</button>
+            <button>
+              <a
+                href="https://forms.gle/xqf7vPkppVxGwt6c6"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Bus registration
+              </a>
+            </button>
           </div>
           <p>Participate the event at your own responsibility!</p>
           <p>

@@ -105,13 +105,14 @@ td {
   font-size: 3rem;
   font-weight: bold;
   line-height: 1.2;
-  margin-top: 280px;
+  margin-top: 50px;
   margin-bottom: 0px;
 }
 
 .header small{
   opacity: 0.7;
   font-weight: lighter;
+  margin-top: 470px;
 }
 
 .header h3{
@@ -126,7 +127,7 @@ td {
   background-size: cover;
   min-height: 500px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
 }
 
@@ -249,20 +250,24 @@ label {
 
   .header .container {
     flex-direction: column;
-    padding-top: 20px;
+    padding-top: 10px;
     text-align: center;
-    background-position: 35% 45%;
-    min-height: 450px;
+    background-position: 33% 50%;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
   }
 
   .header{
-    min-height: 450px;
+    min-height: 320px;
   }
 
   .header h1{
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     line-height: 110%;
-    margin-top: 180px;
+    margin-top: 0px;
+    font-size:2.5rem
   }
   
   .header h3{
@@ -271,6 +276,7 @@ label {
 
   .header small{
     font-size: x-small;
+    margin-top: 200px;
   }
 
   h1 {

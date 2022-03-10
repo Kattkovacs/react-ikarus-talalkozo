@@ -1,5 +1,5 @@
 import React from "react";
-import ApproachMap from "./ApproachMap";
+// import ApproachMap from "./ApproachMap";
 
 const Approach = ({ currentLanguage }) => {
   return (
@@ -9,7 +9,7 @@ const Approach = ({ currentLanguage }) => {
           <h1>MEGKÖZELÍTÉS</h1>
           <p>Helyszín: </p>
           <p>Veszprém megye, Tapolca város, Köztársaság tér</p>
-          <ApproachMap />
+          {/* <ApproachMap /> */}
           <p>Tömegközlekedéssel:</p>
           <p>
             <a href="http://menetrendek.hu">menetrendek.hu</a> oldalon kereshetőek a járatok. Autóbusszal

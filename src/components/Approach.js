@@ -12,7 +12,7 @@ const Approach = ({ currentLanguage }) => {
           {/* <ApproachMap /> */}
           <p>Tömegközlekedéssel:</p>
           <p>
-            <a href="http://menetrendek.hu">menetrendek.hu</a> oldalon kereshetőek a járatok. Autóbusszal
+            <a href="http://menetrendek.hu" className="link">menetrendek.hu</a> oldalon kereshetőek a járatok. Autóbusszal
             Tapolca, autóbuszállomás megállóig, vonattal Tapolca, vasútállomásig
             kell tervezni. A rendezvény az autóbuszállomástól kb. 5 perc (kék
             szaggatott vonal), a vasútállomástól kb. 15 perc séta (zöld
@@ -45,7 +45,7 @@ const Approach = ({ currentLanguage }) => {
           <p>Hungary, Veszprém county, Tapolca city, Köztársaság square</p>
           <p>Approaching by public transport:</p>
           <p>
-            You can find the timetables on <a href="http://menetrendek.hu">menetrendek.hu</a> Traveling by
+            You can find the timetables on <a href="http://menetrendek.hu" className="link">menetrendek.hu</a> Traveling by
             public coach you need to get off at Tapolca bus station, while
             traveling by train disembark at Tapolca train station. From the bus
             station the event is an approximately 5 minutes walk away (blue

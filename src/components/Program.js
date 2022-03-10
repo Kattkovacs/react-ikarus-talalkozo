@@ -69,15 +69,23 @@ const Program = ({ currentLanguage }) => {
                     <h4>16:20</h4>
                   </td>
                   <td>
-                    <strong>Tombola sorsolás, zenés est</strong>
+                    <strong>Tombola sorsolás</strong>
                   </td>
                 </tr>
                 <tr>
                   <td valign="top">
-                    <h4>23:00</h4>
+                    <h4>17:00</h4>
                   </td>
                   <td>
-                    <strong>A rendezvény zárása, járművek kiállása</strong>
+                    <strong>Rendezvény zárás</strong>
+                  </td>
+                </tr>
+                <tr>
+                  <td valign="top">
+                    <h4>17:00-23:00</h4>
+                  </td>
+                  <td>
+                    <strong>Zenés est, kiállítók és látogatók részére</strong>
                   </td>
                 </tr>
               </tbody>
@@ -151,15 +159,23 @@ const Program = ({ currentLanguage }) => {
                     <h4>16:20</h4>
                   </td>
                   <td>
-                    <strong>Tombola draw, musical evening</strong>
+                    <strong>Tombola draw</strong>
                   </td>
                 </tr>
                 <tr>
                   <td valign="top">
-                    <h4>23:00</h4>
+                    <h4>17:00</h4>
                   </td>
                   <td>
-                    <strong>Event closing, vehicles leaving</strong>
+                    <strong>Event closing</strong>
+                  </td>
+                </tr>
+                <tr>
+                  <td valign="top">
+                    <h4>17:00-23:00</h4>
+                  </td>
+                  <td>
+                    <strong>Musical evening for exhibitors and visitors</strong>
                   </td>
                 </tr>
               </tbody>

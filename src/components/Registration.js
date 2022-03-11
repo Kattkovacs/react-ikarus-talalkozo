@@ -29,9 +29,6 @@ const Registration = ({ currentLanguage }) => {
             szálljanak fel és le az autóbuszokról és tartsák be a szervezők
             kéréseit!
           </p>
-          <p>A rendezvény rossz időjárás esetén is megtartásra kerül!</p>
-          <p>A programváltoztatás jogát fenntartjuk!</p>
-          <p>Mindenkinek kellemes időtöltést kívánunk! ☺</p>
         </div>
       ) : (
         <div className="container">
@@ -61,9 +58,6 @@ const Registration = ({ currentLanguage }) => {
             places! Please cooperate with the organiser staff throughout the
             whole duration of the event!
           </p>
-          <p>The bus meeting will be held even in bad weather conditions!</p>
-          <p>We (the organizers) reserve the right to change the programmes!</p>
-          <p>We wish you a pleasant stay on our event! ☺</p>
         </div>
       )}
     </section>

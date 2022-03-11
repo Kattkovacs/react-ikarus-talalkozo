@@ -50,7 +50,7 @@ td {
   padding: 3px;
 }
 
-.container {
+.container, .boxes {
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 70px;
@@ -347,4 +347,32 @@ label {
     display: flex;
     padding-bottom: 10px;
   }
+}
+
+#contact .boxes {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 800px;
+}
+
+.boxes #content {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 300px;
+  padding: 20px 10px;
+  border: #e6e8e9 solid 1px;
+  margin-bottom: 20px;
+}
+
+.boxes h4 {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: table;
+  padding: 2px 5px 0 5px;
+  background-color:#005c99;
+  color:#fff;
+  margin-bottom: 10px;
 }

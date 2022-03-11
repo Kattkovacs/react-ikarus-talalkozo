@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.6abadb80.css",
-    "main.js": "/static/js/main.83ebf0f2.js",
+    "main.css": "/static/css/main.2dcb868c.css",
+    "main.js": "/static/js/main.84236ed3.js",
     "static/js/787.e99d95a1.chunk.js": "/static/js/787.e99d95a1.chunk.js",
     "static/js/mapbox-gl-csp-worker.2d72e816.worker.js": "/static/js/mapbox-gl-csp-worker.2d72e816.worker.js",
     "static/media/ikarus-main-s.jpg": "/static/media/ikarus-main-s.b1c2244763b5976803f4.jpg",
     "index.html": "/index.html",
-    "main.6abadb80.css.map": "/static/css/main.6abadb80.css.map",
-    "main.83ebf0f2.js.map": "/static/js/main.83ebf0f2.js.map",
+    "main.2dcb868c.css.map": "/static/css/main.2dcb868c.css.map",
+    "main.84236ed3.js.map": "/static/js/main.84236ed3.js.map",
     "787.e99d95a1.chunk.js.map": "/static/js/787.e99d95a1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6abadb80.css",
-    "static/js/main.83ebf0f2.js"
+    "static/css/main.2dcb868c.css",
+    "static/js/main.84236ed3.js"
   ]
 }

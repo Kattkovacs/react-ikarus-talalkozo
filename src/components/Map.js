@@ -12,7 +12,7 @@ mapboxgl.accessToken =
 const Map = () => {
   const mapContainerRef = useRef(null);
 
-  const [lng, setLng] = useState(17.432028632655084);
+  const [lng, setLng] = useState(17.436028632655084);
   const [lat, setLat] = useState(46.8828112139076);
   const [zoom, setZoom] = useState(13.4);
 
@@ -57,7 +57,7 @@ const Map = () => {
   return (
     <div>
       <div className="sidebarStyle">
-        <div>Ikarus Találkozó/Meeting Tapolca rendezvény / Event</div>
+        <div>Rendezvény / Event</div>
       </div>
       <div className="sidebarStyle2">
         <div>Szgk. parkoló / Car park</div>

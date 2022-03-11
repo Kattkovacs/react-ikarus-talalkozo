@@ -60,4 +60,9 @@
         width: 280px;
         height: 250px;
     }
+
+    .sidebarStyle, .sidebarStyle2, .sidebarStyle3, .sidebarStyle4{
+        position:relative;
+        margin: 5px;
+    }
 }

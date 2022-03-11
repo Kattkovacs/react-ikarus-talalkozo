@@ -1,5 +1,5 @@
 import React from "react";
-// import ApproachMap from "./ApproachMap";
+import Map from "./Map";
 
 const Approach = ({ currentLanguage }) => {
   return (
@@ -7,52 +7,56 @@ const Approach = ({ currentLanguage }) => {
       {currentLanguage === "hu" ? (
         <div className="container">
           <h1>MEGKÖZELÍTÉS</h1>
-          <p>Helyszín: </p>
+          <strong>Helyszín: </strong>
           <p>Veszprém megye, Tapolca város, Köztársaság tér</p>
-          {/* <ApproachMap /> */}
-          <p>Tömegközlekedéssel:</p>
+          <br />
+          <Map />
+          <br />
+          <strong>Tömegközlekedéssel:</strong>
           <p>
-            <a href="http://menetrendek.hu" className="link">menetrendek.hu</a> oldalon kereshetőek a járatok. Autóbusszal
-            Tapolca, autóbuszállomás megállóig, vonattal Tapolca, vasútállomásig
-            kell tervezni. A rendezvény az autóbuszállomástól kb. 5 perc (kék
-            szaggatott vonal), a vasútállomástól kb. 15 perc séta (zöld
-            szaggatott vonal), a rendezvény helyszíne.
+            <a href="http://menetrendek.hu" className="link">
+              menetrendek.hu
+            </a>{" "}
+            oldalon kereshetőek a járatok. Autóbusszal Tapolca, autóbuszállomás
+            megállóig, vonattal Tapolca, vasútállomásig kell tervezni. A
+            rendezvény az autóbuszállomástól kb. 5 perc (kék szaggatott vonal),
+            a vasútállomástól kb. 15 perc séta (zöld szaggatott vonal), a
+            rendezvény helyszíne.
           </p>
-          <p>Gépjárművel:</p>
+          <strong>Gépjárművel:</strong>
           <p>
             A 77-es számú főúton érhető el a város Veszprém és a 84-es út felől
             is. A Tapolca-patak és a 77-es számú főút találkozásánál van
             lehetőség személygépkocsival parkolni. Innen néhány perc
             sétával(bordó szaggatott vonal) érhető el a találkozó helyszíne:
           </p>
-          <p>Térképen:</p>
-          <p>
-            Tapolca belváros Rendezvény Autóbuszállomás Vasútállomás Szgk.
-            parkoló
-          </p>
-          <p>Nosztalgia különvonattal:</p>
-          <p>
-            Budapest Kelenföld - Balaton északi part - Tapolca
-          </p>
+          <strong>Nosztalgia különvonattal:</strong>
+          <p>Budapest Kelenföld - Balaton északi part - Tapolca</p>
           <p>Egyeztetés alatt!</p>
-          <p>Nosztalgia különjáratokkal:</p>
+          <strong>Nosztalgia különjáratokkal:</strong>
           <p>Egyeztetés alatt!</p>
         </div>
       ) : (
         <div className="container">
           <h1>APPROACH</h1>
-          <p>Location: </p>
+          <strong>Location: </strong>
           <p>Hungary, Veszprém county, Tapolca city, Köztársaság square</p>
-          <p>Approaching by public transport:</p>
+          <br />
+          <Map />
+          <br />
+          <strong>Approaching by public transport:</strong>
           <p>
-            You can find the timetables on <a href="http://menetrendek.hu" className="link">menetrendek.hu</a> Traveling by
-            public coach you need to get off at Tapolca bus station, while
-            traveling by train disembark at Tapolca train station. From the bus
-            station the event is an approximately 5 minutes walk away (blue
-            dashed line) while, from the train station the walk is approximately
-            15 minutes long (green dashed line).
+            You can find the timetables on{" "}
+            <a href="http://menetrendek.hu" className="link">
+              menetrendek.hu
+            </a>{" "}
+            Traveling by public coach you need to get off at Tapolca bus
+            station, while traveling by train disembark at Tapolca train
+            station. From the bus station the event is an approximately 5
+            minutes walk away (blue dashed line) while, from the train station
+            the walk is approximately 15 minutes long (green dashed line).
           </p>
-          <p>Approaching by car:</p>
+          <strong>Approaching by car:</strong>
           <p>
             Tapolca can be reached from the east (from Veszprém) and from the
             west (from route 84) on route 77. At the intersection of the south
@@ -60,16 +64,13 @@ const Approach = ({ currentLanguage }) => {
             park at the visitor's service. From here the event can be reached
             with a couple of minutes walk (claret dashed line).
           </p>
-          <p>On the map:</p>
+          <strong>Nostalgic charter train service:</strong>
           <p>
-            Tapolca inner city Event site Bus station Train station Car park
-          </p>
-          <p>Nostalgic charter train service:</p>
-          <p>
-          Budapest Kelenföld Station - Lake Balaton north coast - Tapolca Station
+            Budapest Kelenföld Station - Lake Balaton north coast - Tapolca
+            Station
           </p>
           <p>Under negotiation!</p>
-          <p>Old timer charter bus services:</p>
+          <strong>Old timer charter bus services:</strong>
           <p>Under negotiation!</p>
         </div>
       )}

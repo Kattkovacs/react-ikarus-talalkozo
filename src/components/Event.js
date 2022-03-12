@@ -22,7 +22,7 @@ const Event = ({ currentLanguage }) => {
             a városon keresztül elérhető a rendezvény helyszíne. A rendezvény
             ideje alatt nosztalgia autóbuszjáratok közlekednek a városban,
             délután folyamán pedig egy 30 km hosszú 1 órás felvonulás lesz a
-            festői szépségű Káli- medencében.
+            festői szépségű Káli-medencében.
           </p>
           <p>
             A rendezvény területén egész nap kitelepült étterem üzemel, a

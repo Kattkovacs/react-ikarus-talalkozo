@@ -9,7 +9,7 @@ const NavLinks = (props) => {
   const dispatch = useDispatch();
   const { currentLanguage, isMobile, closeMobileMenu } = props;
   const animateFrom = { opacity: 0, y: -40 };
-  const animateTo = { opacity: 1, y: 0 };
+  const animateTo = { opacity: 0.9, y: 0 };
 
   const handleOnclick = (e) => {
     e.preventDefault();

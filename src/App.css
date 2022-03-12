@@ -60,6 +60,9 @@ td {
   background: #005c99;
   color: #fff;
   height: 60px;
+  position: sticky; 
+  top: 0;
+  z-index: 3;
 }
 
 .navbar .logo {
@@ -294,10 +297,19 @@ label {
     justify-content: center;
   }
 
-  .boxes .container {
-    display: block;
+  #contact .boxes{
+    flex-direction: column;
+    padding: 10px 0px;
     text-align: center;
+    background-position: 33% 50%;
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    justify-content: center;
+    width: 300px !important;
   }
+  
 }
 
 .navbar .mobileNavigation {
@@ -319,8 +331,8 @@ label {
     right: 5%;
     cursor: pointer;
   }
-  .navbar{
-    opacity: 0.9;
+  .navbar nav{
+    opacity: 0.9 !important;
   }
 
   .navbar nav ul {
@@ -333,13 +345,13 @@ label {
     width: 100%;
     background-color: #005c99;
     border-top: 2px solid #accadd;
-    align-items: baseline;
+    align-items: baseline; 
   }
 
   .navbar nav ul li {
     padding-left: 5%;
     padding-top: 7px;
-    padding-bottom: 7px;
+    padding-bottom: 7px;  
   }
 
   .navbar button {
@@ -353,7 +365,7 @@ label {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  width: 800px;
+  width: 750px;
 }
 
 .boxes #content {
@@ -361,18 +373,26 @@ label {
   align-items: center;
   justify-content: center;
   width: 300px;
-  height: 300px;
-  padding: 20px 10px;
+  height: 150px;
+  padding: 10px 10px;
   border: #e6e8e9 solid 1px;
   margin-bottom: 20px;
 }
 
-.boxes h4 {
-  width: -moz-fit-content;
-  width: fit-content;
-  display: table;
-  padding: 2px 5px 0 5px;
-  background-color:#005c99;
-  color:#fff;
-  margin-bottom: 10px;
+.boxes #content p{
+  margin-bottom: 5px;
+}
+
+.boxes .vscMail{
+  vertical-align:middle;
+  height: auto;
+}
+
+.boxes .mailAddress{
+  padding-bottom: 5px;
+  vertical-align: middle;
+}
+
+.mapImg {
+  width: 300px;
 }

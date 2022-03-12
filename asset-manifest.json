@@ -1,17 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.2dcb868c.css",
-    "main.js": "/static/js/main.84236ed3.js",
+    "main.css": "/static/css/main.6a28ddfa.css",
+    "main.js": "/static/js/main.22c63b51.js",
     "static/js/787.e99d95a1.chunk.js": "/static/js/787.e99d95a1.chunk.js",
     "static/js/mapbox-gl-csp-worker.2d72e816.worker.js": "/static/js/mapbox-gl-csp-worker.2d72e816.worker.js",
     "static/media/ikarus-main-s.jpg": "/static/media/ikarus-main-s.b1c2244763b5976803f4.jpg",
+    "static/media/varosijarat.jpg": "/static/media/varosijarat.58c394c34fe1a67ac458.jpg",
+    "static/media/felvonulasen.png": "/static/media/felvonulasen.8ccbfbea8230dfe3df91.png",
+    "static/media/varosijaraten.jpg": "/static/media/varosijaraten.64a24f04e7c2fc220a76.jpg",
+    "static/media/megkozelites.jpg": "/static/media/megkozelites.c4f41b3eb0127a840b59.jpg",
+    "static/media/megkozelitesen.jpg": "/static/media/megkozelitesen.df20c74ff1d30f4c5fad.jpg",
+    "static/media/felvonulas.jpg": "/static/media/felvonulas.c01ae866b4235d9f476b.jpg",
     "index.html": "/index.html",
-    "main.2dcb868c.css.map": "/static/css/main.2dcb868c.css.map",
-    "main.84236ed3.js.map": "/static/js/main.84236ed3.js.map",
+    "main.6a28ddfa.css.map": "/static/css/main.6a28ddfa.css.map",
+    "main.22c63b51.js.map": "/static/js/main.22c63b51.js.map",
     "787.e99d95a1.chunk.js.map": "/static/js/787.e99d95a1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2dcb868c.css",
-    "static/js/main.84236ed3.js"
+    "static/css/main.6a28ddfa.css",
+    "static/js/main.22c63b51.js"
   ]
 }

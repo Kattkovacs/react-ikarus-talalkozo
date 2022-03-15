@@ -309,7 +309,7 @@ label {
     justify-content: center;
     width: 300px !important;
   }
-  
+
 }
 
 .navbar .mobileNavigation {
@@ -359,6 +359,7 @@ label {
     display: flex;
     padding-bottom: 10px;
   }
+
 }
 
 #contact .boxes {
@@ -396,4 +397,16 @@ label {
 .mapImg {
   width: 300px;
   padding: 5px;
+}
+
+.navbar .logo img {
+  height: 45px;
+  margin-top: 5px;
+}
+
+@media (max-width: 450px){
+  .navbar .logo img {
+    height: 37px;
+    margin-top: 3px;
+  }
 }

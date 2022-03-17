@@ -2,6 +2,7 @@ import "./App.css";
 import Nav from "./components/Nav";
 import Header from "./components/Header";
 import Event from "./components/Event";
+import Location from "./components/Location";
 import Registration from "./components/Registration";
 import Rules from "./components/Rules";
 import Program from "./components/Program";
@@ -19,6 +20,7 @@ function App() {
       <Nav currentLanguage={currentLanguage} />
       <Header currentLanguage={currentLanguage} />
       <Event currentLanguage={currentLanguage} />
+      <Location currentLanguage={currentLanguage} />
       <Registration currentLanguage={currentLanguage} />
       <Rules currentLanguage={currentLanguage} />
       <Program currentLanguage={currentLanguage} />

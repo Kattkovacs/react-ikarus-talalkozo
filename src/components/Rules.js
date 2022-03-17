@@ -1,21 +1,23 @@
 import React from "react";
+import { ImSmile } from "react-icons/im";
 
 const Rules = ({ currentLanguage }) => {
   return (
     <section className="event">
       {currentLanguage === "hu" ? (
-        <div className="container">
+        <div className="box">
           <h1>SZABÁLYOK</h1>
           <p>A rendezvényen mindenki saját felelősségére vesz részt!</p>
           <p>
-            A balesetek elkerülése érdekében kérjük a mozgó járművek között
-            fokozottan ügyeljenek testi épségükre csak a kijelölt helyen
+            A balesetek elkerülése érdekében kérjük, hogy a mozgó járművek
+            között fokozottan ügyeljenek testi épségükre, csak a kijelölt helyen
             szálljanak fel és le az autóbuszokról és tartsák be a szervezők
             kéréseit!
           </p>
           <p>A rendezvény rossz időjárás esetén is megtartásra kerül!</p>
           <p>A programváltoztatás jogát fenntartjuk!</p>
-          <p>Mindenkinek kellemes időtöltést kívánunk! ☺</p>
+          <p>Mindenkinek kellemes időtöltést kívánunk!</p>
+          <ImSmile />
         </div>
       ) : (
         <div className="container">

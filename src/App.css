@@ -33,13 +33,23 @@ button {
   margin: 10px;
 }
 
-button a:hover{
-  color:#c3d4ee;
+button:hover{
+  color:#005c99;
+  background-color:#fff;
+  border: solid 2px;
+}
+
+button:hover a{
+  color:#005c99;
 }
 
 button a {
   text-decoration: none;
   color: #fff;
+}
+
+#registration button{
+  margin-top: 20px;
 }
 
 .link a{
@@ -175,9 +185,15 @@ td {
   padding: 5px 0 0 30px;
 }
 
+.footer div{
+  display: flex;
+  flex-direction: column;
+}
+
 .rights {
   text-align: center;
   font-size: x-small;
+  margin-top: 20px;
 }
 
 .tableWidth{
@@ -208,6 +224,40 @@ td {
   justify-content: space-between;
 }
 
+#reg{
+  background: #fff;
+  color: #005c99;
+}
+
+#reg h1{
+  color: #005c99;
+}
+
+#regAndRules .boxes {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+#regAndRules .box{
+  min-height: 310px;
+}
+
+@media (max-width: 1095px){
+  #regAndRules .boxes{
+    flex-direction: column;
+    padding: 10px 0px;
+    text-align: center;
+    background-position: 33% 50%;
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    justify-content: center;
+    width: 300px !important;
+  }
+}
+
 .box {
   flex: 1;
   background: #005c99;
@@ -217,6 +267,10 @@ td {
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
   padding: 15px 20px;
   text-align: center;
+}
+
+.box h1{
+  color: white;
 }
 
 input[type=submit] {
@@ -387,6 +441,11 @@ label {
 .boxes .vscMail{
   vertical-align:middle;
   height: auto;
+}
+
+.boxes .biBus{
+  vertical-align:middle;
+  margin-right: 5px;
 }
 
 .boxes .mailAddress{

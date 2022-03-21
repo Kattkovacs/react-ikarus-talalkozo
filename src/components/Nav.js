@@ -8,10 +8,12 @@ const Nav = ({ currentLanguage }) => {
     <div className="navbar">
       <div className="container">
         <div className="logo">
-          <img
-            src={currentLanguage === "hu" ? logoHu : logoHu}
-            alt="language"
-          />
+          <a href="/">
+            <img
+              src={currentLanguage === "hu" ? logoHu : logoHu}
+              alt="language"
+            />
+          </a>
         </div>
         <MobileNavigation currentLanguage={currentLanguage} />
         <Navigation currentLanguage={currentLanguage} />

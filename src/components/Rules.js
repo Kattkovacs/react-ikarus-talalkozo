@@ -5,7 +5,7 @@ const Rules = ({ currentLanguage }) => {
   return (
     <section className="event">
       {currentLanguage === "hu" ? (
-        <div className="box">
+        <div className="box boxHu">
           <h1>SZABÁLYOK</h1>
           <p>A rendezvényen mindenki saját felelősségére vesz részt!</p>
           <p>
@@ -20,7 +20,7 @@ const Rules = ({ currentLanguage }) => {
           <ImSmile />
         </div>
       ) : (
-        <div className="container">
+        <div className="box boxEn">
           <h1>RULES</h1>
           <p>Participate in the event at your own responsibility!</p>
           <p>
@@ -30,9 +30,11 @@ const Rules = ({ currentLanguage }) => {
             places! Please cooperate with the organiser staff throughout the
             whole duration of the event!
           </p>
+          <br />
           <p>The bus meeting will be held even in bad weather conditions!</p>
           <p>We (the organizers) reserve the right to change the programmes!</p>
-          <p>We wish you a pleasant stay on our event! ☺</p>
+          <p>We wish you a pleasant stay on our event!</p>
+          <ImSmile />
         </div>
       )}
     </section>

@@ -4,7 +4,7 @@ import Rules from "./Rules";
 
 const RegAndRules = ({ currentLanguage }) => {
   return (
-    <section className="event" id="regAndRules">
+    <section className="event regAndRules">
       <div className="container">
         <div className="boxes">
           <Registration currentLanguage={currentLanguage} />

@@ -1,61 +1,24 @@
-import React, { useRef, useEffect, useState } from "react";
-import 'mapbox-gl/dist/mapbox-gl.css';
-import mapboxgl from "mapbox-gl";
+import React from "react";
+import { useJsApiLoader, GoogleMap, Marker } from "@react-google-maps/api";
 import "../Map.css";
 
-// eslint-disable-next-line import/no-webpack-loader-syntax
-mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default;
-
-mapboxgl.accessToken =
-  "pk.eyJ1Ijoia2F0dGtvdmFjcyIsImEiOiJjbDBtOHd0ZDkxMnBsM2t1b3lnbWZxMmFsIn0.Q5bLd9DAqSrbUwugZppQ1w";
-
 const Map = () => {
-  const mapContainerRef = useRef(null);
+  const { isLoaded } = useJsApiLoader({
+    googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
+  });
 
-  const [lng, setLng] = useState(17.436028632655084);
-  const [lat, setLat] = useState(46.8828112139076);
-  const [zoom, setZoom] = useState(13.4);
+  if (!isLoaded) {
+    return <p>Loading...</p>;
+  }
+  const center = { lat: 46.8828112139076, lng: 17.436028632655084 };
 
-  // Initialize map when component mounts
-  useEffect(() => {
-    const map = new mapboxgl.Map({
-      container: mapContainerRef.current,
-      style: "mapbox://styles/mapbox/streets-v11",
-      center: [lng, lat],
-      zoom: zoom,
-    });
-
-    // // Add navigation control (the +/- zoom buttons)
-    // map.addControl(new mapboxgl.NavigationControl(), 'top-right');
-
-    const marker1 = new mapboxgl.Marker({ color: "#005c99" })
-      .setLngLat([17.442933, 46.883774])
-      .addTo(map);
-
-    const marker2 = new mapboxgl.Marker({ color: "#094064" })
-      .setLngLat([17.440507154350293, 46.87779910987866])
-      .addTo(map);
-
-    const marker3 = new mapboxgl.Marker({ color: "#259ba3" })
-      .setLngLat([17.436028632655084, 46.8828112139076])
-      .addTo(map);
-
-    const marker4 = new mapboxgl.Marker({ color: "#266b4e" })
-      .setLngLat([17.429812998180616, 46.87752132162177])
-      .addTo(map);
-
-    map.on("move", () => {
-      setLng(map.getCenter().lng.toFixed(4));
-      setLat(map.getCenter().lat.toFixed(4));
-      setZoom(map.getZoom().toFixed(2));
-    });
-
-    // Clean up on unmount
-    return () => map.remove();
-  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+  const event = { lat: 46.883774, lng: 17.442933 };
+  const parking = { lat: 46.87779910987866, lng: 17.440507154350293 };
+  const busStation = { lat: 46.8828112139076, lng: 17.436028632655084 };
+  const trainStation = { lat: 46.87752132162177, lng: 17.429812998180616 };
 
   return (
-    <div>
+    <div className="googleMap">
       <div className="sidebarStyle">
         <div>Rendezvény / Event</div>
       </div>
@@ -68,7 +31,54 @@ const Map = () => {
       <div className="sidebarStyle4">
         <div>Vasútállomás / Train station</div>
       </div>
-      <div className="map-container" ref={mapContainerRef} />
+      <GoogleMap
+        center={center}
+        zoom={14}
+        mapContainerStyle={{ width: "100%", height: "100%" }}
+        options={{
+          zoomControl: false,
+          streetViewControl: false,
+          mapTypeControl: false,
+          fullscreenControl: false,
+        }}
+      >
+        <Marker
+          position={event}
+          icon={{
+            // eslint-disable-next-line no-undef
+            path: google.maps.SymbolPath.BACKWARD_CLOSED_ARROW,
+            strokeColor: "#005c99",
+            scale: 4,
+          }}
+        ></Marker>
+        <Marker
+          position={parking}
+          icon={{
+            // eslint-disable-next-line no-undef
+            path: google.maps.SymbolPath.BACKWARD_CLOSED_ARROW,
+            strokeColor: "#094064",
+            scale: 4,
+          }}
+        />
+        <Marker
+          position={busStation}
+          icon={{
+            // eslint-disable-next-line no-undef
+            path: google.maps.SymbolPath.BACKWARD_CLOSED_ARROW,
+            strokeColor: "#259ba3",
+            scale: 4,
+          }}
+        />
+        <Marker
+          position={trainStation}
+          icon={{
+            // eslint-disable-next-line no-undef
+            path: google.maps.SymbolPath.BACKWARD_CLOSED_ARROW,
+            strokeColor: "#266b4e",
+            scale: 4,
+          }}
+        />
+      </GoogleMap>
     </div>
   );
 };

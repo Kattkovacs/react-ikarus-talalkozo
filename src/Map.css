@@ -1,4 +1,4 @@
-.map-container {
+.googleMap {
     z-index: 1 !important;
     width: 900px;
     height: 300px;
@@ -49,14 +49,16 @@
 }
 
 @media (max-width: 768px) {
-    .map-container {
-        width: 400px;
-        height: 300px;
+    .googleMap {
+        display: block;
+        width: 550px;
+        height: 400px;
     }
 }
 
 @media (max-width: 400px) {
-    .map-container {
+    .googleMap {
+        display: inline-block;
         width: 280px;
         height: 250px;
     }

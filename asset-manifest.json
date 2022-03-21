@@ -1,24 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.55ec54a9.css",
-    "main.js": "/static/js/main.9f21d066.js",
+    "main.css": "/static/css/main.5c07abc9.css",
+    "main.js": "/static/js/main.cefe6fd5.js",
     "static/js/787.e99d95a1.chunk.js": "/static/js/787.e99d95a1.chunk.js",
-    "static/js/mapbox-gl-csp-worker.2d72e816.worker.js": "/static/js/mapbox-gl-csp-worker.2d72e816.worker.js",
+    "static/media/round_trip_hu_en.jpg": "/static/media/round_trip_hu_en.29adbca1640c090c873b.jpg",
+    "static/media/city_map_hu.jpg": "/static/media/city_map_hu.a4ac9e3790dbfbae9871.jpg",
+    "static/media/city_trip_hu.jpg": "/static/media/city_trip_hu.6d97d0b5b9d0d6c0045a.jpg",
+    "static/media/city_map_en.jpg": "/static/media/city_map_en.f8d4953a7389d9b0f8eb.jpg",
+    "static/media/city_trip_en.jpg": "/static/media/city_trip_en.4914816a4bf6dff25dd0.jpg",
     "static/media/ikarus-main-s.jpg": "/static/media/ikarus-main-s.b1c2244763b5976803f4.jpg",
-    "static/media/varosijarat.jpg": "/static/media/varosijarat.58c394c34fe1a67ac458.jpg",
-    "static/media/felvonulasen.png": "/static/media/felvonulasen.8ccbfbea8230dfe3df91.png",
-    "static/media/varosijaraten.jpg": "/static/media/varosijaraten.64a24f04e7c2fc220a76.jpg",
-    "static/media/megkozelites.jpg": "/static/media/megkozelites.c4f41b3eb0127a840b59.jpg",
-    "static/media/megkozelitesen.jpg": "/static/media/megkozelitesen.df20c74ff1d30f4c5fad.jpg",
-    "static/media/felvonulas.jpg": "/static/media/felvonulas.c01ae866b4235d9f476b.jpg",
     "static/media/ikarus_tal_white_kor.svg": "/static/media/ikarus_tal_white_kor.311636369934d3d763920f1c8609b8c0.svg",
     "index.html": "/index.html",
-    "main.55ec54a9.css.map": "/static/css/main.55ec54a9.css.map",
-    "main.9f21d066.js.map": "/static/js/main.9f21d066.js.map",
+    "main.5c07abc9.css.map": "/static/css/main.5c07abc9.css.map",
+    "main.cefe6fd5.js.map": "/static/js/main.cefe6fd5.js.map",
     "787.e99d95a1.chunk.js.map": "/static/js/787.e99d95a1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.55ec54a9.css",
-    "static/js/main.9f21d066.js"
+    "static/css/main.5c07abc9.css",
+    "static/js/main.cefe6fd5.js"
   ]
 }

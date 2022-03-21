@@ -1,11 +1,10 @@
 import React from "react";
 import Map from "./Map";
-import megkozelitesImg from "../megkozelites.jpg";
-import varosijaratImg from "../varosijarat.jpg";
-import felvonulasImg from "../felvonulas.jpg";
-import megkozelitesEnImg from "../megkozelitesen.jpg";
-import varosijaratEnImg from "../varosijaraten.jpg";
-import felvonulasEnImg from "../felvonulasen.png";
+import cityMapHu from "../city_map_hu.jpg";
+import cityTripHu from "../city_trip_hu.jpg";
+import roundTrip from "../round_trip_hu_en.jpg";
+import cityMapEn from "../city_map_en.jpg";
+import cityTripEn from "../city_trip_en.jpg";
 
 const Approach = ({ currentLanguage }) => {
   return (
@@ -34,7 +33,7 @@ const Approach = ({ currentLanguage }) => {
               A 77-es számú főúton érhető el a város Veszprém és a 84-es út
               felől is. A Tapolca-patak és a 77-es számú főút találkozásánál van
               lehetőség személygépkocsival parkolni. Innen néhány perc sétával
-              érhető el a találkozó helyszíne:
+              érhető el a találkozó helyszíne.
             </p>
             <strong>Nosztalgia különvonattal:</strong>
             <p>Budapest Kelenföld - Balaton északi part - Tapolca</p>
@@ -42,18 +41,37 @@ const Approach = ({ currentLanguage }) => {
             <strong>Nosztalgia különjáratokkal:</strong>
             <p>Egyeztetés alatt!</p>
           </div>
-          <div>
-            <img
-              src={megkozelitesImg}
-              alt="megkozelites"
-              className="mapImg"
-            ></img>
-            <img
-              src={varosijaratImg}
-              alt="varosijarat"
-              className="mapImg"
-            ></img>
-            <img src={felvonulasImg} alt="felvonulas" className="mapImg"></img>
+          <div className="boxes">
+            <a
+              href="https://www.google.com/maps/d/u/0/viewer?mid=1gRK6n2cPKwoKXMb4NW-8lyedSLpEWs0N&ll=46.88090011481434%2C17.436230000000002&z=16"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="sidebarStyle">
+                <div>Tapolca belváros</div>
+              </div>
+              <img src={cityMapHu} alt="megkozelites" className="mapImg" />
+            </a>
+            <a
+              href="https://www.google.com/maps/d/u/0/viewer?mid=1aOxfPsKxw6FMZNNljYsUEYZhoMFkaPVA&ll=46.88336529699366%2C17.43563999999999&z=15"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="sidebarStyle">
+                <div>Nosztalgia autóbusz körjáratok</div>
+              </div>
+              <img src={cityTripHu} alt="varosijarat" className="mapImg" />
+            </a>
+            <a
+              href="https://www.google.com/maps/d/u/0/viewer?mid=10wK4wL-BFe8fUO6bL8LwXSR066l40WBC&ll=46.86826900882221%2C17.524713850000005&z=13"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="sidebarStyle">
+                <div>Felvonulás</div>
+              </div>
+              <img src={roundTrip} alt="felvonulas" className="mapImg" />
+            </a>
           </div>
         </div>
       ) : (
@@ -95,21 +113,40 @@ const Approach = ({ currentLanguage }) => {
             <p>Under negotiation!</p>
           </div>
           <div>
-            <img
-              src={megkozelitesEnImg}
-              alt="megkozelitesen"
-              className="mapImg"
-            ></img>
-            <img
-              src={varosijaratEnImg}
-              alt="varosijaraten"
-              className="mapImg"
-            ></img>
-            <img
-              src={felvonulasEnImg}
-              alt="felvonulasen"
-              className="mapImg"
-            ></img>
+            <a
+              href="https://www.google.com/maps/d/u/0/viewer?mid=1gRK6n2cPKwoKXMb4NW-8lyedSLpEWs0N&ll=46.88090011481434%2C17.436230000000002&z=16"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="sidebarStyle">
+                <div>Tapolca city center</div>
+              </div>
+              <img src={cityMapEn} alt="megkozelitesen" className="mapImg" />
+            </a>
+            <a
+              href="https://www.google.com/maps/d/u/0/viewer?mid=1aOxfPsKxw6FMZNNljYsUEYZhoMFkaPVA&ll=46.88336529699366%2C17.43563999999999&z=15"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="sidebarStyle">
+                <div>Nostalgia bus tours</div>
+              </div>
+              <img
+                src={cityTripEn}
+                alt="varosijaraten"
+                className="mapImg"
+              ></img>
+            </a>
+            <a
+              href="https://www.google.com/maps/d/u/0/viewer?mid=10wK4wL-BFe8fUO6bL8LwXSR066l40WBC&ll=46.86826900882221%2C17.524713850000005&z=13"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="sidebarStyle">
+                <div>Procession</div>
+              </div>
+              <img src={roundTrip} alt="felvonulasen" className="mapImg"></img>
+            </a>
           </div>
         </div>
       )}

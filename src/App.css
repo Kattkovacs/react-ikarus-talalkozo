@@ -31,6 +31,7 @@ button {
   padding: 5px 10px;
   font-size: larger;
   margin: 10px;
+  border: solid 2px;
 }
 
 button:hover {
@@ -219,6 +220,19 @@ td {
   padding: 2px 5px 0 5px;
   background-color: #005c99;
   color: #fff;
+}
+
+#approach tr th{
+  background-color: #d9edfa;
+}
+
+#approach tr:hover {
+  background-color: #d9edfa;
+}
+
+#approach th, td {
+  padding: 8px;
+  text-align: left;
 }
 
 .boxes .container {
@@ -458,7 +472,7 @@ label {
   height: auto;
 }
 
-.boxes .biBus {
+.biBus {
   vertical-align: middle;
   margin-right: 5px;
 }

@@ -5,6 +5,8 @@ import cityTripHu from "../city_trip_hu.jpg";
 import roundTrip from "../round_trip_hu_en.jpg";
 import cityMapEn from "../city_map_en.jpg";
 import cityTripEn from "../city_trip_en.jpg";
+import bus25059 from "../25059.JPG";
+import { MdOutlineReadMore } from "react-icons/md";
 
 const Approach = ({ currentLanguage }) => {
   return (
@@ -38,8 +40,50 @@ const Approach = ({ currentLanguage }) => {
             <strong>Nosztalgia különvonattal:</strong>
             <p>Budapest Kelenföld - Balaton északi part - Tapolca</p>
             <p>Egyeztetés alatt!</p>
+            <br />
             <strong>Nosztalgia különjáratokkal:</strong>
-            <p>Egyeztetés alatt!</p>
+            <p>
+              Az alábbiakban felsorolt buszokkal van lehetőség eljutni a
+              Találkozó helyszínére. A "Részletek és foglalás" résznél lehet
+              érdeklődni a buszos utazással kapcsolatban.
+            </p>
+            <br />
+            <table>
+              <tr>
+                <th>Útvonal</th>
+                <th>Jármű típusa</th>
+                <th>Részletek és foglalás</th>
+              </tr>
+              <tr>
+                <td>Budapest - Tapolca, Köztársaság tér</td>
+                <td>250.59</td>
+                <td>
+                  <button>
+                    <MdOutlineReadMore className="biBus" size="18px" />
+                    <a
+                      href={bus25059}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Részletek
+                    </a>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td> </td>
+                <td>
+                  <a
+                    href={bus25059}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  ></a>
+                </td>
+              </tr>
+            </table>
+            <p>További különjáratok meghirdetése egyeztetés alatt!</p>
+            <br />
           </div>
           <div className="boxes">
             <a
@@ -110,7 +154,48 @@ const Approach = ({ currentLanguage }) => {
             </p>
             <p>Under negotiation!</p>
             <strong>Old timer charter bus services:</strong>
-            <p>Under negotiation!</p>
+            <p>
+              The buses listed below will take you to the Meeting Venue. You can
+              inquire about old timer bus travel in the "Details and booking"
+              section.
+            </p>
+            <br />
+            <table>
+              <tr>
+                <th> Route </th>
+                <th> Vehicle type </th>
+                <th> Details and booking </th>
+              </tr>
+              <tr>
+                <td>Budapest - Tapolca, Köztársaság tér</td>
+                <td>250.59</td>
+                <td>
+                  <button>
+                    <MdOutlineReadMore className="biBus" size="18px" />
+                    <a
+                      href={bus25059}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Details
+                    </a>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td> </td>
+                <td>
+                  <a
+                    href={bus25059}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  ></a>
+                </td>
+              </tr>
+            </table>
+            <p>More old timer charter bus services are being negotiated!</p>
+            <br />
           </div>
           <div>
             <a

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.5c07abc9.css",
-    "main.js": "/static/js/main.cefe6fd5.js",
+    "main.css": "/static/css/main.4483f95f.css",
+    "main.js": "/static/js/main.06b2f764.js",
     "static/js/787.e99d95a1.chunk.js": "/static/js/787.e99d95a1.chunk.js",
     "static/media/round_trip_hu_en.jpg": "/static/media/round_trip_hu_en.29adbca1640c090c873b.jpg",
     "static/media/city_map_hu.jpg": "/static/media/city_map_hu.a4ac9e3790dbfbae9871.jpg",
@@ -9,14 +9,15 @@
     "static/media/city_map_en.jpg": "/static/media/city_map_en.f8d4953a7389d9b0f8eb.jpg",
     "static/media/city_trip_en.jpg": "/static/media/city_trip_en.4914816a4bf6dff25dd0.jpg",
     "static/media/ikarus-main-s.jpg": "/static/media/ikarus-main-s.b1c2244763b5976803f4.jpg",
+    "static/media/25059.JPG": "/static/media/25059.467dbba980a8775fdf22.JPG",
     "static/media/ikarus_tal_white_kor.svg": "/static/media/ikarus_tal_white_kor.311636369934d3d763920f1c8609b8c0.svg",
     "index.html": "/index.html",
-    "main.5c07abc9.css.map": "/static/css/main.5c07abc9.css.map",
-    "main.cefe6fd5.js.map": "/static/js/main.cefe6fd5.js.map",
+    "main.4483f95f.css.map": "/static/css/main.4483f95f.css.map",
+    "main.06b2f764.js.map": "/static/js/main.06b2f764.js.map",
     "787.e99d95a1.chunk.js.map": "/static/js/787.e99d95a1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5c07abc9.css",
-    "static/js/main.cefe6fd5.js"
+    "static/css/main.4483f95f.css",
+    "static/js/main.06b2f764.js"
   ]
 }

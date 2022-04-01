@@ -4,6 +4,7 @@ import tapolca from "../tapolca.png";
 import maxloads from "../Maxloads.png";
 import kaloztanya from "../kaloz.jpg";
 import nosztalgiabusz from "../noszbusz.jpg";
+import hotelhalasz from "../hotelhalaszkert.png";
 
 const Collaborators = ({ currentLanguage }) => {
   return (
@@ -57,13 +58,26 @@ const Collaborators = ({ currentLanguage }) => {
           </div>
           <div className="logoBox">
             <a
+              href="https://hotelhalaszkert.hu"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={hotelhalasz}
+                alt="hotelhalaszket logo"
+                className="logoImg"
+              />
+            </a>
+          </div>
+          <div className="logoBox">
+            <a
               href="https://www.facebook.com/nosztalgiabusz"
               target="_blank"
               rel="noopener noreferrer"
             >
               <img
                 src={nosztalgiabusz}
-                alt="nosztalgiabusz"
+                alt="nosztalgiabusz logo"
                 className="logoImg"
               />
             </a>

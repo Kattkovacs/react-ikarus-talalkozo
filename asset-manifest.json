@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.67e73f04.css",
-    "main.js": "/static/js/main.3d91f205.js",
+    "main.js": "/static/js/main.d4d9c0b2.js",
     "static/js/787.e99d95a1.chunk.js": "/static/js/787.e99d95a1.chunk.js",
     "static/media/kaloz.jpg": "/static/media/kaloz.63988a1de1a53df05c04.jpg",
+    "static/media/noszbusz.jpg": "/static/media/noszbusz.c9d11337f238d68e043e.jpg",
     "static/media/round_trip_hu_en.jpg": "/static/media/round_trip_hu_en.29adbca1640c090c873b.jpg",
     "static/media/city_map_hu.jpg": "/static/media/city_map_hu.a4ac9e3790dbfbae9871.jpg",
     "static/media/city_trip_hu.jpg": "/static/media/city_trip_hu.6d97d0b5b9d0d6c0045a.jpg",
@@ -16,11 +17,11 @@
     "static/media/volanbusz_logo.jpg": "/static/media/volanbusz_logo.570c1279ec7ae116689a.jpg",
     "index.html": "/index.html",
     "main.67e73f04.css.map": "/static/css/main.67e73f04.css.map",
-    "main.3d91f205.js.map": "/static/js/main.3d91f205.js.map",
+    "main.d4d9c0b2.js.map": "/static/js/main.d4d9c0b2.js.map",
     "787.e99d95a1.chunk.js.map": "/static/js/787.e99d95a1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.67e73f04.css",
-    "static/js/main.3d91f205.js"
+    "static/js/main.d4d9c0b2.js"
   ]
 }

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.67e73f04.css",
-    "main.js": "/static/js/main.d4d9c0b2.js",
+    "main.css": "/static/css/main.07137843.css",
+    "main.js": "/static/js/main.1a6f8519.js",
     "static/js/787.e99d95a1.chunk.js": "/static/js/787.e99d95a1.chunk.js",
     "static/media/kaloz.jpg": "/static/media/kaloz.63988a1de1a53df05c04.jpg",
     "static/media/noszbusz.jpg": "/static/media/noszbusz.c9d11337f238d68e043e.jpg",
@@ -15,13 +15,14 @@
     "static/media/tapolca.png": "/static/media/tapolca.c7e270217d876b82c1ed.png",
     "static/media/ikarus_tal_white_kor.svg": "/static/media/ikarus_tal_white_kor.311636369934d3d763920f1c8609b8c0.svg",
     "static/media/volanbusz_logo.jpg": "/static/media/volanbusz_logo.570c1279ec7ae116689a.jpg",
+    "static/media/hotelhalaszkert.png": "/static/media/hotelhalaszkert.6af95e0c165b80829c76.png",
     "index.html": "/index.html",
-    "main.67e73f04.css.map": "/static/css/main.67e73f04.css.map",
-    "main.d4d9c0b2.js.map": "/static/js/main.d4d9c0b2.js.map",
+    "main.07137843.css.map": "/static/css/main.07137843.css.map",
+    "main.1a6f8519.js.map": "/static/js/main.1a6f8519.js.map",
     "787.e99d95a1.chunk.js.map": "/static/js/787.e99d95a1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.67e73f04.css",
-    "static/js/main.d4d9c0b2.js"
+    "static/css/main.07137843.css",
+    "static/js/main.1a6f8519.js"
   ]
 }

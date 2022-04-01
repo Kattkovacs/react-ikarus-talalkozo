@@ -10,6 +10,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import { useSelector } from "react-redux";
 import RegAndRules from "./components/RegAndRules";
+import Collaborators from "./components/Collaborators";
 
 function App() {
   const currentLanguage = useSelector((state) => state.language);
@@ -24,6 +25,7 @@ function App() {
       <Program currentLanguage={currentLanguage} />
       <Approach currentLanguage={currentLanguage} />
       <Prices currentLanguage={currentLanguage} />
+      <Collaborators currentLanguage={currentLanguage} />
       <Contact currentLanguage={currentLanguage} />
       <Footer currentLanguage={currentLanguage} />
     </div>

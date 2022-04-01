@@ -487,6 +487,17 @@ label {
   padding: 5px;
 }
 
+.logoBox{
+  display:inline-flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.logoImg {
+  width: 200px;
+  padding: 10px;
+}
+
 .navbar .logo img {
   height: 45px;
   margin-top: 5px;
@@ -501,4 +512,5 @@ label {
 
 #approach .boxes {
   padding: 0px;
+  display: flex;
 }

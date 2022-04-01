@@ -3,6 +3,7 @@ import volan from "../volanbusz_logo.jpg";
 import tapolca from "../tapolca.png";
 import maxloads from "../Maxloads.png";
 import kaloztanya from "../kaloz.jpg";
+import nosztalgiabusz from "../noszbusz.jpg";
 
 const Collaborators = ({ currentLanguage }) => {
   return (
@@ -50,6 +51,19 @@ const Collaborators = ({ currentLanguage }) => {
               <img
                 src={kaloztanya}
                 alt="kaloztanya pizzeria"
+                className="logoImg"
+              />
+            </a>
+          </div>
+          <div className="logoBox">
+            <a
+              href="https://www.facebook.com/nosztalgiabusz"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={nosztalgiabusz}
+                alt="nosztalgiabusz"
                 className="logoImg"
               />
             </a>

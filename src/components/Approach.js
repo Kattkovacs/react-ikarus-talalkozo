@@ -15,12 +15,12 @@ const Approach = ({ currentLanguage }) => {
         <div className="container">
           <div>
             <h1>MEGKÖZELÍTÉS</h1>
-            <strong>Helyszín: </strong>
+            <strong>Helyszín </strong>
             <p>Veszprém megye, Tapolca város, Köztársaság tér</p>
             <br />
             <Map />
             <br />
-            <strong>Tömegközlekedéssel:</strong>
+            <strong>Tömegközlekedéssel</strong>
             <p>
               <a href="http://menetrendek.hu" className="link">
                 menetrendek.hu
@@ -30,18 +30,49 @@ const Approach = ({ currentLanguage }) => {
               tervezni. A rendezvény az autóbuszállomástól kb. 5 perc, a
               vasútállomástól kb. 15 perc séta a rendezvény helyszíne.
             </p>
-            <strong>Gépjárművel:</strong>
+            <br />
+            <strong>Gépjárművel</strong>
             <p>
               A 77-es számú főúton érhető el a város Veszprém és a 84-es út
               felől is. A Tapolca-patak és a 77-es számú főút találkozásánál van
               lehetőség személygépkocsival parkolni. Innen néhány perc sétával
               érhető el a találkozó helyszíne.
             </p>
-            <strong>Nosztalgia különvonattal:</strong>
-            <p>Budapest Kelenföld - Balaton északi part - Tapolca</p>
-            <p>Egyeztetés alatt!</p>
             <br />
-            <strong>Nosztalgia különjáratokkal:</strong>
+            <strong>Nosztalgia különvonattal</strong>
+            <p>
+              A különvonat nosztalgia BCmot motorkocsi és Cmn kocsi
+              összeállításban közlekedik. A különvonat utasait a találkozó
+              szervezői különbuszokkal viszik az esemény helyszínére.
+            </p>
+            <table>
+              <tbody>
+                <tr>
+                  <th>Útvonal (oda és vissza)</th>
+                  <th>Járművek típusa</th>
+                  <th>Részletek és foglalás</th>
+                </tr>
+                <tr>
+                  <td>Budapest Kelenföld - Balaton északi part - Tapolca </td>
+                  <td>BCmot, Cmn</td>
+                  <td>
+                    <button>
+                      <MdOutlineReadMore className="biBus" size="18px" />
+                      <a
+                        href="https://www.mavrailtours.hu/hu/programs/show/124"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Részletek
+                      </a>
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <br />
+            <strong>Nosztalgia különjáratokkal</strong>
             <p>
               Az alábbiakban felsorolt buszokkal van lehetőség eljutni a
               Találkozó helyszínére. A "Részletek és foglalás" résznél lehet
@@ -49,38 +80,34 @@ const Approach = ({ currentLanguage }) => {
             </p>
             <br />
             <table>
-              <tr>
-                <th>Útvonal</th>
-                <th>Jármű típusa</th>
-                <th>Részletek és foglalás</th>
-              </tr>
-              <tr>
-                <td>Budapest - Tapolca, Köztársaság tér</td>
-                <td>250.59</td>
-                <td>
-                  <button>
-                    <MdOutlineReadMore className="biBus" size="18px" />
-                    <a
-                      href={bus25059}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Részletek
-                    </a>
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td></td>
-                <td> </td>
-                <td>
-                  <a
-                    href={bus25059}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  ></a>
-                </td>
-              </tr>
+              <tbody>
+                <tr>
+                  <th>Útvonal (oda és vissza)</th>
+                  <th>Jármű típusa</th>
+                  <th>Részletek és foglalás</th>
+                </tr>
+                <tr>
+                  <td>Budapest - Székesfehérvár - Tapolca, Köztársaság tér</td>
+                  <td>250.59</td>
+                  <td>
+                    <button>
+                      <MdOutlineReadMore className="biBus" size="18px" />
+                      <a
+                        href={bus25059}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Részletek
+                      </a>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
             </table>
             <p>További különjáratok meghirdetése egyeztetés alatt!</p>
             <br />
@@ -122,12 +149,12 @@ const Approach = ({ currentLanguage }) => {
         <div className="container">
           <div>
             <h1>APPROACH</h1>
-            <strong>Location: </strong>
+            <strong>Location </strong>
             <p>Hungary, Veszprém county, Tapolca city, Köztársaság square</p>
             <br />
             <Map />
             <br />
-            <strong>Approaching by public transport:</strong>
+            <strong>Approaching by public transport</strong>
             <p>
               You can find the timetables on{" "}
               <a href="http://menetrendek.hu" className="link">
@@ -139,7 +166,8 @@ const Approach = ({ currentLanguage }) => {
               minutes walk away while, from the train station the walk is
               approximately 15 minutes long.
             </p>
-            <strong>Approaching by car:</strong>
+            <br />
+            <strong>Approaching by car</strong>
             <p>
               Tapolca can be reached from the east (from Veszprém) and from the
               west (from route 84) on route 77. At the intersection of the south
@@ -147,12 +175,41 @@ const Approach = ({ currentLanguage }) => {
               car park at the visitor's service. From here the event can be
               reached with a couple of minutes walk.
             </p>
-            <strong>Nostalgic charter train service:</strong>
+            <br />
+            <strong>Nostalgic charter train service</strong>
             <p>
-              Budapest Kelenföld Station - Lake Balaton north coast - Tapolca
-              Station
+              The special train runs in a nostalgia BCmot motor car and Cmn car
+              combination. The passengers of the special train are taken to the
+              event venue by special buses.
             </p>
-            <p>Under negotiation!</p>
+            <table>
+              <tbody>
+                <tr>
+                  <th> Route (back and forth) </th>
+                  <th> Vehicle type </th>
+                  <th> Details and booking </th>
+                </tr>
+                <tr>
+                  <td>
+                    Budapest Kelenföld Station - Lake Balaton north coast -
+                    Tapolca Station
+                  </td>
+                  <td>BCmot, Cmn</td>
+                  <td>
+                    <button>
+                      <MdOutlineReadMore className="biBus" size="18px" />
+                      <a
+                        href="https://www.mavrailtours.hu/hu/programs/show/124"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Details
+                      </a>
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
             <strong>Old timer charter bus services:</strong>
             <p>
               The buses listed below will take you to the Meeting Venue. You can
@@ -161,38 +218,34 @@ const Approach = ({ currentLanguage }) => {
             </p>
             <br />
             <table>
-              <tr>
-                <th> Route </th>
-                <th> Vehicle type </th>
-                <th> Details and booking </th>
-              </tr>
-              <tr>
-                <td>Budapest - Tapolca, Köztársaság tér</td>
-                <td>250.59</td>
-                <td>
-                  <button>
-                    <MdOutlineReadMore className="biBus" size="18px" />
-                    <a
-                      href={bus25059}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Details
-                    </a>
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td></td>
-                <td> </td>
-                <td>
-                  <a
-                    href={bus25059}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  ></a>
-                </td>
-              </tr>
+              <tbody>
+                <tr>
+                  <th> Route (back and forth)</th>
+                  <th> Vehicle type </th>
+                  <th> Details and booking </th>
+                </tr>
+                <tr>
+                  <td>Budapest - Székesfehérvár - Tapolca, Köztársaság tér</td>
+                  <td>250.59</td>
+                  <td>
+                    <button>
+                      <MdOutlineReadMore className="biBus" size="18px" />
+                      <a
+                        href={bus25059}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Details
+                      </a>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
             </table>
             <p>More old timer charter bus services are being negotiated!</p>
             <br />

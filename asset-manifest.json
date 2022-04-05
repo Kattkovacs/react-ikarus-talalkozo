@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.d45adfbb.css",
-    "main.js": "/static/js/main.66375db5.js",
+    "main.css": "/static/css/main.5ad450d0.css",
+    "main.js": "/static/js/main.21132672.js",
     "static/js/787.e99d95a1.chunk.js": "/static/js/787.e99d95a1.chunk.js",
     "static/media/kaloz.jpg": "/static/media/kaloz.63988a1de1a53df05c04.jpg",
+    "static/media/opti.jpg": "/static/media/opti.56d54a47939754271b43.jpg",
     "static/media/noszbusz.jpg": "/static/media/noszbusz.c9d11337f238d68e043e.jpg",
     "static/media/round_trip_hu_en.jpg": "/static/media/round_trip_hu_en.29adbca1640c090c873b.jpg",
     "static/media/city_map_hu.jpg": "/static/media/city_map_hu.a4ac9e3790dbfbae9871.jpg",
@@ -13,16 +14,17 @@
     "static/media/ikarus-main-s.jpg": "/static/media/ikarus-main-s.b1c2244763b5976803f4.jpg",
     "static/media/25059.JPG": "/static/media/25059.467dbba980a8775fdf22.JPG",
     "static/media/tapolca.png": "/static/media/tapolca.c7e270217d876b82c1ed.png",
+    "static/media/mrt.jpg": "/static/media/mrt.48059e521d3b53323663.jpg",
     "static/media/ikarus_tal_white_kor.svg": "/static/media/ikarus_tal_white_kor.311636369934d3d763920f1c8609b8c0.svg",
     "static/media/volanbusz_logo.jpg": "/static/media/volanbusz_logo.570c1279ec7ae116689a.jpg",
     "static/media/hotelhalaszkert.png": "/static/media/hotelhalaszkert.6af95e0c165b80829c76.png",
     "index.html": "/index.html",
-    "main.d45adfbb.css.map": "/static/css/main.d45adfbb.css.map",
-    "main.66375db5.js.map": "/static/js/main.66375db5.js.map",
+    "main.5ad450d0.css.map": "/static/css/main.5ad450d0.css.map",
+    "main.21132672.js.map": "/static/js/main.21132672.js.map",
     "787.e99d95a1.chunk.js.map": "/static/js/787.e99d95a1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d45adfbb.css",
-    "static/js/main.66375db5.js"
+    "static/css/main.5ad450d0.css",
+    "static/js/main.21132672.js"
   ]
 }

@@ -1,10 +1,5 @@
 import React from "react";
-import volan from "../volanbusz_logo.jpg";
-import tapolca from "../tapolca.png";
-import maxloads from "../Maxloads.png";
-import kaloztanya from "../kaloz.jpg";
-import nosztalgiabusz from "../noszbusz.jpg";
-import hotelhalasz from "../hotelhalaszkert.png";
+import { RerouselComp } from "./RerouselComp";
 
 const Collaborators = ({ currentLanguage }) => {
   return (
@@ -15,74 +10,7 @@ const Collaborators = ({ currentLanguage }) => {
         ) : (
           <h1>COLLABORATORS</h1>
         )}
-        <div className="boxes">
-          <div className="logoBox">
-            <a
-              href="https://www.volanbusz.hu"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={volan} alt="volan" className="logoImg" />
-            </a>
-          </div>
-          <div className="logoBox">
-            <a
-              href="https://www.tapolca.hu"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={tapolca} alt="tapolca" className="logoImg" />
-            </a>
-          </div>
-          <div className="logoBox">
-            <a
-              href="https://www.maxloads.ro"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={maxloads} alt="maxloads" className="logoImg" />
-            </a>
-          </div>
-          <div className="logoBox">
-            <a
-              href="https://www.facebook.com/kaloztanya.balatonederics"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src={kaloztanya}
-                alt="kaloztanya pizzeria"
-                className="logoImg"
-              />
-            </a>
-          </div>
-          <div className="logoBox">
-            <a
-              href="https://hotelhalaszkert.hu"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src={hotelhalasz}
-                alt="hotelhalaszket logo"
-                className="logoImg"
-              />
-            </a>
-          </div>
-          <div className="logoBox">
-            <a
-              href="https://www.facebook.com/nosztalgiabusz"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src={nosztalgiabusz}
-                alt="nosztalgiabusz logo"
-                className="logoImg"
-              />
-            </a>
-          </div>
-        </div>
+        <RerouselComp />
       </div>
     </section>
   );

@@ -271,7 +271,7 @@ td {
 }
 
 @media (max-width: 1095px) {
-  .regAndRules .boxes {
+  .boxes {
     flex-direction: column;
     padding: 10px 0px;
     text-align: center;
@@ -283,7 +283,7 @@ td {
     justify-content: center;
     width: 300px !important;
   }
-
+  
   .boxes a {
     display: inline-block;
   }

@@ -1,5 +1,6 @@
 import React from "react";
 import { RerouselComp } from "./RerouselComp";
+import MobileCollabolators from "./MobileCollabolators";
 
 const Collaborators = ({ currentLanguage }) => {
   return (
@@ -11,6 +12,7 @@ const Collaborators = ({ currentLanguage }) => {
           <h1>COLLABORATORS</h1>
         )}
         <RerouselComp />
+        <MobileCollabolators />
       </div>
     </section>
   );

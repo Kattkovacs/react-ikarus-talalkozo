@@ -400,6 +400,22 @@ label {
   display: none;
 }
 
+.container .mobileCollab {
+  display: none;
+}
+
+@media (max-width: 990px) {
+  .container .ffu8bod {
+    display: none;
+  }
+
+  .container .mobileCollab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 @media (max-width: 990px) {
   .navbar .navigation {
     display: none;

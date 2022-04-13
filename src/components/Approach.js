@@ -6,7 +6,8 @@ import roundTrip from "../round_trip_hu_en.jpg";
 import cityMapEn from "../city_map_en.jpg";
 import cityTripEn from "../city_trip_en.jpg";
 import bus25059 from "../25059.JPG";
-import bus25098 from "../25098.jpg"
+import bus25098 from "../25098.jpg";
+import bus5521 from "../5521.jpg";
 import { MdOutlineReadMore } from "react-icons/md";
 
 const Approach = ({ currentLanguage }) => {
@@ -104,13 +105,32 @@ const Approach = ({ currentLanguage }) => {
                   </td>
                 </tr>
                 <tr>
-                <td>Szécsény - Népliget - Székesfehérvár - Tapolca, Köztársaság tér</td>
+                  <td>
+                    Szécsény - Népliget - Székesfehérvár - Tapolca, Köztársaság
+                    tér
+                  </td>
                   <td>250.98</td>
                   <td>
                     <button>
                       <MdOutlineReadMore className="biBus" size="18px" />
                       <a
                         href={bus25098}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Részletek
+                      </a>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Budapest - Székesfehérvár - Balatonfűzfő - Tapolca</td>
+                  <td>55.21</td>
+                  <td>
+                    <button>
+                      <MdOutlineReadMore className="biBus" size="18px" />
+                      <a
+                        href={bus5521}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -253,9 +273,39 @@ const Approach = ({ currentLanguage }) => {
                   </td>
                 </tr>
                 <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
+                  <td>
+                    Szécsény - Népliget - Székesfehérvár - Tapolca, Köztársaság
+                    tér
+                  </td>
+                  <td>250.98</td>
+                  <td>
+                    <button>
+                      <MdOutlineReadMore className="biBus" size="18px" />
+                      <a
+                        href={bus25098}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Details
+                      </a>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Budapest - Székesfehérvár - Balatonfűzfő - Tapolca</td>
+                  <td>55.21</td>
+                  <td>
+                    <button>
+                      <MdOutlineReadMore className="biBus" size="18px" />
+                      <a
+                        href={bus5521}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Details
+                      </a>
+                    </button>
+                  </td>
                 </tr>
               </tbody>
             </table>

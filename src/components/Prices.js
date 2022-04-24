@@ -41,6 +41,14 @@ const Prices = ({ currentLanguage }) => {
                 </td>
                 <td>400 Ft/db</td>
               </tr>
+              <tr>
+                <td colSpan="2">
+                  <small>
+                    A Tombola főnyereménye: 2 éjszaka 2 fő részére a Hotel
+                    Halászkertben, Badacsonyban
+                  </small>
+                </td>
+              </tr>
             </tbody>
           </table>
         </div>
@@ -78,9 +86,17 @@ const Prices = ({ currentLanguage }) => {
               </tr>
               <tr>
                 <td>
-                  <strong>Tombola ticket</strong>
+                  <strong>Raffle 'Tombola' ticket</strong>
                 </td>
                 <td>400 HUF/piece</td>
+              </tr>
+              <tr>
+                <td colSpan="2">
+                  <small>
+                    The main prize of the Raffle: 2 nights for 2 people at the
+                    Hotel Halászkert in Badacsony
+                  </small>
+                </td>
               </tr>
             </tbody>
           </table>

@@ -11,17 +11,11 @@ const Registration = ({ currentLanguage }) => {
             A kiállítóknak kötelező regisztráció van, ennek hiányában nem tudjuk
             garantálni a helyet.
           </p>
-          <p>Kérjük, aki autóbusszal érkezik, itt regisztrálhat:</p>
+          <strong>A regisztráció lezárult!</strong>
           <div className="center">
             <button>
               <BiBus className="biBus" size="18px" />
-              <a
-                href="https://forms.gle/xqf7vPkppVxGwt6c6"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Regisztráció
-              </a>
+              Regisztráció
             </button>
           </div>
         </div>
@@ -32,20 +26,11 @@ const Registration = ({ currentLanguage }) => {
             Registration is mandatory for all exhibitors! In absence of
             registration we can not guarantee exhibition place for your vehicle.
           </p>
-          <p>
-            If you want to demonstrate your vehicle on our event please
-            registrate here:
-          </p>
+          <strong>Registration is closed!</strong>
           <div className="center">
             <button className="noWrap">
               <BiBus className="biBus" size="18px" />
-              <a
-                href="https://forms.gle/xqf7vPkppVxGwt6c6"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Bus registration
-              </a>
+              Bus registration
             </button>
           </div>
         </div>

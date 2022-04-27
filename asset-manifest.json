@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.0aedbb23.css",
-    "main.js": "/static/js/main.b1cf18b9.js",
+    "main.js": "/static/js/main.d0065498.js",
     "static/js/787.e99d95a1.chunk.js": "/static/js/787.e99d95a1.chunk.js",
     "static/media/kaloz.jpg": "/static/media/kaloz.63988a1de1a53df05c04.jpg",
     "static/media/opti.jpg": "/static/media/opti.56d54a47939754271b43.jpg",
@@ -22,11 +22,11 @@
     "static/media/hotelhalaszkert.png": "/static/media/hotelhalaszkert.6af95e0c165b80829c76.png",
     "index.html": "/index.html",
     "main.0aedbb23.css.map": "/static/css/main.0aedbb23.css.map",
-    "main.b1cf18b9.js.map": "/static/js/main.b1cf18b9.js.map",
+    "main.d0065498.js.map": "/static/js/main.d0065498.js.map",
     "787.e99d95a1.chunk.js.map": "/static/js/787.e99d95a1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0aedbb23.css",
-    "static/js/main.b1cf18b9.js"
+    "static/js/main.d0065498.js"
   ]
 }

@@ -35,9 +35,10 @@ const Approach = ({ currentLanguage }) => {
             <br />
             <strong>Gépjárművel</strong>
             <p>
-              A 77-es számú főúton érhető el a város Veszprém és a 84-es út
+              Ajánlott parkoló: Halápi úti körforgalom melletti zöld területen.
+              További parkolási lehetőség: A 77-es számú főúton érhető el a város Veszprém és a 84-es út
               felől is. A Tapolca-patak és a 77-es számú főút találkozásánál van
-              lehetőség személygépkocsival parkolni. Innen néhány perc sétával
+              lehetőség személygépkocsival parkolni. Ezektől a parkolóktól néhány perc sétával
               érhető el a találkozó helyszíne.
             </p>
             <br />
@@ -201,10 +202,11 @@ const Approach = ({ currentLanguage }) => {
             <br />
             <strong>Approaching by car</strong>
             <p>
-              Tapolca can be reached from the east (from Veszprém) and from the
+              Recommended parking: in the green area next to the Halápi road roundabout.
+              Additional parking: Tapolca can be reached from the east (from Veszprém) and from the
               west (from route 84) on route 77. At the intersection of the south
               bypass route 77 and the Tapolca-creek, there is a high capacity
-              car park at the visitor's service. From here the event can be
+              car park at the visitor's service. From these parkings the event can be
               reached with a couple of minutes walk.
             </p>
             <br />

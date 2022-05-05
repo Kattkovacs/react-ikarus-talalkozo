@@ -13,7 +13,9 @@ const Map = () => {
   const center = { lat: 46.8828112139076, lng: 17.436028632655084 };
 
   const event = { lat: 46.883774, lng: 17.442933 };
-  const parking = { lat: 46.87779910987866, lng: 17.440507154350293 };
+  const parking1 = { lat: 46.890061, lng: 17.447153 };
+  const parking2 = { lat: 46.889035, lng: 17.447153 };
+  const parking3 = { lat: 46.87779910987866, lng: 17.440507154350293 };
   const busStation = { lat: 46.8828112139076, lng: 17.436028632655084 };
   const trainStation = { lat: 46.87752132162177, lng: 17.429812998180616 };
 
@@ -52,7 +54,25 @@ const Map = () => {
           }}
         ></Marker>
         <Marker
-          position={parking}
+          position={parking1}
+          icon={{
+            // eslint-disable-next-line no-undef
+            path: google.maps.SymbolPath.BACKWARD_CLOSED_ARROW,
+            strokeColor: "#094064",
+            scale: 4,
+          }}
+        />
+        <Marker
+          position={parking2}
+          icon={{
+            // eslint-disable-next-line no-undef
+            path: google.maps.SymbolPath.BACKWARD_CLOSED_ARROW,
+            strokeColor: "#094064",
+            scale: 4,
+          }}
+        />
+        <Marker
+          position={parking3}
           icon={{
             // eslint-disable-next-line no-undef
             path: google.maps.SymbolPath.BACKWARD_CLOSED_ARROW,

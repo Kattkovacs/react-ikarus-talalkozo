@@ -133,10 +133,16 @@ td {
   margin-bottom: 0px;
 }
 
-.header small {
+.header .lighter {
   opacity: 0.7;
   font-weight: lighter;
   margin-top: 470px;
+}
+
+.header .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 65px;
 }
 
 .header h3 {

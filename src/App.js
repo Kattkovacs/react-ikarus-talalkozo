@@ -20,12 +20,12 @@ function App() {
       <Nav currentLanguage={currentLanguage} />
       <Header currentLanguage={currentLanguage} />
       <Event currentLanguage={currentLanguage} />
-      <Location currentLanguage={currentLanguage} />
-      <RegAndRules currentLanguage={currentLanguage} />
-      <Program currentLanguage={currentLanguage} />
-      <Approach currentLanguage={currentLanguage} />
-      <Prices currentLanguage={currentLanguage} />
-      <Collaborators currentLanguage={currentLanguage} />
+      {/* <Location currentLanguage={currentLanguage} /> */}
+      {/* <RegAndRules currentLanguage={currentLanguage} /> */}
+      {/* <Program currentLanguage={currentLanguage} /> */}
+      {/* <Approach currentLanguage={currentLanguage} /> */}
+      {/* <Prices currentLanguage={currentLanguage} /> */}
+      {/* <Collaborators currentLanguage={currentLanguage} /> */}
       <Contact currentLanguage={currentLanguage} />
       <Footer currentLanguage={currentLanguage} />
     </div>

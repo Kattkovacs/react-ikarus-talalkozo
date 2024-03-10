@@ -57,7 +57,7 @@ const Program = ({ currentLanguage }) => {
                     <p>
                       Felvonulás az összes jármű részvételével a a festői
                       szépségű Káli-Medencében
-                      Tapolca-Gyulakeszi-Kékkút-Kővágóörs-Köveskál-Gyulakeszi-Tapolca
+                      Tapolca-Gyulakeszi-Mindszentkála-Szentbékála-Gyulakeszi-Tapolca
                       útvonalon:
                     </p>
                     <p>Térképen:</p>
@@ -70,6 +70,10 @@ const Program = ({ currentLanguage }) => {
                   </td>
                   <td>
                     <strong>Tombola sorsolás</strong>
+                    <small>
+                    A Tombola főnyereménye: 2 éjszaka 2 fő részére reggelivel a Hotel
+                    Halászkertben, Badacsonyban
+                  </small>
                   </td>
                 </tr>
                 <tr>
@@ -147,7 +151,7 @@ const Program = ({ currentLanguage }) => {
                     <p>
                       Old timer bus parade featuring all attending vehicles in
                       the picturesque Káli-basin on the
-                      Tapolca-Gyulakeszi-Kékkút-Kővágóörs-Köveskál-Gyulakeszi-Tapolca
+                      Tapolca-Gyulakeszi-Mindszentkála-Szentbékála-Gyulakeszi-Tapolca
                       route:
                     </p>
                     <p>On the map:</p>
@@ -160,6 +164,10 @@ const Program = ({ currentLanguage }) => {
                   </td>
                   <td>
                     <strong>Tombola draw</strong>
+                    <small>
+                    The main prize of the Raffle 'Tombola': 2 nights for 2 people with breakfast at the
+                    Hotel Halászkert in Badacsony
+                  </small>
                   </td>
                 </tr>
                 <tr>

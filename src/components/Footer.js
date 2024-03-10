@@ -3,7 +3,7 @@ import React from "react";
 const Footer = ({ currentLanguage }) => {
   return (
     <section className="footer">
-      {/* <footer>
+      <footer>
         <div className="container">
           {currentLanguage === "hu" ? (
             <div>
@@ -21,7 +21,7 @@ const Footer = ({ currentLanguage }) => {
             </div>
           )}
         </div>
-      </footer> */}
+      </footer>
       <p className="rights">
         {currentLanguage === "hu"
           ? "© Minden jog fenntartva! 2022"

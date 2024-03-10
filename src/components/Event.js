@@ -6,7 +6,7 @@ const Event = ({ currentLanguage }) => {
       {currentLanguage === "hu" ? (
         <div className="container">
           <br></br>
-          <h2>Honlapunkat 2024. február közepén frissítjük a buszok regisztrációjával és a további programokkal.</h2>
+          {/* <h2>Honlapunkat 2024. február közepén frissítjük a buszok regisztrációjával és a további programokkal.</h2> */}
           <h1>RENDEZVÉNY</h1>
           <p>
             2024. május 11-én negyedik alkalommal kerül megrendezésre a
@@ -21,7 +21,7 @@ const Event = ({ currentLanguage }) => {
       ) : (
         <div className="container">
           <br></br>
-          <h2>We will update our website in mid-February 2024 with bus registration and additional programs.</h2>
+          {/* <h2>We will update our website in mid-February 2024 with bus registration and additional programs.</h2> */}
           <h1>THE EVENT</h1>
           <p>
             On the 11<sup>th</sup> of may 2024. the International Ikarus Meeting will be

@@ -7,6 +7,7 @@ import nosztalgiabusz from "../noszbusz.jpg";
 import hotelhalasz from "../hotelhalaszkert.png";
 import mrt from "../mrt.jpg";
 import opti from "../opti.jpg";
+import gyoribuszok from "../gyoribuszok.jpg";
 
 const MobileCollabolators = () => {
   const customers = {
@@ -20,16 +21,16 @@ const MobileCollabolators = () => {
       image: tapolca,
       src: "https://www.tapolca.hu",
     },
-    maxloads: {
-      id: 3,
-      image: maxloads,
-      src: "https://www.maxloads.ro",
-    },
-    kaloztanya: {
-      id: 4,
-      image: kaloztanya,
-      src: "https://www.facebook.com/kaloztanya.balatonederics",
-    },
+    // maxloads: {
+    //   id: 3,
+    //   image: maxloads,
+    //   src: "https://www.maxloads.ro",
+    // },
+    // kaloztanya: {
+    //   id: 4,
+    //   image: kaloztanya,
+    //   src: "https://www.facebook.com/kaloztanya.balatonederics",
+    // },
     nosztalgiabusz: {
       id: 5,
       image: nosztalgiabusz,
@@ -40,16 +41,21 @@ const MobileCollabolators = () => {
       image: hotelhalasz,
       src: "https://hotelhalaszkert.hu",
     },
-    mrt: {
-      id: 7,
-      image: mrt,
-      src: "https://www.mavrailtours.hu/hu/",
-    },
-    opti: {
-      id: 8,
-      image: opti,
-      src: "http://optitrailer.com/",
-    },
+    // mrt: {
+    //   id: 7,
+    //   image: mrt,
+    //   src: "https://www.mavrailtours.hu/hu/",
+    // },
+    // opti: {
+    //   id: 8,
+    //   image: opti,
+    //   src: "http://optitrailer.com/",
+    // },
+    gyoribuszok: {
+      id: 9,
+      image: gyoribuszok,
+      src: "http://www.gyoribuszok.hu/",
+    }
   };
 
   return (

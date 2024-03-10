@@ -1,7 +1,7 @@
 import React from "react";
 import Map from "./Map";
 import cityMapHu from "../city_map_hu.jpg";
-import cityTripHu from "../city_trip_hu.jpg";
+// import cityTripHu from "../city_trip_hu.jpg";
 import roundTrip from "../round_trip_hu_en.jpg";
 import cityMapEn from "../city_map_en.jpg";
 import cityTripEn from "../city_trip_en.jpg";
@@ -42,13 +42,13 @@ const Approach = ({ currentLanguage }) => {
               érhető el a találkozó helyszíne.
             </p>
             <br />
-            <strong>Nosztalgia különvonattal</strong>
+            {/* <strong>Nosztalgia különvonattal</strong>
             <p>
               A különvonat nosztalgia BCmot motorkocsi és Cmn kocsi
               összeállításban közlekedik. A különvonat utasait a találkozó
               szervezői különbuszokkal viszik az esemény helyszínére.
-            </p>
-            <table>
+            </p> */}
+            {/* <table>
               <tbody>
                 <tr>
                   <th>Útvonal (oda és vissza)</th>
@@ -72,11 +72,12 @@ const Approach = ({ currentLanguage }) => {
                   </td>
                 </tr>
               </tbody>
-            </table>
+            </table> */}
 
             <br />
             <strong>Nosztalgia különjáratokkal</strong>
-            <p>
+            <p>Egyeztetés alatt...</p>
+            {/* <p>
               Az alábbiakban felsorolt buszokkal van lehetőség eljutni a
               Találkozó helyszínére. A "Részletek és foglalás" résznél lehet
               érdeklődni a buszos utazással kapcsolatban.
@@ -143,7 +144,7 @@ const Approach = ({ currentLanguage }) => {
               </tbody>
             </table>
             <p>További különjáratok meghirdetése egyeztetés alatt!</p>
-            <br />
+            <br /> */}
           </div>
           <div className="boxes">
             <a
@@ -162,9 +163,9 @@ const Approach = ({ currentLanguage }) => {
               rel="noopener noreferrer"
             >
               <div className="sidebarStyle">
-                <div>Nosztalgia autóbusz körjáratok</div>
+                <div>Nosztalgia autóbusz körjáratok (Egyeztetés alatt...)</div>
               </div>
-              <img src={cityTripHu} alt="varosijarat" className="mapImg" />
+              {/* <img src={cityTripHu} alt="varosijarat" className="mapImg" /> */}
             </a>
             <a
               href="https://www.google.com/maps/d/u/0/viewer?mid=10wK4wL-BFe8fUO6bL8LwXSR066l40WBC&ll=46.86826900882221%2C17.524713850000005&z=13"
@@ -174,7 +175,7 @@ const Approach = ({ currentLanguage }) => {
               <div className="sidebarStyle">
                 <div>Felvonulás</div>
               </div>
-              <img src={roundTrip} alt="felvonulas" className="mapImg" />
+              {/* <img src={roundTrip} alt="felvonulas" className="mapImg" /> */}
             </a>
           </div>
         </div>
@@ -210,13 +211,13 @@ const Approach = ({ currentLanguage }) => {
               reached with a couple of minutes walk.
             </p>
             <br />
-            <strong>Nostalgic charter train service</strong>
+            {/* <strong>Nostalgic charter train service</strong>
             <p>
               The special train runs in a nostalgia BCmot motor car and Cmn car
               combination. The passengers of the special train are taken to the
               event venue by special buses.
-            </p>
-            <table>
+            </p> */}
+            {/* <table>
               <tbody>
                 <tr>
                   <th> Route (back and forth) </th>
@@ -243,9 +244,10 @@ const Approach = ({ currentLanguage }) => {
                   </td>
                 </tr>
               </tbody>
-            </table>
+            </table> */}
             <strong>Old timer charter bus services:</strong>
-            <p>
+            <p>Old timer charter bus services are being negotiated!</p>
+            {/* <p>
               The buses listed below will take you to the Meeting Venue. You can
               inquire about old timer bus travel in the "Details and booking"
               section.
@@ -312,7 +314,7 @@ const Approach = ({ currentLanguage }) => {
               </tbody>
             </table>
             <p>More old timer charter bus services are being negotiated!</p>
-            <br />
+            <br /> */}
           </div>
           <div>
             <a
@@ -331,13 +333,13 @@ const Approach = ({ currentLanguage }) => {
               rel="noopener noreferrer"
             >
               <div className="sidebarStyle">
-                <div>Nostalgia bus tours</div>
+                <div>Nostalgia bus tours (are being negotiated...)</div>
               </div>
-              <img
+              {/* <img
                 src={cityTripEn}
                 alt="varosijaraten"
                 className="mapImg"
-              ></img>
+              ></img> */}
             </a>
             <a
               href="https://www.google.com/maps/d/u/0/viewer?mid=10wK4wL-BFe8fUO6bL8LwXSR066l40WBC&ll=46.86826900882221%2C17.524713850000005&z=13"
@@ -347,7 +349,7 @@ const Approach = ({ currentLanguage }) => {
               <div className="sidebarStyle">
                 <div>Procession</div>
               </div>
-              <img src={roundTrip} alt="felvonulasen" className="mapImg"></img>
+              {/* <img src={roundTrip} alt="felvonulasen" className="mapImg"></img> */}
             </a>
           </div>
         </div>

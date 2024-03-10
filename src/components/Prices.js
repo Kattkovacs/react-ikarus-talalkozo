@@ -18,11 +18,11 @@ const Prices = ({ currentLanguage }) => {
                 <td>
                   <strong>Városi nosztalgia körjáratok</strong>
                 </td>
-                <td>800 Ft/fő (6 éves korig ingyenes)</td>
+                <td>1500 Ft/fő (6 éves korig ingyenes)</td>
               </tr>
               <tr>
                 <td>
-                  <strong>Balaton-parti Káli-medencei busz felvonulás</strong>
+                  <strong>Káli-medencei busz felvonulás</strong>
                 </td>
                 <td>INGYENES</td>
               </tr>
@@ -37,14 +37,14 @@ const Prices = ({ currentLanguage }) => {
               </tr>
               <tr>
                 <td>
-                  <strong>Tombola sorsjegy</strong>
+                  <strong>Tombola sorsjegy</strong>        
                 </td>
-                <td>400 Ft/db</td>
+                <td>500 Ft/db</td>
               </tr>
               <tr>
                 <td colSpan="2">
                   <small>
-                    A Tombola főnyereménye: 2 éjszaka 2 fő részére a Hotel
+                    A Tombola főnyereménye: 2 éjszaka 2 fő részére reggelivel a Hotel
                     Halászkertben, Badacsonyban
                   </small>
                 </td>
@@ -67,7 +67,7 @@ const Prices = ({ currentLanguage }) => {
                 <td>
                   <strong>Nostalgic city-bus services</strong>
                 </td>
-                <td>800 HUF/person/round (free up to the age of 6)</td>
+                <td>1500 HUF/person/round (free up to the age of 6)</td>
               </tr>
               <tr>
                 <td>
@@ -88,12 +88,12 @@ const Prices = ({ currentLanguage }) => {
                 <td>
                   <strong>Raffle 'Tombola' ticket</strong>
                 </td>
-                <td>400 HUF/piece</td>
+                <td>500 HUF/piece</td>
               </tr>
               <tr>
                 <td colSpan="2">
                   <small>
-                    The main prize of the Raffle: 2 nights for 2 people at the
+                    The main prize of the Raffle: 2 nights for 2 people with breakfast at the
                     Hotel Halászkert in Badacsony
                   </small>
                 </td>

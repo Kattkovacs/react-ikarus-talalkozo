@@ -1,5 +1,5 @@
 import React from "react";
-import { BiBus } from "react-icons/bi";
+// import { BiBus } from "react-icons/bi";
 
 const Registration = ({ currentLanguage }) => {
   return (
@@ -11,13 +11,14 @@ const Registration = ({ currentLanguage }) => {
             A kiállítóknak kötelező regisztráció van, ennek hiányában nem tudjuk
             garantálni a helyet.
           </p>
-          <strong>A regisztráció lezárult!</strong>
-          <div className="center">
+          {/* <strong>A regisztráció lezárult!</strong> */}
+          <strong>A regisztráció hamarosan indul!</strong>
+          {/* <div className="center">
             <button>
               <BiBus className="biBus" size="18px" />
               Regisztráció
             </button>
-          </div>
+          </div> */}
         </div>
       ) : (
         <div className="box boxEn" id="reg">
@@ -26,13 +27,14 @@ const Registration = ({ currentLanguage }) => {
             Registration is mandatory for all exhibitors! In absence of
             registration we can not guarantee exhibition place for your vehicle.
           </p>
-          <strong>Registration is closed!</strong>
+          <strong>Registration will start soon!</strong>
+          {/* <strong>Registration is closed!</strong>
           <div className="center">
             <button className="noWrap">
               <BiBus className="biBus" size="18px" />
               Bus registration
             </button>
-          </div>
+          </div> */}
         </div>
       )}
     </section>

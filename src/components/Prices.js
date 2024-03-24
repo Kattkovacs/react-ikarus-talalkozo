@@ -22,17 +22,23 @@ const Prices = ({ currentLanguage }) => {
               </tr>
               <tr>
                 <td>
+                  <strong>Ikarus 481-es busszal a Dobó laktanyához, tankbérlés.hu gyűjteményének megtekintése</strong>
+                </td>
+                <td>3500 Ft/fő</td>
+              </tr>
+              <tr>
+                <td>
                   <strong>Káli-medencei busz felvonulás</strong>
                 </td>
-                <td>INGYENES</td>
+                {/* <td>INGYENES</td> */}
               </tr>
               <tr>
                 <td colSpan="2">
-                  <small>
+                  {/* <small>
                     (az autóbuszokon becsületkassza üzemel, amellyel a járművek
                     tulajdonosait támogathatják, hogy megjelentek a
                     rendezvényen)
-                  </small>
+                  </small> */}
                 </td>
               </tr>
               <tr>
@@ -71,17 +77,23 @@ const Prices = ({ currentLanguage }) => {
               </tr>
               <tr>
                 <td>
+                  <strong>Take the Ikarus 481 bus to the Dobó barracks, view the tankbérlés.hu collection</strong>
+                </td>
+                <td>3500 HUF/person</td>
+              </tr>
+              <tr>
+                <td>
                   <strong>Old timer bus parade in the Káli-basin</strong>
                 </td>
-                <td>FREE</td>
+                {/* <td>FREE</td> */}
               </tr>
               <tr>
                 <td colSpan="2">
-                  <small>
+                  {/* <small>
                     (On the attending buses there will be an „honesty jar”.
                     Money gathered in this „jar” supports the owner of the
                     vehicle as thanks for displaying it on the event.)
-                  </small>
+                  </small> */}
                 </td>
               </tr>
               <tr>

@@ -50,6 +50,17 @@ const Program = ({ currentLanguage }) => {
                 </tr>
                 <tr>
                   <td valign="top">
+                    <h4>Minden Fél Órában</h4>
+                  </td>
+                  <td>
+                    <p>
+                      Minden fél órában Ikarus 481-es buszt indítunk a Dobó laktanyához.
+                      Megtekinthető a tankbérlés.hu széleskörű gyűjteménye!
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td valign="top">
                     <h4>14:30</h4>
                   </td>
                   <td>
@@ -57,7 +68,7 @@ const Program = ({ currentLanguage }) => {
                     <p>
                       Felvonulás az összes jármű részvételével a a festői
                       szépségű Káli-Medencében
-                      Tapolca-Gyulakeszi-Mindszentkála-Szentbékála-Gyulakeszi-Tapolca
+                      Tapolca-Gyulakeszi-Mindszentkálla-Szentbékkálla-Gyulakeszi-Tapolca
                       útvonalon:
                     </p>
                     <p>Térképen:</p>
@@ -69,7 +80,7 @@ const Program = ({ currentLanguage }) => {
                     <h4>16:20</h4>
                   </td>
                   <td>
-                    <strong>Tombola sorsolás</strong>
+                    <strong>Tombola sorsolás </strong>
                     <small>
                     A Tombola főnyereménye: 2 éjszaka 2 fő részére reggelivel a Hotel
                     Halászkertben, Badacsonyban
@@ -144,6 +155,16 @@ const Program = ({ currentLanguage }) => {
                 </tr>
                 <tr>
                   <td valign="top">
+                    <h4>Every Half Hour</h4>
+                  </td>
+                  <td>
+                    <p>Every half hour we run bus Ikarus 481 to the Dobó barracks.
+                       You can view the extensive collection of tankbérlés.hu!
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td valign="top">
                     <h4>14:30</h4>
                   </td>
                   <td>
@@ -151,7 +172,7 @@ const Program = ({ currentLanguage }) => {
                     <p>
                       Old timer bus parade featuring all attending vehicles in
                       the picturesque Káli-basin on the
-                      Tapolca-Gyulakeszi-Mindszentkála-Szentbékála-Gyulakeszi-Tapolca
+                      Tapolca-Gyulakeszi-Mindszentkálla-Szentbékkálla-Gyulakeszi-Tapolca
                       route:
                     </p>
                     <p>On the map:</p>

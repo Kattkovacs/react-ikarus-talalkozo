@@ -34,6 +34,10 @@ button {
   border: solid 2px;
 }
 
+.smallButton {
+  font-size: small;
+}
+
 button:hover {
   color: #005c99;
   background-color: #fff;

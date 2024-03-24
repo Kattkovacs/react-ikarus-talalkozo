@@ -2,13 +2,14 @@ import React from "react";
 import Map from "./Map";
 import cityMapHu from "../city_map_hu.jpg";
 // import cityTripHu from "../city_trip_hu.jpg";
-import roundTrip from "../round_trip_hu_en.jpg";
+import roundTrip from "../felvonulas24_hu.jpg";
 import cityMapEn from "../city_map_en.jpg";
-import cityTripEn from "../city_trip_en.jpg";
-import bus25059 from "../25059.JPG";
-import bus25098 from "../25098.jpg";
-import bus5521 from "../5521.jpg";
-import { MdOutlineReadMore } from "react-icons/md";
+import underConst from "../under_const.jpg";
+// import cityTripEn from "../city_trip_en.jpg";
+// import bus25059 from "../25059.JPG";
+// import bus25098 from "../25098.jpg";
+// import bus5521 from "../5521.jpg";
+// import { MdOutlineReadMore } from "react-icons/md";
 
 const Approach = ({ currentLanguage }) => {
   return (
@@ -158,16 +159,6 @@ const Approach = ({ currentLanguage }) => {
               <img src={cityMapHu} alt="megkozelites" className="mapImg" />
             </a>
             <a
-              href="https://www.google.com/maps/d/u/0/viewer?mid=1aOxfPsKxw6FMZNNljYsUEYZhoMFkaPVA&ll=46.88336529699366%2C17.43563999999999&z=15"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div className="sidebarStyle">
-                <div>Nosztalgia autóbusz körjáratok (Egyeztetés alatt...)</div>
-              </div>
-              {/* <img src={cityTripHu} alt="varosijarat" className="mapImg" /> */}
-            </a>
-            <a
               href="https://www.google.com/maps/d/u/0/viewer?mid=10wK4wL-BFe8fUO6bL8LwXSR066l40WBC&ll=46.86826900882221%2C17.524713850000005&z=13"
               target="_blank"
               rel="noopener noreferrer"
@@ -175,7 +166,17 @@ const Approach = ({ currentLanguage }) => {
               <div className="sidebarStyle">
                 <div>Felvonulás</div>
               </div>
-              {/* <img src={roundTrip} alt="felvonulas" className="mapImg" /> */}
+              <img src={roundTrip} alt="felvonulas" className="mapImg" />
+            </a>
+            <a
+              href="https://www.google.com/maps/d/u/0/viewer?mid=1aOxfPsKxw6FMZNNljYsUEYZhoMFkaPVA&ll=46.88336529699366%2C17.43563999999999&z=15"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="sidebarStyle">
+                <div>Nosztalgia autóbusz körjáratok</div>
+              </div>
+              <img src={underConst} alt="varosijarat" className="mapImg" />
             </a>
           </div>
         </div>
@@ -328,20 +329,6 @@ const Approach = ({ currentLanguage }) => {
               <img src={cityMapEn} alt="megkozelitesen" className="mapImg" />
             </a>
             <a
-              href="https://www.google.com/maps/d/u/0/viewer?mid=1aOxfPsKxw6FMZNNljYsUEYZhoMFkaPVA&ll=46.88336529699366%2C17.43563999999999&z=15"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div className="sidebarStyle">
-                <div>Nostalgia bus tours (are being negotiated...)</div>
-              </div>
-              {/* <img
-                src={cityTripEn}
-                alt="varosijaraten"
-                className="mapImg"
-              ></img> */}
-            </a>
-            <a
               href="https://www.google.com/maps/d/u/0/viewer?mid=10wK4wL-BFe8fUO6bL8LwXSR066l40WBC&ll=46.86826900882221%2C17.524713850000005&z=13"
               target="_blank"
               rel="noopener noreferrer"
@@ -349,7 +336,21 @@ const Approach = ({ currentLanguage }) => {
               <div className="sidebarStyle">
                 <div>Procession</div>
               </div>
-              {/* <img src={roundTrip} alt="felvonulasen" className="mapImg"></img> */}
+              <img src={roundTrip} alt="felvonulasen" className="mapImg"></img>
+            </a>
+            <a
+              href="https://www.google.com/maps/d/u/0/viewer?mid=1aOxfPsKxw6FMZNNljYsUEYZhoMFkaPVA&ll=46.88336529699366%2C17.43563999999999&z=15"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="sidebarStyle">
+                <div>Nostalgia bus tours</div>
+              </div>
+              <img
+                src={underConst}
+                alt="varosijaraten"
+                className="mapImg"
+              ></img>
             </a>
           </div>
         </div>

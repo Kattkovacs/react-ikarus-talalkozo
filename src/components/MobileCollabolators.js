@@ -1,12 +1,14 @@
 import React from "react";
 import volan from "../volanbusz_logo.jpg";
 import tapolca from "../tapolca.png";
-import maxloads from "../Maxloads.png";
-import kaloztanya from "../kaloz.jpg";
+import tapolcaOnkormanyzat from "../TapolcaOnk.jpg";
+import tapolcakft from "../tapolcakft_logo_szines.jpg";
+// import maxloads from "../Maxloads.png";
+// import kaloztanya from "../kaloz.jpg";
 import nosztalgiabusz from "../noszbusz.jpg";
 import hotelhalasz from "../hotelhalaszkert.png";
-import mrt from "../mrt.jpg";
-import opti from "../opti.jpg";
+// import mrt from "../mrt.jpg";
+// import opti from "../opti.jpg";
 import gyoribuszok from "../gyoribuszok.jpg";
 
 const MobileCollabolators = () => {
@@ -19,6 +21,16 @@ const MobileCollabolators = () => {
     tapolca: {
       id: 2,
       image: tapolca,
+      src: "https://www.tapolca.hu",
+    },
+    tapolcakft: {
+      id: 3,
+      image: tapolcakft,
+      src: "https://tapolcakft.hu/",
+    },
+    tapolcaOnkormanyzat: {
+      id: 4,
+      image: tapolcaOnkormanyzat,
       src: "https://www.tapolca.hu",
     },
     // maxloads: {

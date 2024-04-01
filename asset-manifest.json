@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.4febb1ae.css",
-    "main.js": "/static/js/main.cf8a164c.js",
+    "main.js": "/static/js/main.29253300.js",
     "static/js/787.e99d95a1.chunk.js": "/static/js/787.e99d95a1.chunk.js",
     "static/media/tapolcakft_logo_szines.jpg": "/static/media/tapolcakft_logo_szines.eb88daa1d36b21c36fda.jpg",
     "static/media/noszbusz.jpg": "/static/media/noszbusz.c9d11337f238d68e043e.jpg",
@@ -11,16 +11,17 @@
     "static/media/ikarus-main-s.jpg": "/static/media/ikarus-main-s.3f954df0d9724995f99d.jpg",
     "static/media/under_const.jpg": "/static/media/under_const.8071ebb2f2b11df0be54.jpg",
     "static/media/tapolca.png": "/static/media/tapolca.c7e270217d876b82c1ed.png",
+    "static/media/TapolcaOnk.jpg": "/static/media/TapolcaOnk.00851e92b8823624f3c4.jpg",
     "static/media/ikarus_tal_white_kor.svg": "/static/media/ikarus_tal_white_kor.311636369934d3d763920f1c8609b8c0.svg",
     "static/media/volanbusz_logo.jpg": "/static/media/volanbusz_logo.570c1279ec7ae116689a.jpg",
     "static/media/hotelhalaszkert.png": "/static/media/hotelhalaszkert.6af95e0c165b80829c76.png",
     "index.html": "/index.html",
     "main.4febb1ae.css.map": "/static/css/main.4febb1ae.css.map",
-    "main.cf8a164c.js.map": "/static/js/main.cf8a164c.js.map",
+    "main.29253300.js.map": "/static/js/main.29253300.js.map",
     "787.e99d95a1.chunk.js.map": "/static/js/787.e99d95a1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4febb1ae.css",
-    "static/js/main.cf8a164c.js"
+    "static/js/main.29253300.js"
   ]
 }

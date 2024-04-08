@@ -5,7 +5,7 @@ import tapolcaOnkormanyzat from "../TapolcaOnk.jpg";
 import tapolcakft from "../tapolcakft_logo_szines.jpg";
 // import maxloads from "../Maxloads.png";
 // import kaloztanya from "../kaloz.jpg";
-import nosztalgiabusz from "../noszbusz.jpg";
+import nosztalgiabusz from "../noszbusz.JPG";
 import hotelhalasz from "../hotelhalaszkert.png";
 // import mrt from "../mrt.jpg";
 // import opti from "../opti.jpg";

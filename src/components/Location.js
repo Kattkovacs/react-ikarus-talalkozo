@@ -19,8 +19,7 @@ const Location = ({ currentLanguage }) => {
             kiállítók és a látogatók részére, valamint lehetőség lesz pólók
             ajándéktárgyak illetve tombola vásárlására. A rendezvény
             megközelíthetőségének javítása érdekében több városból nosztalgia
-            különjáratok indulnak, valamint Budapestről nosztalgia különvonat
-            közlekedik, ezekről részletesen a megközelítés menüpontban
+            különjáratok indulnak, melyekről részletesen a megközelítés menüpontban
             tájékozódhatnak.
           </p>
           <p>
@@ -46,8 +45,7 @@ const Location = ({ currentLanguage }) => {
             and other souvenirs, aswell as tombola tickets for various valuable
             prizes. To further enhance the accessibility of the event, old timer
             charter buses will carry passengers from the bigger cities of
-            Hungary. From Budapest an exclusive nostalgic charter train service
-            will run to Tapolca station and back. Find out more about the topic
+            Hungary. Find out more about the topic
             in the „Approach” menu.
           </p>
           <p>

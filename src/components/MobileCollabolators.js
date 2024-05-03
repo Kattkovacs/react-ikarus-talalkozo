@@ -3,6 +3,8 @@ import volan from "../volanbusz_logo.jpg";
 import tapolca from "../tapolca.png";
 import tapolcaOnkormanyzat from "../TapolcaOnk.jpg";
 import tapolcakft from "../tapolcakft_logo_szines.jpg";
+import teodora from "../Teodora.JPG";
+import ferrocar from "../Ferrocar.jpg";
 // import maxloads from "../Maxloads.png";
 // import kaloztanya from "../kaloz.jpg";
 import nosztalgiabusz from "../noszbusz.JPG";
@@ -67,6 +69,16 @@ const MobileCollabolators = () => {
       id: 9,
       image: gyoribuszok,
       src: "http://www.gyoribuszok.hu/",
+    },
+    teodora: {
+      id: 10,
+      image: teodora,
+      src: "https://www.szentkiralyi.hu/",
+    },
+    ferrocar: {
+      id: 11,
+      image: ferrocar,
+      src: "https://ferrocar.hu/",
     }
   };
 

@@ -1,15 +1,15 @@
 import React from "react";
-import { BiBus } from "react-icons/bi";
-import { useState } from "react";
-import BusRegistration from "./BusRegistration";
+// import { BiBus } from "react-icons/bi";
+// import { useState } from "react";
+// import BusRegistration from "./BusRegistration";
 
 
 const Registration = ({ currentLanguage }) => {
-  const [open, setOpen] = useState(false);
-  const onClickHandle = (e) => {
-    e.preventDefault();
-    setOpen(!open);
-  };
+  // const [open, setOpen] = useState(false);
+  // const onClickHandle = (e) => {
+  //   e.preventDefault();
+  //   setOpen(!open);
+  // };
   return (
     <section className="event" id="registration">
       {currentLanguage === "hu" ? (
@@ -19,15 +19,16 @@ const Registration = ({ currentLanguage }) => {
             A kiállítóknak kötelező regisztráció van, ennek hiányában nem tudjuk
             garantálni a helyet.
           </p>
-          {/* <strong>A regisztráció lezárult!</strong> */}
+          <br></br>
+          <strong>A regisztráció lezárult!</strong>
           {/* <strong>A regisztráció hamarosan indul!</strong> */}
-          <div className="center">
+          {/* <div className="center">
             <button onClick={onClickHandle}>
               <BiBus className="biBus" size="18px" />
               Regisztráció
             </button>
           </div>
-          <BusRegistration currentLanguage={currentLanguage} open={open}/>
+          <BusRegistration currentLanguage={currentLanguage} open={open}/> */}
         </div>
       ) : (
         <div className="box boxEn" id="reg">
@@ -36,15 +37,16 @@ const Registration = ({ currentLanguage }) => {
             Registration is mandatory for all exhibitors! In absence of
             registration we can not guarantee exhibition place for your vehicle.
           </p>
+          <br></br>
           {/* <strong>Registration will start soon!</strong> */}
-          {/* <strong>Registration is closed!</strong> */}
-          <div className="center">
+          <strong>Registration is closed!</strong>
+          {/* <div className="center">
           <button onClick={onClickHandle}>
               <BiBus className="biBus" size="18px" />
               Bus registration
             </button>
           </div>
-          <BusRegistration currentLanguage={currentLanguage} open={open}/>
+          <BusRegistration currentLanguage={currentLanguage} open={open}/> */}
         </div>
       )}
     </section>

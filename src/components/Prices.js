@@ -30,17 +30,24 @@ const Prices = ({ currentLanguage }) => {
                 <td>
                   <strong>Káli-medencei busz felvonulás</strong>
                 </td>
-                {/* <td>INGYENES</td> */}
               </tr>
               <tr>
+                <td>- Ikarus 30, 311, 55, 66 típusú buszokkal</td>
+                <td>3000 Ft/fő</td>
+              </tr>
+              <tr>
+                <td>- Egyéb Ikarus típusú buszokkal</td>
+                <td>2000 Ft/fő</td>
+              </tr>
+              {/* <tr>
                 <td colSpan="2">
-                  {/* <small>
+                  <small>
                     (az autóbuszokon becsületkassza üzemel, amellyel a járművek
                     tulajdonosait támogathatják, hogy megjelentek a
                     rendezvényen)
-                  </small> */}
+                  </small>
                 </td>
-              </tr>
+              </tr> */}
               <tr>
                 <td>
                   <strong>Tombola sorsjegy</strong>        
@@ -86,6 +93,14 @@ const Prices = ({ currentLanguage }) => {
                   <strong>Old timer bus parade in the Káli-basin</strong>
                 </td>
                 {/* <td>FREE</td> */}
+              </tr>
+              <tr>
+                <td>- with Ikarus 30, 311, 55, 66 bus types</td>
+                <td>3000 HUF/person</td>
+              </tr>
+              <tr>
+                <td>- with other Ikarus bus types</td>
+                <td>2000 HUF/person</td>
               </tr>
               <tr>
                 <td colSpan="2">

@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.4febb1ae.css",
-    "main.js": "/static/js/main.155ade1d.js",
+    "main.js": "/static/js/main.31ebf14e.js",
     "static/js/787.e99d95a1.chunk.js": "/static/js/787.e99d95a1.chunk.js",
     "static/media/tapolcakft_logo_szines.jpg": "/static/media/tapolcakft_logo_szines.eb88daa1d36b21c36fda.jpg",
     "static/media/Ferrocar.jpg": "/static/media/Ferrocar.96999458d41aaf7f8a49.jpg",
@@ -19,11 +19,11 @@
     "static/media/hotelhalaszkert.png": "/static/media/hotelhalaszkert.6af95e0c165b80829c76.png",
     "index.html": "/index.html",
     "main.4febb1ae.css.map": "/static/css/main.4febb1ae.css.map",
-    "main.155ade1d.js.map": "/static/js/main.155ade1d.js.map",
+    "main.31ebf14e.js.map": "/static/js/main.31ebf14e.js.map",
     "787.e99d95a1.chunk.js.map": "/static/js/787.e99d95a1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4febb1ae.css",
-    "static/js/main.155ade1d.js"
+    "static/js/main.31ebf14e.js"
   ]
 }

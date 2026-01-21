@@ -33,7 +33,9 @@ const Approach = ({ currentLanguage }) => {
                 menetrendek.hu
               </a>{" "}
               oldalon kereshetőek a járatok. Autóbusszal Tapolca,
-              autóbuszállomás megállóig, vonattal Tapolca, vasútállomásig kell
+              autóbuszállomás megállóig, vonattal Tapolca, vasútállomásig és onnan a 
+              <a href="https://maps.app.goo.gl/j85AeSrXto4Sy3FNA"> volt Kinizsi laktanyához</a>
+             (GPS koordináták: 46.877523, 17.402617) kell
               tervezni. 
             </p>
             <br />

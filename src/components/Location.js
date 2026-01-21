@@ -7,10 +7,12 @@ const Location = ({ currentLanguage }) => {
         <div className="container">
           <h1>HELYSZÍN</h1>
           <p>
-           Idén a rendezvény helyszíne <a href="https://maps.app.goo.gl/j85AeSrXto4Sy3FNA"> a volt Kinizsi laktanya</a> területén lesz. A rendezvény
+           Idén a rendezvény helyszíne <a href="https://maps.app.goo.gl/j85AeSrXto4Sy3FNA"> a volt Kinizsi laktanya</a> területén lesz. 
+           A rendezvény
             ideje alatt nosztalgia autóbuszjáratok közlekednek a városban,
-            délután folyamán pedig egy 30 km hosszú 1 órás felvonulás lesz a
-            festői szépségű Káli-medencében.
+            délután folyamán pedig felvonulás lesz.
+            {/* egy 30 km hosszú 1 órás felvonulás lesz a
+            festői szépségű Káli-medencében. */}
           </p>
           <p>
             A rendezvény területén egész nap kitelepült étterem üzemel, a

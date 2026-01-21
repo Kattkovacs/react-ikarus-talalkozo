@@ -7,6 +7,7 @@ const Program = ({ currentLanguage }) => {
         <div className="container">
           <div className="program">
             <h1>PROGRAMOK</h1>
+            <strong>2026. május 9.</strong>
             <table>
               <tbody>
                 <tr>
@@ -35,6 +36,11 @@ const Program = ({ currentLanguage }) => {
                   </td>
                   <td>
                     <p>
+                      Városi nosztalgia járatok közlekednek, melyekre                   
+                      felszállni előre megváltott menetjeggyel lehet. 
+                      A járatok útvonala egyeztetés alatt van. 
+                    </p>
+                    {/* <p>
                       Városi nosztalgia járatok közlekednek, melyekre a
                       Köztársaság téri kijelölt autóbusz megállóhelyen lehet
                       felszállni előre megváltott menetjeggyel. A járatoknak
@@ -45,10 +51,10 @@ const Program = ({ currentLanguage }) => {
                     </p>
                     <p>A járatok az alábbi útvonalon közlekednek:</p>
                     <p>Térképen:</p>
-                    <p>Városi nosztalgia autóbusz körjáratok útvonala</p>
+                    <p>Városi nosztalgia autóbusz körjáratok útvonala</p> */}
                   </td>
                 </tr>
-                <tr>
+                {/* <tr>
                   <td valign="top">
                     <h4>Minden Fél Órában</h4>
                   </td>
@@ -58,21 +64,22 @@ const Program = ({ currentLanguage }) => {
                       Megtekinthető a tankbérlés.hu széleskörű gyűjteménye!
                     </p>
                   </td>
-                </tr>
+                </tr> */}
                 <tr>
                   <td valign="top">
                     <h4>14:30</h4>
                   </td>
                   <td>
                     <strong>Felvonulás</strong>
-                    <p>
+                    <p>Egyeztetés alatt.</p>
+                    {/* <p>
                       Felvonulás az összes jármű részvételével a a festői
                       szépségű Káli-Medencében
                       Tapolca-Gyulakeszi-Mindszentkálla-Szentbékkálla-Gyulakeszi-Tapolca
                       útvonalon:
                     </p>
                     <p>Térképen:</p>
-                    <p>Felvonulás </p>
+                    <p>Felvonulás </p> */}
                   </td>
                 </tr>
                 <tr>
@@ -95,14 +102,14 @@ const Program = ({ currentLanguage }) => {
                     <strong>Rendezvény zárás</strong>
                   </td>
                 </tr>
-                <tr>
+                {/* <tr>
                   <td valign="top">
                     <h4>17:00-23:00</h4>
                   </td>
                   <td>
                     <strong>Zenés est, kiállítók és látogatók részére</strong>
                   </td>
-                </tr>
+                </tr> */}
               </tbody>
             </table>
           </div>

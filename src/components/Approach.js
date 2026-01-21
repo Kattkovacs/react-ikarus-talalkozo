@@ -19,7 +19,7 @@ const Approach = ({ currentLanguage }) => {
           <div>
             <h1>MEGKÖZELÍTÉS</h1>
             <strong>Helyszín </strong>
-            <p>Veszprém megye, Tapolca város, Köztársaság tér</p>
+            <p>Veszprém megye, Tapolca város, volt Kinizsi laktanya</p>
             <br />
             <div hidden={true}>
 
@@ -33,17 +33,12 @@ const Approach = ({ currentLanguage }) => {
               </a>{" "}
               oldalon kereshetőek a járatok. Autóbusszal Tapolca,
               autóbuszállomás megállóig, vonattal Tapolca, vasútállomásig kell
-              tervezni. A rendezvény az autóbuszállomástól kb. 5 perc, a
-              vasútállomástól kb. 15 perc séta a rendezvény helyszíne.
+              tervezni. 
             </p>
             <br />
             <strong>Gépjárművel</strong>
             <p>
-              Ajánlott parkoló: Halápi úti körforgalom melletti zöld területen.
-              További parkolási lehetőség: A 77-es számú főúton érhető el a város Veszprém és a 84-es út
-              felől is. A Tapolca-patak és a 77-es számú főút találkozásánál van
-              lehetőség személygépkocsival parkolni. Ezektől a parkolóktól néhány perc sétával
-              érhető el a találkozó helyszíne.
+              A helyszínen autó parkolásra van lehetőség.
             </p>
             <br />
             {/* <strong>Nosztalgia különvonattal</strong>
@@ -150,6 +145,7 @@ const Approach = ({ currentLanguage }) => {
             <p>További különjáratok meghirdetése egyeztetés alatt!</p>
             <br /> */}
           </div>
+          <div hidden={true}>
           <div className="boxes">
             <a
               href="https://www.google.com/maps/d/u/0/viewer?mid=1gRK6n2cPKwoKXMb4NW-8lyedSLpEWs0N&ll=46.88090011481434%2C17.436230000000002&z=16"
@@ -181,6 +177,7 @@ const Approach = ({ currentLanguage }) => {
               </div>
               <img src={underConst} alt="varosijarat" className="mapImg" />
             </a>
+          </div>
           </div>
         </div>
       ) : (

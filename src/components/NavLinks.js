@@ -63,6 +63,7 @@ const NavLinks = (props) => {
         transition={{ delay: 0.4 }}
       >
         <button
+        hidden={true}
           value={currentLanguage === "hu" ? "en" : "hu"}
           onClick={(e) => {
             handleOnclick(e);

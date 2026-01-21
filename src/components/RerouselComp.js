@@ -7,7 +7,7 @@ import teodora from "../Teodora.JPG";
 import ferrocar from "../Ferrocar.jpg";
 // import maxloads from "../Maxloads.png";
 // import kaloztanya from "../kaloz.jpg";
-import nosztalgiabusz from "../noszbusz.JPG";
+import nosztalgiabusz from "../noszbusz.jpg";
 import hotelhalasz from "../hotelhalaszkert.png";
 import tapolcakft from "../tapolcakft_logo_szines.jpg";
 // import mrt from "../mrt.jpg";

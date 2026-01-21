@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.4febb1ae.css",
-    "main.js": "/static/js/main.31ebf14e.js",
+    "main.js": "/static/js/main.f106b6c2.js",
     "static/js/787.e99d95a1.chunk.js": "/static/js/787.e99d95a1.chunk.js",
     "static/media/tapolcakft_logo_szines.jpg": "/static/media/tapolcakft_logo_szines.eb88daa1d36b21c36fda.jpg",
     "static/media/Ferrocar.jpg": "/static/media/Ferrocar.96999458d41aaf7f8a49.jpg",
@@ -9,7 +9,7 @@
     "static/media/city_map_en.jpg": "/static/media/city_map_en.356063537bdc6cca2b1c.jpg",
     "static/media/ikarus-main-s.jpg": "/static/media/ikarus-main-s.3f954df0d9724995f99d.jpg",
     "static/media/under_const.jpg": "/static/media/under_const.8071ebb2f2b11df0be54.jpg",
-    "static/media/noszbusz.JPG": "/static/media/noszbusz.f7b5e483afce7c88f07a.JPG",
+    "static/media/noszbusz.jpg": "/static/media/noszbusz.f7b5e483afce7c88f07a.jpg",
     "static/media/tapolca.png": "/static/media/tapolca.c7e270217d876b82c1ed.png",
     "static/media/felvonulas24_hu.jpg": "/static/media/felvonulas24_hu.fc5a39c112a74fd1b11b.jpg",
     "static/media/Teodora.JPG": "/static/media/Teodora.bc72fd4251e2e9f10062.JPG",
@@ -19,11 +19,11 @@
     "static/media/hotelhalaszkert.png": "/static/media/hotelhalaszkert.6af95e0c165b80829c76.png",
     "index.html": "/index.html",
     "main.4febb1ae.css.map": "/static/css/main.4febb1ae.css.map",
-    "main.31ebf14e.js.map": "/static/js/main.31ebf14e.js.map",
+    "main.f106b6c2.js.map": "/static/js/main.f106b6c2.js.map",
     "787.e99d95a1.chunk.js.map": "/static/js/787.e99d95a1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4febb1ae.css",
-    "static/js/main.31ebf14e.js"
+    "static/js/main.f106b6c2.js"
   ]
 }

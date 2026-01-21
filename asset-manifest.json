@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.daeabbcb.css",
-    "main.js": "/static/js/main.6ecc0f20.js",
+    "main.js": "/static/js/main.8465241f.js",
     "static/js/787.e99d95a1.chunk.js": "/static/js/787.e99d95a1.chunk.js",
     "static/media/Ferrocar.jpg": "/static/media/Ferrocar.96999458d41aaf7f8a49.jpg",
     "static/media/ikarus-main-s.jpg": "/static/media/ikarus-main-s.d5968dc794f507790931.jpg",
@@ -14,11 +14,11 @@
     "static/media/volanbusz_logo.jpg": "/static/media/volanbusz_logo.570c1279ec7ae116689a.jpg",
     "index.html": "/index.html",
     "main.daeabbcb.css.map": "/static/css/main.daeabbcb.css.map",
-    "main.6ecc0f20.js.map": "/static/js/main.6ecc0f20.js.map",
+    "main.8465241f.js.map": "/static/js/main.8465241f.js.map",
     "787.e99d95a1.chunk.js.map": "/static/js/787.e99d95a1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.daeabbcb.css",
-    "static/js/main.6ecc0f20.js"
+    "static/js/main.8465241f.js"
   ]
 }

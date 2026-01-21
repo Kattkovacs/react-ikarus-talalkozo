@@ -89,8 +89,7 @@ const Program = ({ currentLanguage }) => {
                   <td>
                     <strong>Tombola sorsolás </strong>
                     <small>
-                    A Tombola főnyereménye: 2 éjszaka 2 fő részére reggelivel a Hotel
-                    Halászkertben, Badacsonyban
+                    A Tombola főnyereménye: egyeztetés alatt.
                   </small>
                   </td>
                 </tr>

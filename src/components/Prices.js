@@ -12,20 +12,21 @@ const Prices = ({ currentLanguage }) => {
                 <td>
                   <strong>Belépés a rendezvényre</strong>
                 </td>
-                <td>INGYENES</td>
+                <td>2000 Ft/fő</td>
               </tr>
               <tr>
                 <td>
                   <strong>Városi nosztalgia körjáratok</strong>
                 </td>
-                <td>1500 Ft/fő (6 éves korig ingyenes)</td>
+                <td>Egyeztetés alatt</td>
+                {/* <td>1500 Ft/fő (6 éves korig ingyenes)</td> */}
               </tr>
-              <tr>
+              {/* <tr>
                 <td>
                   <strong>Ikarus 481-es busszal a Dobó laktanyához, tankbérlés.hu gyűjteményének megtekintése</strong>
                 </td>
                 <td>3500 Ft/fő</td>
-              </tr>
+              </tr> */}
               <tr>
                 <td>
                   <strong>Káli-medencei busz felvonulás</strong>
@@ -33,11 +34,11 @@ const Prices = ({ currentLanguage }) => {
               </tr>
               <tr>
                 <td>- Ikarus 30, 311, 55, 66 típusú buszokkal</td>
-                <td>3000 Ft/fő</td>
+                <td>Egyeztetés alatt</td>
               </tr>
               <tr>
                 <td>- Egyéb Ikarus típusú buszokkal</td>
-                <td>2000 Ft/fő</td>
+                <td>Egyeztetés alatt</td>
               </tr>
               {/* <tr>
                 <td colSpan="2">
@@ -52,13 +53,12 @@ const Prices = ({ currentLanguage }) => {
                 <td>
                   <strong>Tombola sorsjegy</strong>        
                 </td>
-                <td>500 Ft/db</td>
+                <td>Egyeztetés alatt</td>
               </tr>
               <tr>
                 <td colSpan="2">
                   <small>
-                    A Tombola főnyereménye: 2 éjszaka 2 fő részére reggelivel a Hotel
-                    Halászkertben, Badacsonyban
+                    A Tombola főnyereménye: Egyeztetés alatt
                   </small>
                 </td>
               </tr>

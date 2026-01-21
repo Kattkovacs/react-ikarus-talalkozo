@@ -20,7 +20,7 @@ const Registration = ({ currentLanguage }) => {
             garantálni a helyet.
           </p>
           <br></br>
-          <strong>A regisztráció lezárult!</strong>
+          <strong>A regisztráció 2026. február 1-én indul!</strong>
           {/* <strong>A regisztráció hamarosan indul!</strong> */}
           {/* <div className="center">
             <button onClick={onClickHandle}>
@@ -39,7 +39,7 @@ const Registration = ({ currentLanguage }) => {
           </p>
           <br></br>
           {/* <strong>Registration will start soon!</strong> */}
-          <strong>Registration is closed!</strong>
+          <strong>Registration starts on 1st February 2026!</strong>
           {/* <div className="center">
           <button onClick={onClickHandle}>
               <BiBus className="biBus" size="18px" />

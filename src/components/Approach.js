@@ -21,7 +21,10 @@ const Approach = ({ currentLanguage }) => {
             <strong>Helyszín </strong>
             <p>Veszprém megye, Tapolca város, Köztársaság tér</p>
             <br />
+            <div hidden={true}>
+
             <Map />
+            </div>
             <br />
             <strong>Tömegközlekedéssel</strong>
             <p>

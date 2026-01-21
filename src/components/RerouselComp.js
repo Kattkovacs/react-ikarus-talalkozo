@@ -1,18 +1,18 @@
 import React, { useRef } from "react";
 import { Rerousel } from "rerousel";
 import volan from "../volanbusz_logo.jpg";
-import tapolca from "../tapolca.png";
-import tapolcaOnkormanyzat from "../TapolcaOnk.jpg";
-import teodora from "../Teodora.JPG";
+// import tapolca from "../tapolca.png";
+// import tapolcaOnkormanyzat from "../TapolcaOnk.jpg";
+// import teodora from "../Teodora.JPG";
 import ferrocar from "../Ferrocar.jpg";
 // import maxloads from "../Maxloads.png";
 // import kaloztanya from "../kaloz.jpg";
 import nosztalgiabusz from "../noszbusz.jpg";
-import hotelhalasz from "../hotelhalaszkert.png";
-import tapolcakft from "../tapolcakft_logo_szines.jpg";
+// import hotelhalasz from "../hotelhalaszkert.png";
+// import tapolcakft from "../tapolcakft_logo_szines.jpg";
 // import mrt from "../mrt.jpg";
 // import opti from "../opti.jpg";
-import gyoribuszok from "../gyoribuszok.jpg";
+// import gyoribuszok from "../gyoribuszok.jpg";
 
 export const RerouselComp = () => {
   const customerLogo = useRef(null);
@@ -22,21 +22,21 @@ export const RerouselComp = () => {
       image: volan,
       src: "https://www.volanbusz.hu",
     },
-    tapolca: {
-      id: 2,
-      image: tapolca,
-      src: "https://www.tapolca.hu",
-    },
-    tapolcakft: {
-      id: 3,
-      image: tapolcakft,
-      src: "https://tapolcakft.hu/",
-    },
-    tapolcaOnkormanyzat: {
-      id: 4,
-      image: tapolcaOnkormanyzat,
-      src: "https://www.tapolca.hu",
-    },
+    // tapolca: {
+    //   id: 2,
+    //   image: tapolca,
+    //   src: "https://www.tapolca.hu",
+    // },
+    // tapolcakft: {
+    //   id: 3,
+    //   image: tapolcakft,
+    //   src: "https://tapolcakft.hu/",
+    // },
+    // tapolcaOnkormanyzat: {
+    //   id: 4,
+    //   image: tapolcaOnkormanyzat,
+    //   src: "https://www.tapolca.hu",
+    // },
     // maxloads: {
     //   id: 3,
     //   image: maxloads,
@@ -52,11 +52,11 @@ export const RerouselComp = () => {
       image: nosztalgiabusz,
       src: "https://www.facebook.com/nosztalgiabusz",
     },
-    hotelhalasz: {
-      id: 6,
-      image: hotelhalasz,
-      src: "https://hotelhalaszkert.hu",
-    },
+    // hotelhalasz: {
+    //   id: 6,
+    //   image: hotelhalasz,
+    //   src: "https://hotelhalaszkert.hu",
+    // },
     // mrt: {
     //   id: 7,
     //   image: mrt,
@@ -67,16 +67,16 @@ export const RerouselComp = () => {
     //   image: opti,
     //   src: "http://optitrailer.com/",
     // },
-    gyoribuszok: {
-      id: 9,
-      image: gyoribuszok,
-      src: "http://www.gyoribuszok.hu/",
-    },
-    teodora: {
-      id: 10,
-      image: teodora,
-      src: "https://www.szentkiralyi.hu/",
-    },
+    // gyoribuszok: {
+    //   id: 9,
+    //   image: gyoribuszok,
+    //   src: "http://www.gyoribuszok.hu/",
+    // },
+    // teodora: {
+    //   id: 10,
+    //   image: teodora,
+    //   src: "https://www.szentkiralyi.hu/",
+    // },
     ferrocar: {
       id: 11,
       image: ferrocar,

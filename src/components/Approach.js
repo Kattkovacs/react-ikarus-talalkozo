@@ -19,7 +19,8 @@ const Approach = ({ currentLanguage }) => {
           <div>
             <h1>MEGKÖZELÍTÉS</h1>
             <strong>Helyszín </strong>
-            <p>Veszprém megye, Tapolca város, volt Kinizsi laktanya</p>
+            <p>Veszprém vármegye, Tapolca város, <a href="https://maps.app.goo.gl/j85AeSrXto4Sy3FNA"> volt Kinizsi laktanya</a> </p>
+            <p>GPS koordináták: 46.877523, 17.402617</p>
             <br />
             <div hidden={true}>
 

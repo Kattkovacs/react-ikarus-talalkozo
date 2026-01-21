@@ -7,9 +7,7 @@ const Location = ({ currentLanguage }) => {
         <div className="container">
           <h1>HELYSZÍN</h1>
           <p>
-            A tértől 800 méterre (77-es déli elkerülő úton) nagy méretű
-            személyautó parkoló áll rendelkezésre, ahonnan néhány perces sétával
-            a városon keresztül elérhető a rendezvény helyszíne. A rendezvény
+           Idén a rendezvény helyszíne <a href="https://maps.app.goo.gl/j85AeSrXto4Sy3FNA"> a volt Kinizsi laktanya</a> területén lesz. A rendezvény
             ideje alatt nosztalgia autóbuszjáratok közlekednek a városban,
             délután folyamán pedig egy 30 km hosszú 1 órás felvonulás lesz a
             festői szépségű Káli-medencében.
@@ -22,11 +20,14 @@ const Location = ({ currentLanguage }) => {
             különjáratok indulnak, melyekről részletesen a megközelítés menüpontban
             tájékozódhatnak.
           </p>
-          <p>
+          <p>Ha veterán autóval érkezel (az autó kora 30 éves felett van), 
+            akkor 2 fő részére ingyenes a belépés és a buszos kiállítótérre be lehet parkolni. 
+          </p>
+          {/* <p>
             A helyszín befogadóképessége korlátozott, emiatt csak IKARUS márkájú
             járművek kiállítására van lehetőség, egyéb veterán járművet sajnos
             nem tudunk fogadni, emiatt megértésüket köszönjük!
-          </p>
+          </p> */}
         </div>
       ) : (
         <div className="container">

@@ -15,6 +15,14 @@ const Prices = ({ currentLanguage }) => {
                 <td>2000 Ft/fő</td>
               </tr>
               <tr>
+                <td colSpan="2">
+                  <small>
+                    Ha veterán autóval érkezel (az autó kora 30 éves felett van), 
+            akkor 2 fő részére ingyenes a belépés és a buszos kiállítótérre be lehet parkolni. 
+                  </small>
+                </td>
+              </tr>
+              <tr>
                 <td>
                   <strong>Városi nosztalgia körjáratok</strong>
                 </td>

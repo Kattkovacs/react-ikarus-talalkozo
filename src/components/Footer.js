@@ -24,8 +24,8 @@ const Footer = ({ currentLanguage }) => {
       </footer>
       <p className="rights">
         {currentLanguage === "hu"
-          ? "© Minden jog fenntartva! 2022"
-          : "© All rights reserved 2022"}
+          ? "© Minden jog fenntartva! 2026"
+          : "© All rights reserved 2026"}
       </p>
     </section>
   );

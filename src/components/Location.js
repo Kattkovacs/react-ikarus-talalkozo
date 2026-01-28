@@ -8,13 +8,17 @@ const Location = ({ currentLanguage }) => {
           <h1>HELYSZÍN</h1>
           <p>
            Idén a rendezvény helyszíne <a href="https://maps.app.goo.gl/j85AeSrXto4Sy3FNA"> a volt Kinizsi laktanya</a> területén lesz. 
-           A rendezvény
-            ideje alatt nosztalgia autóbuszjáratok közlekednek a városban,
-            délután folyamán pedig felvonulás lesz.
-            {/* egy 30 km hosszú 1 órás felvonulás lesz a
-            festői szépségű Káli-medencében. */}
-          </p>
+           </p>
+           <div style={{margin: "10px", display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "center"}}>
+          <iframe display="flex-item" title="map" style={{"width":"525px", "height":"230px", "border": "1px solid white"}} 
+          src="https://www.openstreetmap.org/export/embed.html?bbox=17.400847077369693%2C46.876738872119404%2C17.40438759326935%2C46.878308306353915&amp;layer=mapnik&amp;marker=46.8775235949746%2C17.40261733531952"></iframe>
+          <small display="flex-item"><a href="https://www.openstreetmap.org/?mlat=46.877524&amp;mlon=17.402617#map=19/46.877524/17.402617">Térkép megnyitása nagyobb méretben</a></small>
+           </div>
           <p>
+            A rendezvény
+            ideje alatt nosztalgia autóbuszjáratok közlekednek a városban,
+            délután folyamán pedig egy 34 km hosszú, egy és negyed órás felvonulás lesz a
+            festői szépségű Káli-medencében. 
             A rendezvény területén egész nap kitelepült étterem üzemel, a
             kiállítók és a látogatók részére, valamint lehetőség lesz pólók
             ajándéktárgyak illetve tombola vásárlására. A rendezvény

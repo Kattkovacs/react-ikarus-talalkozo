@@ -1,8 +1,8 @@
 import React from "react";
 import Map from "./Map";
-import cityMapHu from "../city_map_hu.jpg";
+// import cityMapHu from "../city_map_hu.jpg";
 // import cityTripHu from "../city_trip_hu.jpg";
-import roundTrip from "../felvonulas24_hu.jpg";
+import roundTrip from "../felvonulas26_hu.png";
 import cityMapEn from "../city_map_en.jpg";
 import underConst from "../under_const.jpg";
 // import cityTripEn from "../city_trip_en.jpg";
@@ -76,9 +76,9 @@ const Approach = ({ currentLanguage }) => {
               </tbody>
             </table> */}
 
-            <br />
+            {/* <br /> */}
             <strong>Nosztalgia különjáratokkal</strong>
-            <p>Egyeztetés alatt...</p>
+            <p>Autóbusz különjáratok egyeztetés alatt...</p>
             {/* <p>
               Az alábbiakban felsorolt buszokkal van lehetőség eljutni a
               Találkozó helyszínére. A "Részletek és foglalás" résznél lehet
@@ -148,20 +148,24 @@ const Approach = ({ currentLanguage }) => {
             <p>További különjáratok meghirdetése egyeztetés alatt!</p>
             <br /> */}
           </div>
-          <div hidden={true}>
+          <div hidden={false}>
           <div className="boxes">
-            <a
+            <div>
+            {/* <a
               href="https://www.google.com/maps/d/u/0/viewer?mid=1gRK6n2cPKwoKXMb4NW-8lyedSLpEWs0N&ll=46.88090011481434%2C17.436230000000002&z=16"
               target="_blank"
               rel="noopener noreferrer"
-            >
+            > */}
               <div className="sidebarStyle">
                 <div>Tapolca belváros</div>
               </div>
-              <img src={cityMapHu} alt="megkozelites" className="mapImg" />
-            </a>
+              {/* <img src={cityMapHu} alt="megkozelites" className="mapImg" /> */}
+            <img src={underConst} alt="varosijarat" className="mapImg" />
+            {/* </a> */}
+              </div>
             <a
-              href="https://www.google.com/maps/d/u/0/viewer?mid=10wK4wL-BFe8fUO6bL8LwXSR066l40WBC&ll=46.86826900882221%2C17.524713850000005&z=13"
+              // href="https://www.google.com/maps/d/u/0/viewer?mid=10wK4wL-BFe8fUO6bL8LwXSR066l40WBC&ll=46.86826900882221%2C17.524713850000005&z=13"
+              href="https://www.google.com/maps/d/u/0/edit?mid=1zBUVfyo1XqIAvjbyHaznWH4ieQ0HBjI&usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -170,16 +174,18 @@ const Approach = ({ currentLanguage }) => {
               </div>
               <img src={roundTrip} alt="felvonulas" className="mapImg" />
             </a>
-            <a
+            <div>
+            {/* <a
               href="https://www.google.com/maps/d/u/0/viewer?mid=1aOxfPsKxw6FMZNNljYsUEYZhoMFkaPVA&ll=46.88336529699366%2C17.43563999999999&z=15"
               target="_blank"
               rel="noopener noreferrer"
-            >
+              > */}
               <div className="sidebarStyle">
                 <div>Nosztalgia autóbusz körjáratok</div>
               </div>
               <img src={underConst} alt="varosijarat" className="mapImg" />
-            </a>
+            {/* </a> */}
+              </div>
           </div>
           </div>
         </div>

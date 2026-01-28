@@ -13,6 +13,7 @@ import nosztalgiabusz from "../noszbusz.jpg";
 // import mrt from "../mrt.jpg";
 // import opti from "../opti.jpg";
 // import gyoribuszok from "../gyoribuszok.jpg";
+import beaver from "../beaver.jpg";
 
 export const RerouselComp = () => {
   const customerLogo = useRef(null);
@@ -81,7 +82,12 @@ export const RerouselComp = () => {
       id: 11,
       image: ferrocar,
       src: "https://ferrocar.hu/",
-    }
+    },
+    beaver: {
+      id: 12,
+      image: beaver,
+      src: "https://beavertradition.com/",
+    },
   };
 
   return (

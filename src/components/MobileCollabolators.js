@@ -12,6 +12,7 @@ import nosztalgiabusz from "../noszbusz.jpg";
 // import mrt from "../mrt.jpg";
 // import opti from "../opti.jpg";
 // import gyoribuszok from "../gyoribuszok.jpg";
+import beaver from "../beaver.jpg";
 
 const MobileCollabolators = () => {
   const customers = {
@@ -79,7 +80,12 @@ const MobileCollabolators = () => {
       id: 11,
       image: ferrocar,
       src: "https://ferrocar.hu/",
-    }
+    },
+    beaver: {
+      id: 12,
+      image: beaver,
+      src: "https://beavertradition.com/",
+    },
   };
 
   return (

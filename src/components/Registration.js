@@ -1,15 +1,15 @@
 import React from "react";
-// import { BiBus } from "react-icons/bi";
-// import { useState } from "react";
-// import BusRegistration from "./BusRegistration";
+import { BiBus } from "react-icons/bi";
+import { useState } from "react";
+import BusRegistration from "./BusRegistration";
 
 
 const Registration = ({ currentLanguage }) => {
-  // const [open, setOpen] = useState(false);
-  // const onClickHandle = (e) => {
-  //   e.preventDefault();
-  //   setOpen(!open);
-  // };
+  const [open, setOpen] = useState(false);
+  const onClickHandle = (e) => {
+    e.preventDefault();
+    setOpen(!open);
+  };
   return (
     <section className="event" id="registration">
       {currentLanguage === "hu" ? (
@@ -20,15 +20,15 @@ const Registration = ({ currentLanguage }) => {
             garantálni a helyet.
           </p>
           <br></br>
-          <strong>A regisztráció 2026. február 1-én indul!</strong>
+          {/* <strong>A regisztráció 2026. február 1-én indul!</strong> */}
           {/* <strong>A regisztráció hamarosan indul!</strong> */}
-          {/* <div className="center">
+          <div className="center">
             <button onClick={onClickHandle}>
               <BiBus className="biBus" size="18px" />
               Regisztráció
             </button>
           </div>
-          <BusRegistration currentLanguage={currentLanguage} open={open}/> */}
+          <BusRegistration currentLanguage={currentLanguage} open={open}/>
         </div>
       ) : (
         <div className="box boxEn" id="reg">

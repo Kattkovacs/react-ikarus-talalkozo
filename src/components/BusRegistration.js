@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import apiKeyData from './Api';
 
 
 const BusRegistration = (props) => {
@@ -40,11 +41,25 @@ const BusRegistration = (props) => {
 		const objt = { name, email, phone, bus, year, image };
         
         console.log(objt);
-        
-		axios
+        const sheetName = "Sheet1";
+        const spreadsheetId = "1KMt7SjGP8deo2ZXrnzE9Yrx51Vu2-2S0uvb2K2FL4Hc";
+        const apiKey = apiKeyData;
+        console.log(apiKey);
+        const url = `https:///api.sheetson.com/v2/sheets/${sheetName}`;
+
+        axios
 			.post(
-            		'https://sheet.best/api/sheets/c87186c5-8294-4f63-9a83-00aef3287774',
-            		objt
+            		url,
+                    objt,  
+                    {
+                headers: {
+                "Authorization": `Bearer ${apiKey}`,
+                "X-Spreadsheet-Id": spreadsheetId,
+                "Content-Type": "application/json",
+                // "Access-Control-Allow-Origin": "*",
+            },
+            }
+
             	)
             	.then((response) => {
                 		console.log(response);
@@ -54,13 +69,28 @@ const BusRegistration = (props) => {
                         console.log(error);
                     });
                 
+		// axios
+		// 	.post(
+        //     		'https://sheet.best/api/sheets/c87186c5-8294-4f63-9a83-00aef3287774',
+        //     		objt
+        //     	)
+        //     	.then((response) => {
+        //         		console.log(response);
+        //                 setSent(true);
+        //         	})
+        //         .catch((error) => {
+        //                 console.log(error);
+        //             });
+                
         e.target.reset();
-        setName('');
+        if(sent===true){
+            setName('');
         setEmail('');
         setBus('');
         setPhone('');
         setYear('');
         setImage(null);
+        }
         console.log(objt);
 	};
 
@@ -76,7 +106,7 @@ const BusRegistration = (props) => {
                             <input required placeholder="Név" onChange={(e) => setName(e.target.value)}/>                        
                         <br />                  
                         <label>                      
-                            <input required type="email" placeholder="E-mail" onChange={(e) => setEmail(e.target.value)}/>  
+                            <input id="email" required type="email" placeholder="E-mail" onChange={(e) => setEmail(e.target.value)}/>  
                         </label>    
                         <label>                      
                             <input required placeholder="Telefon" onChange={(e) => setPhone(e.target.value)}/>  

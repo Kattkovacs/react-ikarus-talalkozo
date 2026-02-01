@@ -14,6 +14,7 @@ const BusRegistration = (props) => {
     const [image, setImage] = useState('');
     const [loading, setLoading] = useState(false);
     const [sent, setSent] = useState(false);
+    const [dataLoading, setDataLoading] = useState(false);  
   
     const uploadImage = async e => {
       const files = e.target.files
@@ -37,8 +38,9 @@ const BusRegistration = (props) => {
   
 	const Submit = (e) => {
 		e.preventDefault();
-        
-		const objt = { name, email, phone, bus, year, image };
+        setDataLoading(true);
+        const time = new Date().toLocaleString();
+		const objt = { time, name, email, phone, bus, year, image};
         
         console.log(objt);
         const sheetName = "Sheet1";
@@ -64,9 +66,11 @@ const BusRegistration = (props) => {
             	.then((response) => {
                 		console.log(response);
                         setSent(true);
+                        setDataLoading(false);
                 	})
                 .catch((error) => {
                         console.log(error);
+                        setDataLoading(false);
                     });
                 
 		// axios
@@ -128,15 +132,19 @@ const BusRegistration = (props) => {
                          {(() => {
                             if (loading) {
                             return (
-                                <h3>Loading...</h3>
+                                <h3>Loading image...</h3>
                             )
                             } else if (!loading && image) {
                             return (
                                 <img alt=" " src={image} style={{ width: '200px' }} />
                             )
-                            } else if (sent) {
+                            } else if (dataLoading) {
                                 return (
-                                    <p>Regisztrációját köszönjük!</p>
+                                    <h3>Loading data... Please, wait!</h3>
+                                )
+                            } else if (sent && !dataLoading) {
+                                return (
+                                    <strong>Regisztrációját köszönjük!</strong>
                                 )
                             }
                         })()}

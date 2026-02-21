@@ -41,12 +41,11 @@ const BusRegistration = (props) => {
         setDataLoading(true);
         const time = new Date().toLocaleString();
 		const objt = { time, name, email, phone, bus, year, image};
-        
-        console.log(objt);
+
         const sheetName = "Sheet1";
         const spreadsheetId = "1KMt7SjGP8deo2ZXrnzE9Yrx51Vu2-2S0uvb2K2FL4Hc";
         const apiKey = apiKeyData;
-        console.log(apiKey);
+      
         const url = `https:///api.sheetson.com/v2/sheets/${sheetName}`;
 
         axios

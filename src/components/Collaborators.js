@@ -1,16 +1,14 @@
 import React from "react";
 import { RerouselComp } from "./RerouselComp";
 import MobileCollabolators from "./MobileCollabolators";
+import { useTranslation } from "../i18n";
 
-const Collaborators = ({ currentLanguage }) => {
+const Collaborators = () => {
+  const t = useTranslation();
   return (
     <section className="event" id="approach">
       <div className="container">
-        {currentLanguage === "hu" ? (
-          <h1>EGYÜTTMŰKÖDŐK</h1>
-        ) : (
-          <h1>COLLABORATORS</h1>
-        )}
+        <h1>{t.collaborators.title}</h1>
         <RerouselComp />
         <MobileCollabolators />
       </div>

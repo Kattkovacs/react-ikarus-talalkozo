@@ -1,7 +1,9 @@
 import React from "react";
 import { ImSmile } from "react-icons/im";
+import { useLang } from "../context/LanguageContext";
 
-const Rules = ({ currentLanguage }) => {
+const Rules = () => {
+  const { lang: currentLanguage } = useLang();
   return (
     <section className="event">
       {currentLanguage === "hu" ? (

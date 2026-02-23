@@ -1,6 +1,8 @@
 import React from "react";
+import { useLang } from "../context/LanguageContext";
 
-const Program = ({ currentLanguage }) => {
+const Program = () => {
+  const { lang: currentLanguage } = useLang();
   return (
     <section className="event" id="program">
       {currentLanguage === "hu" ? (

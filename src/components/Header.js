@@ -1,6 +1,8 @@
 import React from "react";
+import { useLang } from "../context/LanguageContext";
 
-const Header = ({ currentLanguage }) => {
+const Header = () => {
+  const { lang: currentLanguage } = useLang();
   return (
     <header className="header">
       {currentLanguage === "hu" ? (

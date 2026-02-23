@@ -1,9 +1,9 @@
 import NavLinks from "./NavLinks";
 
-const Navigation = ({ currentLanguage }) => {
+const Navigation = () => {
   return (
     <nav className="navigation">
-      <NavLinks currentLanguage={currentLanguage} />
+      <NavLinks />
     </nav>
   );
 };

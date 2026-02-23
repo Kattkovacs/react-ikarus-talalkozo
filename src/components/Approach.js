@@ -5,13 +5,15 @@ import Map from "./Map";
 import roundTrip from "../felvonulas26_hu.png";
 import cityMapEn from "../city_map_en.jpg";
 import underConst from "../under_const.jpg";
+import { useLang } from "../context/LanguageContext";
 // import cityTripEn from "../city_trip_en.jpg";
 // import bus25059 from "../25059.JPG";
 // import bus25098 from "../25098.jpg";
 // import bus5521 from "../5521.jpg";
 // import { MdOutlineReadMore } from "react-icons/md";
 
-const Approach = ({ currentLanguage }) => {
+const Approach = () => {
+  const { lang: currentLanguage } = useLang();
   return (
     <section className="event" id="approach">
       {currentLanguage === "hu" ? (

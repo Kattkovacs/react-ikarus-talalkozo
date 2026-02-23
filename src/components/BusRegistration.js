@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import apiKeyData from './Api';
+import { useLang } from '../context/LanguageContext';
+import { useTranslation } from '../i18n';
 
 
-const BusRegistration = (props) => {
-    const { currentLanguage, open } = props;
+const BusRegistration = ({ open }) => {
+    const { lang: currentLanguage } = useLang();
+    const t = useTranslation();
     const [name, setName] = useState('');
 	const [email, setEmail] = useState('');
 	const [bus, setBus] = useState('');
@@ -101,103 +104,47 @@ const BusRegistration = (props) => {
         <>
         {open && (
             <section className="event" id="registration">
-                {currentLanguage === "hu" ? (
-                <div className="box boxHu" id="reg">
-                    <h1>BUSZ REGISZTRÁCIÓS ŰRLAP</h1>
-                    <form className="form" onSubmit={(e)=>Submit(e)}>
-                        <label>Tulajdonos</label>
-                            <input required placeholder="Név" onChange={(e) => setName(e.target.value)}/>                        
-                        <br />                  
-                        <label>                      
-                            <input id="email" required type="email" placeholder="E-mail" onChange={(e) => setEmail(e.target.value)}/>  
-                        </label>    
-                        <label>                      
-                            <input required placeholder="Telefon" onChange={(e) => setPhone(e.target.value)}/>  
-                        </label>  
-                        <br />                   
-                        <label>Ikarus busz típusa</label>
-                            <input required placeholder="Típus" onChange={(e) => setBus(e.target.value)}/>
-                        <label>Évjárat</label>
-                            <input required placeholder="Évjárat" onChange={(e) => setYear(e.target.value)}/>                        
-                        <br />          
-                        <br />               
-                        <label>Fotó feltöltése(1db)</label>                            
+                <div className={`box ${currentLanguage === "hu" ? "boxHu" : "boxEn"}`} id="reg">
+                    <h1>{t.busReg.formTitle}</h1>
+                    <form className="form" onSubmit={(e) => Submit(e)}>
+                        <label>{t.busReg.owner}</label>
+                            <input required placeholder={t.busReg.namePlaceholder} onChange={(e) => setName(e.target.value)} />
+                        <br />
+                        <label>
+                            <input id="email" required type="email" placeholder="E-mail" onChange={(e) => setEmail(e.target.value)} />
+                        </label>
+                        <label>
+                            <input required placeholder={t.busReg.phonePlaceholder} onChange={(e) => setPhone(e.target.value)} />
+                        </label>
+                        <br />
+                        <label>{t.busReg.busType}</label>
+                            <input required placeholder={t.busReg.typePlaceholder} onChange={(e) => setBus(e.target.value)} />
+                        <label>{t.busReg.yearLabel}</label>
+                            <input required placeholder={t.busReg.yearPlaceholder} onChange={(e) => setYear(e.target.value)} />
+                        <br />
+                        <br />
+                        <label>{t.busReg.photoLabel}</label>
                         <input
                             type="file"
                             name="file"
                             accept="image/*"
                             onChange={uploadImage}
                         />
-                         {(() => {
+                        {(() => {
                             if (loading) {
-                            return (
-                                <h3>Loading image...</h3>
-                            )
+                                return <h3>{t.busReg.loadingImage}</h3>;
                             } else if (!loading && image) {
-                            return (
-                                <img alt=" " src={image} style={{ width: '200px' }} />
-                            )
+                                return <img alt=" " src={image} style={{ width: '200px' }} />;
                             } else if (dataLoading) {
-                                return (
-                                    <h3>Loading data... Please, wait!</h3>
-                                )
+                                return <h3>{t.busReg.loadingData}</h3>;
                             } else if (sent && !dataLoading) {
-                                return (
-                                    <strong>Regisztrációját köszönjük!</strong>
-                                )
+                                return <strong>{t.busReg.thanks}</strong>;
                             }
                         })()}
                         <br />
-                        <input className="button" type="submit"/>                     
+                        <input className="button" type="submit" />
                     </form>
                 </div>
-                ) : (
-                <div className="box boxEn" id="reg">
-                    <h1>BUS REGISTRATION</h1>
-                    <form className="form" onSubmit={(e)=>Submit(e)}>
-                        <label>Owner</label>
-                            <input required placeholder="Name" onChange={(e) => setName(e.target.value)}/>                        
-                        <br />                  
-                        <label>                      
-                            <input required type="email" placeholder="E-mail" onChange={(e) => setEmail(e.target.value)}/>  
-                        </label>    
-                        <label>                      
-                            <input required placeholder="Phone" onChange={(e) => setPhone(e.target.value)}/>  
-                        </label>  
-                        <br />                   
-                        <label>Type of Ikarus bus</label>
-                            <input required placeholder="Type" onChange={(e) => setBus(e.target.value)}/>
-                        <label>Year</label>
-                            <input required placeholder="Year" onChange={(e) => setYear(e.target.value)}/>                        
-                        <br />          
-                        <br />               
-                        <label>Photo upload</label>                            
-                        <input
-                            type="file"
-                            name="file"
-                            accept="image/*"
-                            onChange={uploadImage}
-                        />
-                         {(() => {
-                            if (loading) {
-                                return (
-                                    <h3>Loading...</h3>
-                                )
-                            } else if (!loading && image) {
-                                return (
-                                    <img alt=" " src={image} style={{ width: '200px' }} />
-                                )                    
-                            } else if (sent) {
-                                return (
-                                    <strong>Thank you for your registration!</strong>
-                                )
-                            }
-                        })()}
-                        <br />
-                        <input className="button" type="submit"/>                     
-                    </form>
-                </div>
-                )}
             </section>
         )}
       </>

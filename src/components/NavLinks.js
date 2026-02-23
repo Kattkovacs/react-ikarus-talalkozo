@@ -1,19 +1,18 @@
 import React from "react";
 import huFlag from "../001-hungary.png";
 import enFlag from "../001-united-kingdom.png";
-import { useDispatch } from "react-redux";
-import { language } from "../actions";
+import { useLang } from "../context/LanguageContext";
+import { useTranslation } from "../i18n";
 import { motion } from "framer-motion";
 
-const NavLinks = (props) => {
-  const dispatch = useDispatch();
-  const { currentLanguage, isMobile, closeMobileMenu } = props;
+const NavLinks = ({ isMobile, closeMobileMenu }) => {
+  const { lang, setLang } = useLang();
+  const t = useTranslation();
   const animateFrom = { opacity: 0, y: -40 };
   const animateTo = { opacity: 0.9, y: 0 };
 
-  const handleOnclick = (e) => {
-    e.preventDefault();
-    dispatch(language(e.currentTarget.value));
+  const handleLanguageToggle = () => {
+    setLang(lang === "hu" ? "en" : "hu");
   };
 
   return (
@@ -24,9 +23,7 @@ const NavLinks = (props) => {
         animate={animateTo}
         transition={{ delay: 0.05 }}
       >
-        <a href="/#program">
-          {currentLanguage === "hu" ? "Programok" : "Programmes"}
-        </a>
+        <a href="/#program">{t.nav.programs}</a>
       </motion.li>
       <motion.li
         onClick={() => isMobile && closeMobileMenu()}
@@ -34,9 +31,7 @@ const NavLinks = (props) => {
         animate={animateTo}
         transition={{ delay: 0.1 }}
       >
-        <a href="/#approach">
-          {currentLanguage === "hu" ? "Megközelítés" : "Approach"}
-        </a>
+        <a href="/#approach">{t.nav.approach}</a>
       </motion.li>
       <motion.li
         onClick={() => isMobile && closeMobileMenu()}
@@ -44,7 +39,7 @@ const NavLinks = (props) => {
         animate={animateTo}
         transition={{ delay: 0.2 }}
       >
-        <a href="/#prices">{currentLanguage === "hu" ? "Árak" : "Prices"}</a>
+        <a href="/#prices">{t.nav.prices}</a>
       </motion.li>
       <motion.li
         onClick={() => isMobile && closeMobileMenu()}
@@ -52,9 +47,7 @@ const NavLinks = (props) => {
         animate={animateTo}
         transition={{ delay: 0.3 }}
       >
-        <a href="/#contact">
-          {currentLanguage === "hu" ? "Kapcsolat" : "Contact"}
-        </a>
+        <a href="/#contact">{t.nav.contact}</a>
       </motion.li>
       <motion.li
         onClick={() => isMobile && closeMobileMenu()}
@@ -62,17 +55,8 @@ const NavLinks = (props) => {
         animate={animateTo}
         transition={{ delay: 0.4 }}
       >
-        <button
-        hidden={true}
-          value={currentLanguage === "hu" ? "en" : "hu"}
-          onClick={(e) => {
-            handleOnclick(e);
-          }}
-        >
-          <img
-            src={currentLanguage === "hu" ? enFlag : huFlag}
-            alt="language"
-          />
+        <button hidden={true} onClick={handleLanguageToggle}>
+          <img src={lang === "hu" ? enFlag : huFlag} alt="language" />
         </button>
       </motion.li>
     </ul>

@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import { useTranslation } from "../i18n";
 // import { VscMail } from "react-icons/vsc";
 
 const FB_SRC =
@@ -41,42 +42,16 @@ const LazyFbIframe = () => {
   );
 };
 
-const Contact = ({ currentLanguage }) => {
+const Contact = () => {
+  const t = useTranslation();
   return (
     <section className="event" id="contact">
-      {currentLanguage === "hu" ? (
-        <div className="container">
-          <h1>KAPCSOLAT</h1>
-          <div className="boxes">
-            {/* <div id="content">
-              <strong>TOVÁBBI INFORMÁCIÓ</strong>
-              <p>
-                A találkozóval kapcsolatban bármilyen további információval a
-                következő elérhetőségen állunk rendelkezésére:{" "}
-              </p>
-              <VscMail className="vscMail" size="15px" />
-              <strong className="mailAddress"> ikarustapolca@gmail.com</strong>
-            </div> */}
-            <LazyFbIframe />
-          </div>
+      <div className="container">
+        <h1>{t.contact.title}</h1>
+        <div className="boxes">
+          <LazyFbIframe />
         </div>
-      ) : (
-        <div className="container">
-          <h1>CONTACT</h1>
-          <div className="boxes">
-            {/* <div id="content">
-              <h4>FURTHER INFORMATION</h4>
-              <p>
-                If you need further information about the event, feel free to
-                contact us on mail:
-              </p>
-              <VscMail className="vscMail" size="15px" />
-              <strong className="mailAddress"> ikarustapolca@gmail.com</strong>
-            </div> */}
-            <LazyFbIframe />
-          </div>
-        </div>
-      )}
+      </div>
     </section>
   );
 };

@@ -3,20 +3,17 @@ import MobileNavigation from "./MobileNavigation";
 import Navigation from "./Navigation";
 import logoHu from "../ikarus_tal_white_kor.svg";
 
-const Nav = ({ currentLanguage }) => {
+const Nav = () => {
   return (
     <div className="navbar">
       <div className="container">
         <div className="logo">
           <a href="/">
-            <img
-              src={currentLanguage === "hu" ? logoHu : logoHu}
-              alt="language"
-            />
+            <img src={logoHu} alt="logo" />
           </a>
         </div>
-        <MobileNavigation currentLanguage={currentLanguage} />
-        <Navigation currentLanguage={currentLanguage} />
+        <MobileNavigation />
+        <Navigation />
       </div>
     </div>
   );

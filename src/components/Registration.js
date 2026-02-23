@@ -2,9 +2,13 @@ import React from "react";
 import { BiBus } from "react-icons/bi";
 import { useState } from "react";
 import BusRegistration from "./BusRegistration";
+import { useLang } from "../context/LanguageContext";
+import { useTranslation } from "../i18n";
 
 
-const Registration = ({ currentLanguage }) => {
+const Registration = () => {
+  const { lang } = useLang();
+  const t = useTranslation();
   const [open, setOpen] = useState(false);
   const onClickHandle = (e) => {
     e.preventDefault();
@@ -12,41 +16,35 @@ const Registration = ({ currentLanguage }) => {
   };
   return (
     <section className="event" id="registration">
-      {currentLanguage === "hu" ? (
+      {lang === "hu" ? (
         <div className="box boxHu" id="reg">
-          <h1>BUSZ REGISZTRÁCIÓ</h1>
-          <p>
-            A kiállítóknak kötelező regisztráció van, ennek hiányában nem tudjuk
-            garantálni a helyet.
-          </p>
+          <h1>{t.registration.title}</h1>
+          <p>{t.registration.description}</p>
           <br></br>
           {/* <strong>A regisztráció 2026. február 1-én indul!</strong> */}
           {/* <strong>A regisztráció hamarosan indul!</strong> */}
           <div className="center">
             <button onClick={onClickHandle}>
               <BiBus className="biBus" size="18px" />
-              Regisztráció
+              {t.registration.button}
             </button>
           </div>
-          <BusRegistration currentLanguage={currentLanguage} open={open}/>
+          <BusRegistration open={open} />
         </div>
       ) : (
         <div className="box boxEn" id="reg">
-          <h1>BUS REGISTRATION</h1>
-          <p>
-            Registration is mandatory for all exhibitors! In absence of
-            registration we can not guarantee exhibition place for your vehicle.
-          </p>
+          <h1>{t.registration.title}</h1>
+          <p>{t.registration.description}</p>
           <br></br>
           {/* <strong>Registration will start soon!</strong> */}
-          <strong>Registration starts on 1st February 2026!</strong>
+          <strong>{t.registration.startsSoon}</strong>
           {/* <div className="center">
           <button onClick={onClickHandle}>
               <BiBus className="biBus" size="18px" />
-              Bus registration
+              {t.registration.button}
             </button>
           </div>
-          <BusRegistration currentLanguage={currentLanguage} open={open}/> */}
+          <BusRegistration open={open} /> */}
         </div>
       )}
     </section>

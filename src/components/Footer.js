@@ -1,32 +1,21 @@
 import React from "react";
+import { useTranslation } from "../i18n";
 
-const Footer = ({ currentLanguage }) => {
+const Footer = () => {
+  const t = useTranslation();
   return (
     <section className="footer">
       <footer>
         <div className="container">
-          {currentLanguage === "hu" ? (
-            <div>
-              <a href="/#program">Programok</a>
-              <a href="/#media">Megjelenések</a>
-              <a href="/#prices">Árak</a>
-              <a href="/#registration">Busz regisztráció</a>
-            </div>
-          ) : (
-            <div>
-              <a href="/#program">Programmes</a>
-              <a href="/#media">Media</a>
-              <a href="/#prices">Prices</a>
-              <a href="/#registration">Bus registration</a>
-            </div>
-          )}
+          <div>
+            <a href="/#program">{t.footer.programs}</a>
+            <a href="/#media">{t.footer.media}</a>
+            <a href="/#prices">{t.footer.prices}</a>
+            <a href="/#registration">{t.footer.busReg}</a>
+          </div>
         </div>
       </footer>
-      <p className="rights">
-        {currentLanguage === "hu"
-          ? "© Minden jog fenntartva! 2026"
-          : "© All rights reserved 2026"}
-      </p>
+      <p className="rights">{t.footer.rights}</p>
     </section>
   );
 };

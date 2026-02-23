@@ -3,7 +3,7 @@ import { CgMenu } from "react-icons/cg";
 import { CgClose } from "react-icons/cg";
 import { useState } from "react";
 
-const MobileNavigation = ({ currentLanguage }) => {
+const MobileNavigation = () => {
   const [open, setOpen] = useState(false);
   const hamburgerIcon = (
     <CgMenu
@@ -27,11 +27,7 @@ const MobileNavigation = ({ currentLanguage }) => {
     <nav className="mobileNavigation">
       {open ? closeIcon : hamburgerIcon}
       {open && (
-        <NavLinks
-          currentLanguage={currentLanguage}
-          isMobile={true}
-          closeMobileMenu={closeMobileMenu}
-        />
+        <NavLinks isMobile={true} closeMobileMenu={closeMobileMenu} />
       )}
     </nav>
   );

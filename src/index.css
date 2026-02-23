@@ -1,6 +1,13 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-brand: #005c99;
+  --color-brand-dark: #094064;
+  --color-brand-light: #e1edff;
+  --color-brand-teal: #259ba3;
+  --color-brand-green: #266b4e;
+  --font-sans: "Nunito", sans-serif;
+}
 
 body {
   margin: 0;

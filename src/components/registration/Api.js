@@ -1,3 +1,3 @@
-const apiKeyData = process.env.REACT_APP_SHEETSON_KEY;
+const apiKeyData = import.meta.env.VITE_SHEETSON_KEY;
 
 export default apiKeyData;

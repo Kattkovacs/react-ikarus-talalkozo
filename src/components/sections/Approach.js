@@ -1,5 +1,4 @@
 import React from "react";
-import Map from "../map/Map";
 // import cityMapHu from "../../city_map_hu.jpg";
 // import cityTripHu from "../../city_trip_hu.jpg";
 import roundTrip from "../../felvonulas26_hu.png";
@@ -24,10 +23,6 @@ const Approach = () => {
             <p>Veszprém vármegye, Tapolca város, <a href="https://maps.app.goo.gl/j85AeSrXto4Sy3FNA"> volt Kinizsi laktanya</a> </p>
             <p>GPS koordináták: 46.877523, 17.402617</p>
             <br />
-            <div hidden={true}>
-
-            <Map />
-            </div>
             <br />
             <strong>Tömegközlekedéssel</strong>
             <p>
@@ -198,7 +193,18 @@ const Approach = () => {
             <strong>Location </strong>
             <p>Hungary, Veszprém county, Tapolca city, Köztársaság square</p>
             <br />
-            <Map />
+            <div style={{margin: "10px 0", display: "flex", flexDirection: "column", alignItems: "flex-start"}}>
+              <iframe
+                title="map-en"
+                style={{width: "525px", height: "230px", border: "1px solid white"}}
+                src="https://www.openstreetmap.org/export/embed.html?bbox=17.390000%2C46.865000%2C17.450000%2C46.895000&layer=mapnik&marker=46.877523%2C17.402617"
+              />
+              <small>
+                <a href="https://www.openstreetmap.org/?mlat=46.877523&mlon=17.402617#map=15/46.877523/17.402617">
+                  Open map in larger size
+                </a>
+              </small>
+            </div>
             <br />
             <strong>Approaching by public transport</strong>
             <p>

@@ -1,7 +1,7 @@
 import React from "react";
 import MobileNavigation from "./MobileNavigation";
 import Navigation from "./Navigation";
-import logoHu from "../ikarus_tal_white_kor.svg";
+import logoHu from "../../ikarus_tal_white_kor.svg";
 
 const Nav = () => {
   return (

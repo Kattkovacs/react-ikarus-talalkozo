@@ -1,19 +1,19 @@
 import React, { useRef } from "react";
 import { Rerousel } from "rerousel";
-import volan from "../volanbusz_logo.jpg";
-// import tapolca from "../tapolca.png";
-// import tapolcaOnkormanyzat from "../TapolcaOnk.jpg";
-// import teodora from "../Teodora.JPG";
-import ferrocar from "../Ferrocar.jpg";
-// import maxloads from "../Maxloads.png";
-// import kaloztanya from "../kaloz.jpg";
-import nosztalgiabusz from "../noszbusz.jpg";
-// import hotelhalasz from "../hotelhalaszkert.png";
-// import tapolcakft from "../tapolcakft_logo_szines.jpg";
-// import mrt from "../mrt.jpg";
-// import opti from "../opti.jpg";
-// import gyoribuszok from "../gyoribuszok.jpg";
-import beaver from "../beaver.jpg";
+import volan from "../../volanbusz_logo.jpg";
+// import tapolca from "../../tapolca.png";
+// import tapolcaOnkormanyzat from "../../TapolcaOnk.jpg";
+// import teodora from "../../Teodora.JPG";
+import ferrocar from "../../Ferrocar.jpg";
+// import maxloads from "../../Maxloads.png";
+// import kaloztanya from "../../kaloz.jpg";
+import nosztalgiabusz from "../../noszbusz.jpg";
+// import hotelhalasz from "../../hotelhalaszkert.png";
+// import tapolcakft from "../../tapolcakft_logo_szines.jpg";
+// import mrt from "../../mrt.jpg";
+// import opti from "../../opti.jpg";
+// import gyoribuszok from "../../gyoribuszok.jpg";
+import beaver from "../../beaver.jpg";
 
 export const RerouselComp = () => {
   const customerLogo = useRef(null);

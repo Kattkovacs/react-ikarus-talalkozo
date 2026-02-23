@@ -1,6 +1,6 @@
 import React from "react";
 import { ImSmile } from "react-icons/im";
-import { useLang } from "../context/LanguageContext";
+import { useLang } from "../../context/LanguageContext";
 
 const Rules = () => {
   const { lang: currentLanguage } = useLang();

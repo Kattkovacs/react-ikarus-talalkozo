@@ -2,8 +2,8 @@ import React from "react";
 import { BiBus } from "react-icons/bi";
 import { useState } from "react";
 import BusRegistration from "./BusRegistration";
-import { useLang } from "../context/LanguageContext";
-import { useTranslation } from "../i18n";
+import { useLang } from "../../context/LanguageContext";
+import { useTranslation } from "../../i18n";
 
 
 const Registration = () => {

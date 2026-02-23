@@ -1,8 +1,8 @@
 import React from "react";
-import huFlag from "../001-hungary.png";
-import enFlag from "../001-united-kingdom.png";
-import { useLang } from "../context/LanguageContext";
-import { useTranslation } from "../i18n";
+import huFlag from "../../001-hungary.png";
+import enFlag from "../../001-united-kingdom.png";
+import { useLang } from "../../context/LanguageContext";
+import { useTranslation } from "../../i18n";
 import { motion } from "framer-motion";
 
 const NavLinks = ({ isMobile, closeMobileMenu }) => {

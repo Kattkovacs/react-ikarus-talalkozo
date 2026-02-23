@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import apiKeyData from './Api';
-import { useLang } from '../context/LanguageContext';
-import { useTranslation } from '../i18n';
+import { useLang } from '../../context/LanguageContext';
+import { useTranslation } from '../../i18n';
 
 
 const BusRegistration = ({ open }) => {

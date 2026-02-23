@@ -1,6 +1,6 @@
 import React from "react";
-import Registration from "./Registration";
-import Rules from "./Rules";
+import Registration from "../registration/Registration";
+import Rules from "../registration/Rules";
 
 const RegAndRules = () => {
   return (

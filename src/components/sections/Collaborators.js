@@ -1,7 +1,7 @@
 import React from "react";
-import { RerouselComp } from "./RerouselComp";
-import MobileCollabolators from "./MobileCollabolators";
-import { useTranslation } from "../i18n";
+import { RerouselComp } from "../ui/RerouselComp";
+import MobileCollabolators from "../ui/MobileCollabolators";
+import { useTranslation } from "../../i18n";
 
 const Collaborators = () => {
   const t = useTranslation();

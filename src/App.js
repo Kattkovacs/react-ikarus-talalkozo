@@ -1,15 +1,15 @@
 import "./App.css";
-import Nav from "./components/Nav";
-import Header from "./components/Header";
-import Event from "./components/Event";
-import Location from "./components/Location";
-import Program from "./components/Program";
-import Approach from "./components/Approach";
-import Prices from "./components/Prices";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import RegAndRules from "./components/RegAndRules";
-import Collaborators from "./components/Collaborators";
+import Nav from "./components/layout/Nav";
+import Header from "./components/layout/Header";
+import Event from "./components/sections/Event";
+import Location from "./components/sections/Location";
+import Program from "./components/sections/Program";
+import Approach from "./components/sections/Approach";
+import Prices from "./components/sections/Prices";
+import Contact from "./components/sections/Contact";
+import Footer from "./components/layout/Footer";
+import RegAndRules from "./components/sections/RegAndRules";
+import Collaborators from "./components/sections/Collaborators";
 
 function App() {
   return (

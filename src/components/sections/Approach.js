@@ -1,11 +1,11 @@
 import React from "react";
-import Map from "./Map";
-// import cityMapHu from "../city_map_hu.jpg";
-// import cityTripHu from "../city_trip_hu.jpg";
-import roundTrip from "../felvonulas26_hu.png";
-import cityMapEn from "../city_map_en.jpg";
-import underConst from "../under_const.jpg";
-import { useLang } from "../context/LanguageContext";
+import Map from "../map/Map";
+// import cityMapHu from "../../city_map_hu.jpg";
+// import cityTripHu from "../../city_trip_hu.jpg";
+import roundTrip from "../../felvonulas26_hu.png";
+import cityMapEn from "../../city_map_en.jpg";
+import underConst from "../../under_const.jpg";
+import { useLang } from "../../context/LanguageContext";
 // import cityTripEn from "../city_trip_en.jpg";
 // import bus25059 from "../25059.JPG";
 // import bus25098 from "../25098.jpg";

@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { useTranslation } from "../i18n";
+import { useTranslation } from "../../i18n";
 // import { VscMail } from "react-icons/vsc";
 
 const FB_SRC =

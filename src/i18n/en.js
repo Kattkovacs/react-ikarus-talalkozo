@@ -40,7 +40,8 @@ const en = {
     photoLabel: 'Photo upload',
     thanks: 'Thank you for your registration!',
     loadingImage: 'Loading...',
-    loadingData: 'Loading data... Please, wait!',
+    loadingData: 'Uploading data... Please wait!',
+    errorData: 'Submission failed. Please try again!',
   },
 };
 

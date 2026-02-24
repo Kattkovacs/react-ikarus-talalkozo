@@ -5,7 +5,7 @@ import { useLang } from '../../context/LanguageContext';
 import { useTranslation } from '../../i18n';
 
 const initialForm = { name: '', email: '', bus: '', phone: '', year: '' };
-const initialStatus = { image: '', loading: false, sent: false, dataLoading: false };
+const initialStatus = { image: '', loading: false, sent: false, dataLoading: false, error: false };
 
 const BusRegistration = ({ open }) => {
     const { lang: currentLanguage } = useLang();
@@ -50,7 +50,7 @@ const BusRegistration = ({ open }) => {
         })
         .catch((error) => {
             console.log(error);
-            setStatus(prev => ({ ...prev, dataLoading: false }));
+            setStatus(prev => ({ ...prev, dataLoading: false, error: true }));
         });
 
         e.target.reset();
@@ -106,8 +106,10 @@ const BusRegistration = ({ open }) => {
                         {(() => {
                             if (status.sent && !status.dataLoading) {
                                 return <strong style={{ fontSize: '1.1rem', color: '#fff' }}>{t.busReg.thanks}</strong>;
+                            } else if (status.error) {
+                                return <strong style={{ fontSize: '1.1rem', color: '#ff4444', fontWeight: 'bold' }}>{t.busReg.errorData}</strong>;
                             } else if (status.dataLoading) {
-                                return <h3>{t.busReg.loadingData}</h3>;
+                                return <strong style={{ fontSize: '1.1rem', color: '#ff4444', fontWeight: 'bold' }}>{t.busReg.loadingData}</strong>;
                             } else if (status.loading) {
                                 return <h3>{t.busReg.loadingImage}</h3>;
                             } else if (!status.loading && status.image) {

@@ -38,7 +38,7 @@ const hu = {
     yearLabel: 'Évjárat',
     yearPlaceholder: 'Évjárat',
     photoLabel: 'Fotó feltöltése (1db)',
-    thanks: 'Regisztrációját köszönjük!',
+    thanks: 'Sikeres regisztráció!',
     loadingImage: 'Kép feltöltése...',
     loadingData: 'Adatok feltöltése... Kérjük várjon!',
     errorData: 'Adatok feltöltése sikertelen. Kérjük próbálja újra!',

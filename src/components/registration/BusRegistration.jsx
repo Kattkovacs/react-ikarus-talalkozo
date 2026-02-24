@@ -46,7 +46,8 @@ const BusRegistration = ({ open }) => {
         .then((response) => {
             console.log(response);
             setForm(initialForm);
-            setStatus({ image: '', loading: false, sent: true, dataLoading: false });
+            setStatus({ image: '', loading: false, sent: true, dataLoading: false, error: false });
+            setTimeout(() => setStatus(initialStatus), 30000);
         })
         .catch((error) => {
             console.log(error);
@@ -59,7 +60,16 @@ const BusRegistration = ({ open }) => {
 
     return (
         <>
-        {open && (
+        {status.sent && (
+            <section className="event" id="registration">
+                <div className={`box ${currentLanguage === "hu" ? "boxHu" : "boxEn"}`} id="reg">
+                    <div style={{ padding: '20px 0' }}>
+                        <strong style={{ fontSize: '1.4rem', color: '#22c55e', fontWeight: 'bold', display: 'block', textAlign: 'center' }}>{t.busReg.thanks}</strong>
+                    </div>
+                </div>
+            </section>
+        )}
+        {open && !status.sent && (
             <section className="event" id="registration">
                 <div className={`box ${currentLanguage === "hu" ? "boxHu" : "boxEn"}`} id="reg">
                     <h1>{t.busReg.formTitle}</h1>
@@ -105,7 +115,9 @@ const BusRegistration = ({ open }) => {
                         </div>
                         {(() => {
                             if (status.sent && !status.dataLoading) {
-                                return <strong style={{ fontSize: '1.1rem', color: '#fff' }}>{t.busReg.thanks}</strong>;
+                                return <div style={{ margin: '12px 0', padding: '10px 16px', backgroundColor: '#dcfce7', borderRadius: '6px', border: '1px solid #22c55e' }}>
+                                    <strong style={{ fontSize: '1.2rem', color: '#16a34a', fontWeight: 'bold' }}>{t.busReg.thanks}</strong>
+                                </div>;
                             } else if (status.error) {
                                 return <strong style={{ fontSize: '1.1rem', color: '#ff4444', fontWeight: 'bold' }}>{t.busReg.errorData}</strong>;
                             } else if (status.dataLoading) {

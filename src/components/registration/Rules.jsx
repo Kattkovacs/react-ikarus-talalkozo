@@ -19,7 +19,7 @@ const Rules = () => {
           <p>A rendezvény rossz időjárás esetén is megtartásra kerül!</p>
           <p>A programváltoztatás jogát fenntartjuk!</p>
           <p>Mindenkinek kellemes időtöltést kívánunk!</p>
-          <ImSmile />
+          <div className="flex justify-center"><ImSmile /></div>
         </div>
       ) : (
         <div className="box boxEn">
@@ -36,7 +36,7 @@ const Rules = () => {
           <p>The bus meeting will be held even in bad weather conditions!</p>
           <p>We (the organizers) reserve the right to change the programmes!</p>
           <p>We wish you a pleasant stay on our event!</p>
-          <ImSmile />
+          <div className="flex justify-center"><ImSmile /></div>
         </div>
       )}
     </section>

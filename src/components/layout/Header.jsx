@@ -9,7 +9,7 @@ const Header = () => {
         <div className="container">
           <div>
             <h1>5. Nemzetközi Ikarus Találkozó Tapolca</h1>
-            <h3>2026. május 9.</h3>
+            <h3 style={{ fontWeight: 'bold', fontSize: '1.2rem', marginTop: '4px' }}>2026. május 9.</h3>
           </div>
           <small className="lighter">Győri Buszok</small>
         </div>
@@ -17,7 +17,7 @@ const Header = () => {
         <div className="container">
           <div>
             <h1>5<small><sup>th</sup></small> International Ikarus Meeting Tapolca</h1>
-            <h3>9 May 2026</h3>
+            <h3 style={{ fontWeight: 'bold', fontSize: '1.2rem', marginTop: '4px' }}>9 May 2026</h3>
           </div>
           <small className="lighter">Győri Buszok</small>
         </div>

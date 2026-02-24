@@ -107,29 +107,45 @@ const BusRegistration = ({ open }) => {
                 <div className={`box ${currentLanguage === "hu" ? "boxHu" : "boxEn"}`} id="reg">
                     <h1>{t.busReg.formTitle}</h1>
                     <form className="form" onSubmit={(e) => Submit(e)}>
-                        <label>{t.busReg.owner}</label>
-                            <input required placeholder={t.busReg.namePlaceholder} onChange={(e) => setName(e.target.value)} />
-                        <br />
-                        <label>
-                            <input id="email" required type="email" placeholder="E-mail" onChange={(e) => setEmail(e.target.value)} />
-                        </label>
-                        <label>
-                            <input required placeholder={t.busReg.phonePlaceholder} onChange={(e) => setPhone(e.target.value)} />
-                        </label>
-                        <br />
-                        <label>{t.busReg.busType}</label>
-                            <input required placeholder={t.busReg.typePlaceholder} onChange={(e) => setBus(e.target.value)} />
-                        <label>{t.busReg.yearLabel}</label>
-                            <input required placeholder={t.busReg.yearPlaceholder} onChange={(e) => setYear(e.target.value)} />
-                        <br />
-                        <br />
-                        <label>{t.busReg.photoLabel}</label>
-                        <input
-                            type="file"
-                            name="file"
-                            accept="image/*"
-                            onChange={uploadImage}
-                        />
+                        <h3 style={{ fontWeight: '600', marginTop: '16px', marginBottom: '8px' }}>{t.busReg.owner}</h3>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '5px' }}>
+                            <label style={{ width: '144px', flexShrink: 0 }}>{t.busReg.namePlaceholder}</label>
+                            <input required onChange={(e) => setName(e.target.value)} className="flex-1 bg-gray-100 text-gray-900 px-3 py-2 rounded" />
+                        </div>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '5px' }}>
+                            <label style={{ width: '144px', flexShrink: 0 }}>E-mail</label>
+                            <input id="email" required type="email" onChange={(e) => setEmail(e.target.value)} className="flex-1 bg-gray-100 text-gray-900 px-3 py-2 rounded" />
+                        </div>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '5px' }}>
+                            <label style={{ width: '144px', flexShrink: 0 }}>{t.busReg.phonePlaceholder}</label>
+                            <input required onChange={(e) => setPhone(e.target.value)} className="flex-1 bg-gray-100 text-gray-900 px-3 py-2 rounded" />
+                        </div>
+                        <h3 style={{ fontWeight: '600', marginTop: '24px', marginBottom: '8px' }}>{t.busReg.busType}</h3>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '5px' }}>
+                            <label style={{ width: '144px', flexShrink: 0 }}>{t.busReg.typePlaceholder}</label>
+                            <input required onChange={(e) => setBus(e.target.value)} className="flex-1 bg-gray-100 text-gray-900 px-3 py-2 rounded" />
+                        </div>
+                        <h3 style={{ fontWeight: '600', marginTop: '24px', marginBottom: '8px' }}>{t.busReg.yearLabel}</h3>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '5px' }}>
+                            <label style={{ width: '144px', flexShrink: 0 }}>{t.busReg.yearPlaceholder}</label>
+                            <input required onChange={(e) => setYear(e.target.value)} className="flex-1 bg-gray-100 text-gray-900 px-3 py-2 rounded" />
+                        </div>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '5px' }}>
+                            <label style={{ width: '144px', flexShrink: 0 }}>{t.busReg.photoLabel}</label>
+                            <label className="cursor-pointer">
+                                <span style={{ backgroundColor: '#9ca3af', color: '#fff', borderRadius: '4px', border: 'solid 1px #6b7280', padding: '3px 8px', fontSize: 'small', display: 'inline-block' }}
+                                    onMouseEnter={e => { e.currentTarget.style.backgroundColor = '#6b7280'; }}
+                                    onMouseLeave={e => { e.currentTarget.style.backgroundColor = '#9ca3af'; }}
+                                >{t.busReg.photoLabel}</span>
+                                <input
+                                    type="file"
+                                    name="file"
+                                    accept="image/*"
+                                    onChange={uploadImage}
+                                    className="hidden"
+                                />
+                            </label>
+                        </div>
                         {(() => {
                             if (loading) {
                                 return <h3>{t.busReg.loadingImage}</h3>;

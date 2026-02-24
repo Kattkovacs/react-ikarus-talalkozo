@@ -9,7 +9,7 @@ const Location = () => {
         <div className="container">
           <h1>HELYSZÍN</h1>
           <p>
-           Idén a rendezvény helyszíne <a href="https://maps.app.goo.gl/j85AeSrXto4Sy3FNA"> a volt Kinizsi laktanya</a> területén lesz. 
+           Idén a rendezvény helyszíne <a href="https://www.google.com/maps?q=46.877523,17.402617" target="_blank" rel="noopener noreferrer" style={{ color: '#005c99', textDecoration: 'underline' }}>a volt Kinizsi laktanya területén</a> lesz.
            </p>
            <div style={{margin: "10px", display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "center"}}>
           <iframe display="flex-item" title="map" style={{"width":"525px", "height":"230px", "border": "1px solid white"}} 

@@ -21,7 +21,7 @@ const Approach = () => {
             <h1>MEGKÖZELÍTÉS</h1>
             <strong>Helyszín </strong>
             <p>Veszprém vármegye, Tapolca város, <a href="https://maps.app.goo.gl/j85AeSrXto4Sy3FNA"> volt Kinizsi laktanya</a> </p>
-            <p>GPS koordináták: 46.877523, 17.402617</p>
+            <p>GPS koordináták: <a href="https://www.google.com/maps?q=46.877523,17.402617" target="_blank" rel="noopener noreferrer" style={{ color: '#005c99', textDecoration: 'underline' }}>46.877523, 17.402617</a></p>
             <br />
             <br />
             <strong>Tömegközlekedéssel</strong>
@@ -32,7 +32,7 @@ const Approach = () => {
               oldalon kereshetőek a járatok. Autóbusszal Tapolca,
               autóbuszállomás megállóig, vonattal Tapolca, vasútállomásig és onnan a 
               <a href="https://maps.app.goo.gl/j85AeSrXto4Sy3FNA"> volt Kinizsi laktanyához </a>
-             (GPS koordináták: 46.877523, 17.402617) kell
+             (GPS koordináták: <a href="https://www.google.com/maps?q=46.877523,17.402617" target="_blank" rel="noopener noreferrer" style={{ color: '#005c99', textDecoration: 'underline' }}>46.877523, 17.402617</a>) kell
               tervezni. 
             </p>
             <br />

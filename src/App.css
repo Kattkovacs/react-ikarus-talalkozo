@@ -216,6 +216,9 @@ td {
 .event h1 {
   color: #005c99;
   padding-top: 15px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 0.03em;
 }
 
 .event .container {
@@ -224,10 +227,10 @@ td {
 }
 
 .program h4 {
-  width: -moz-fit-content;
-  width: fit-content;
+  min-width: 100px;
+  text-align: center;
   display: table;
-  padding: 2px 5px 0 5px;
+  padding: 4px 20px;
   background-color: #005c99;
   color: #fff;
 }
@@ -312,6 +315,9 @@ td {
 
 .box h1 {
   color: white;
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 0.03em;
 }
 
 input[type="submit"] {

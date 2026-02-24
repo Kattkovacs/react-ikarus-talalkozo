@@ -49,7 +49,7 @@ const BusRegistration = ({ open }) => {
         const spreadsheetId = "1KMt7SjGP8deo2ZXrnzE9Yrx51Vu2-2S0uvb2K2FL4Hc";
         const apiKey = apiKeyData;
       
-        const url = `https:///api.sheetson.com/v2/sheets/${sheetName}`;
+        const url = `https://api.sheetson.com/v2/sheets/${sheetName}`;
 
         axios
 			.post(
@@ -69,6 +69,12 @@ const BusRegistration = ({ open }) => {
                 		console.log(response);
                         setSent(true);
                         setDataLoading(false);
+                        setName('');
+                        setEmail('');
+                        setBus('');
+                        setPhone('');
+                        setYear('');
+                        setImage('');
                 	})
                 .catch((error) => {
                         console.log(error);
@@ -89,14 +95,6 @@ const BusRegistration = ({ open }) => {
         //             });
                 
         e.target.reset();
-        if(sent===true){
-            setName('');
-        setEmail('');
-        setBus('');
-        setPhone('');
-        setYear('');
-        setImage(null);
-        }
         console.log(objt);
 	};
 
@@ -147,14 +145,14 @@ const BusRegistration = ({ open }) => {
                             </label>
                         </div>
                         {(() => {
-                            if (loading) {
+                            if (sent && !dataLoading) {
+                                return <strong style={{ fontSize: '1.1rem', color: '#fff' }}>{t.busReg.thanks}</strong>;
+                            } else if (dataLoading) {
+                                return <h3>{t.busReg.loadingData}</h3>;
+                            } else if (loading) {
                                 return <h3>{t.busReg.loadingImage}</h3>;
                             } else if (!loading && image) {
                                 return <img alt=" " src={image} style={{ width: '200px' }} />;
-                            } else if (dataLoading) {
-                                return <h3>{t.busReg.loadingData}</h3>;
-                            } else if (sent && !dataLoading) {
-                                return <strong>{t.busReg.thanks}</strong>;
                             }
                         })()}
                         <br />

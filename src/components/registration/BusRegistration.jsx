@@ -17,13 +17,24 @@ const BusRegistration = ({ open }) => {
 
     const uploadImage = async e => {
       const files = e.target.files;
+      if (!files || !files[0]) return;
       const data = new FormData();
       data.append('file', files[0]);
       data.append('upload_preset', 'cloudikarus');
-      setStatus(prev => ({ ...prev, loading: true }));
-      const res = await fetch('https://api.cloudinary.com/v1_1/datr2hthy/image/upload', { method: 'POST', body: data });
-      const file = await res.json();
-      setStatus(prev => ({ ...prev, image: file.secure_url, loading: false }));
+      setStatus(prev => ({ ...prev, loading: true, error: false }));
+      try {
+        const res = await fetch('https://api.cloudinary.com/v1_1/datr2hthy/image/upload', { method: 'POST', body: data });
+        const file = await res.json();
+        if (!res.ok) {
+          console.error('Cloudinary error:', file);
+          setStatus(prev => ({ ...prev, loading: false, error: true }));
+          return;
+        }
+        setStatus(prev => ({ ...prev, image: file.secure_url, loading: false }));
+      } catch (err) {
+        console.error('Upload failed:', err);
+        setStatus(prev => ({ ...prev, loading: false, error: true }));
+      }
     };
 
     const Submit = (e) => {

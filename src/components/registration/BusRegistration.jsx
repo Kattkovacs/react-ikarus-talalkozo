@@ -4,99 +4,58 @@ import apiKeyData from './Api';
 import { useLang } from '../../context/LanguageContext';
 import { useTranslation } from '../../i18n';
 
+const initialForm = { name: '', email: '', bus: '', phone: '', year: '' };
+const initialStatus = { image: '', loading: false, sent: false, dataLoading: false };
 
 const BusRegistration = ({ open }) => {
     const { lang: currentLanguage } = useLang();
     const t = useTranslation();
-    const [name, setName] = useState('');
-	const [email, setEmail] = useState('');
-	const [bus, setBus] = useState('');
-    const [phone, setPhone] = useState('');
-    const [year, setYear] = useState('');
-    
-    const [image, setImage] = useState('');
-    const [loading, setLoading] = useState(false);
-    const [sent, setSent] = useState(false);
-    const [dataLoading, setDataLoading] = useState(false);  
-  
+    const [form, setForm] = useState(initialForm);
+    const [status, setStatus] = useState(initialStatus);
+
+    const setField = (field) => (e) => setForm(prev => ({ ...prev, [field]: e.target.value }));
+
     const uploadImage = async e => {
-      const files = e.target.files
-      const data = new FormData()
-      data.append('file', files[0])
-      data.append('upload_preset', 'cloudikarus')
-      setLoading(true)
-      const res = await fetch(
-        'https://api.cloudinary.com/v1_1/datr2hthy/image/upload',
-        {
-          method: 'POST',
-          body: data
-        }
-      )
-      const file = await res.json()
-  
-      setImage(file.secure_url)
-      console.log(file.secure_url);
-      setLoading(false)
-    }
-  
-	const Submit = (e) => {
-		e.preventDefault();
-        setDataLoading(true);
+      const files = e.target.files;
+      const data = new FormData();
+      data.append('file', files[0]);
+      data.append('upload_preset', 'cloudikarus');
+      setStatus(prev => ({ ...prev, loading: true }));
+      const res = await fetch('https://api.cloudinary.com/v1_1/datr2hthy/image/upload', { method: 'POST', body: data });
+      const file = await res.json();
+      setStatus(prev => ({ ...prev, image: file.secure_url, loading: false }));
+    };
+
+    const Submit = (e) => {
+        e.preventDefault();
+        setStatus(prev => ({ ...prev, dataLoading: true }));
         const time = new Date().toLocaleString();
-		const objt = { time, name, email, phone, bus, year, image};
+        const objt = { time, ...form, image: status.image };
 
         const sheetName = "Sheet1";
         const spreadsheetId = "1KMt7SjGP8deo2ZXrnzE9Yrx51Vu2-2S0uvb2K2FL4Hc";
-        const apiKey = apiKeyData;
-      
         const url = `https://api.sheetson.com/v2/sheets/${sheetName}`;
 
-        axios
-			.post(
-            		url,
-                    objt,  
-                    {
-                headers: {
-                "Authorization": `Bearer ${apiKey}`,
+        axios.post(url, objt, {
+            headers: {
+                "Authorization": `Bearer ${apiKeyData}`,
                 "X-Spreadsheet-Id": spreadsheetId,
                 "Content-Type": "application/json",
-                // "Access-Control-Allow-Origin": "*",
             },
-            }
+        })
+        .then((response) => {
+            console.log(response);
+            setForm(initialForm);
+            setStatus({ image: '', loading: false, sent: true, dataLoading: false });
+        })
+        .catch((error) => {
+            console.log(error);
+            setStatus(prev => ({ ...prev, dataLoading: false }));
+        });
 
-            	)
-            	.then((response) => {
-                		console.log(response);
-                        setSent(true);
-                        setDataLoading(false);
-                        setName('');
-                        setEmail('');
-                        setBus('');
-                        setPhone('');
-                        setYear('');
-                        setImage('');
-                	})
-                .catch((error) => {
-                        console.log(error);
-                        setDataLoading(false);
-                    });
-                
-		// axios
-		// 	.post(
-        //     		'https://sheet.best/api/sheets/c87186c5-8294-4f63-9a83-00aef3287774',
-        //     		objt
-        //     	)
-        //     	.then((response) => {
-        //         		console.log(response);
-        //                 setSent(true);
-        //         	})
-        //         .catch((error) => {
-        //                 console.log(error);
-        //             });
-                
         e.target.reset();
         console.log(objt);
-	};
+    };
 
     return (
         <>
@@ -108,25 +67,25 @@ const BusRegistration = ({ open }) => {
                         <h3 style={{ fontWeight: '600', marginTop: '16px', marginBottom: '8px' }}>{t.busReg.owner}</h3>
                         <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '5px' }}>
                             <label style={{ width: '144px', flexShrink: 0 }}>{t.busReg.namePlaceholder}</label>
-                            <input required onChange={(e) => setName(e.target.value)} className="flex-1 bg-gray-100 text-gray-900 px-3 py-2 rounded" />
+                            <input required onChange={setField('name')} className="flex-1 bg-gray-100 text-gray-900 px-3 py-2 rounded" />
                         </div>
                         <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '5px' }}>
                             <label style={{ width: '144px', flexShrink: 0 }}>E-mail</label>
-                            <input id="email" required type="email" onChange={(e) => setEmail(e.target.value)} className="flex-1 bg-gray-100 text-gray-900 px-3 py-2 rounded" />
+                            <input id="email" required type="email" onChange={setField('email')} className="flex-1 bg-gray-100 text-gray-900 px-3 py-2 rounded" />
                         </div>
                         <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '5px' }}>
                             <label style={{ width: '144px', flexShrink: 0 }}>{t.busReg.phonePlaceholder}</label>
-                            <input required onChange={(e) => setPhone(e.target.value)} className="flex-1 bg-gray-100 text-gray-900 px-3 py-2 rounded" />
+                            <input required onChange={setField('phone')} className="flex-1 bg-gray-100 text-gray-900 px-3 py-2 rounded" />
                         </div>
                         <h3 style={{ fontWeight: '600', marginTop: '24px', marginBottom: '8px' }}>{t.busReg.busType}</h3>
                         <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '5px' }}>
                             <label style={{ width: '144px', flexShrink: 0 }}>{t.busReg.typePlaceholder}</label>
-                            <input required onChange={(e) => setBus(e.target.value)} className="flex-1 bg-gray-100 text-gray-900 px-3 py-2 rounded" />
+                            <input required onChange={setField('bus')} className="flex-1 bg-gray-100 text-gray-900 px-3 py-2 rounded" />
                         </div>
                         <h3 style={{ fontWeight: '600', marginTop: '24px', marginBottom: '8px' }}>{t.busReg.yearLabel}</h3>
                         <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '5px' }}>
                             <label style={{ width: '144px', flexShrink: 0 }}>{t.busReg.yearPlaceholder}</label>
-                            <input required onChange={(e) => setYear(e.target.value)} className="flex-1 bg-gray-100 text-gray-900 px-3 py-2 rounded" />
+                            <input required onChange={setField('year')} className="flex-1 bg-gray-100 text-gray-900 px-3 py-2 rounded" />
                         </div>
                         <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '5px' }}>
                             <label style={{ width: '144px', flexShrink: 0 }}>{t.busReg.photoLabel}</label>
@@ -145,14 +104,14 @@ const BusRegistration = ({ open }) => {
                             </label>
                         </div>
                         {(() => {
-                            if (sent && !dataLoading) {
+                            if (status.sent && !status.dataLoading) {
                                 return <strong style={{ fontSize: '1.1rem', color: '#fff' }}>{t.busReg.thanks}</strong>;
-                            } else if (dataLoading) {
+                            } else if (status.dataLoading) {
                                 return <h3>{t.busReg.loadingData}</h3>;
-                            } else if (loading) {
+                            } else if (status.loading) {
                                 return <h3>{t.busReg.loadingImage}</h3>;
-                            } else if (!loading && image) {
-                                return <img alt=" " src={image} style={{ width: '200px' }} />;
+                            } else if (!status.loading && status.image) {
+                                return <img alt=" " src={status.image} style={{ width: '200px' }} />;
                             }
                         })()}
                         <br />

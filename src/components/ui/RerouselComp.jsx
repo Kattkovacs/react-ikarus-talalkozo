@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { Rerousel } from "rerousel";
 import volan from "../../volanbusz_logo.jpg";
+import smithgift from "../../smithgift.png";
 // import tapolca from "../../tapolca.png";
 // import tapolcaOnkormanyzat from "../../TapolcaOnk.jpg";
 // import teodora from "../../Teodora.JPG";
@@ -87,6 +88,11 @@ export const RerouselComp = () => {
       id: 12,
       image: beaver,
       src: "https://beavertradition.com/",
+    },
+    smithgift: {
+      id: 13,
+      image: smithgift,
+      src: "https://www.smithgift.hu/",
     },
   };
 

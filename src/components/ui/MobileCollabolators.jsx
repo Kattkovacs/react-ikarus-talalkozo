@@ -1,5 +1,6 @@
 import React from "react";
 import volan from "../../volanbusz_logo.jpg";
+import smithgift from "../../smithgift.png";
 // import tapolca from "../../tapolca.png";
 // import tapolcaOnkormanyzat from "../../TapolcaOnk.jpg";
 // import tapolcakft from "../../tapolcakft_logo_szines.jpg";
@@ -85,6 +86,11 @@ const MobileCollabolators = () => {
       id: 12,
       image: beaver,
       src: "https://beavertradition.com/",
+    },
+    smithgift: {
+      id: 13,
+      image: smithgift,
+      src: "https://www.smithgift.hu/",
     },
   };
 

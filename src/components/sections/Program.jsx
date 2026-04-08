@@ -39,8 +39,7 @@ const Program = () => {
                   <td>
                     <p>
                       Városi nosztalgia járatok közlekednek, melyekre                   
-                      felszállni előre megváltott menetjeggyel lehet. 
-                      A járatok útvonala egyeztetés alatt van. 
+                      felszállni előre megváltott menetjeggyel lehet. 10 km-es kört tesznek meg a buszok a városban, útközben nincs megállóhely, le-, illetve felszállás csak a végállomáson lehetséges. Az autóbuszok férőhelye korlátozott, kérjük ezt vegyék figyelembe felszálláskor és a problémamentes utazásért a kalauzok kéréseit tartsák be.
                     </p>
                     {/* <p>
                       Városi nosztalgia járatok közlekednek, melyekre a
@@ -72,16 +71,14 @@ const Program = () => {
                     <h4>14:30</h4>
                   </td>
                   <td>
-                    <strong>Felvonulás</strong>
-                    <p>Egyeztetés alatt.</p>
-                    {/* <p>
+                    <strong>Felvonulás </strong>
+                    <p>
                       Felvonulás az összes jármű részvételével a a festői
                       szépségű Káli-Medencében
-                      Tapolca-Gyulakeszi-Mindszentkálla-Szentbékkálla-Gyulakeszi-Tapolca
-                      útvonalon:
+                      Kinizsi Laktanya-Gyulakeszi-Kékkút-Kővágóörs-Köveskál-Gyulakeszi-Kinizsi laktanya
+                      útvonalon.
                     </p>
-                    <p>Térképen:</p>
-                    <p>Felvonulás </p> */}
+                    <p>Térképen: <a href="https://www.google.com/maps/d/u/0/edit?mid=1zBUVfyo1XqIAvjbyHaznWH4ieQ0HBjI&usp=sharing" target="_blank" rel="noopener noreferrer" title="Térkép" style={{color: "#005c99", fontWeight: "bold"}}>[link]</a></p>
                   </td>
                 </tr>
                 <tr>
@@ -176,7 +173,8 @@ const Program = () => {
                     <h4>14:30</h4>
                   </td>
                   <td>
-                    <strong>Old timer bus parade</strong>
+                    <strong>Old timer bus parade </strong>
+                    <a href="https://www.google.com/maps/d/u/0/edit?mid=1zBUVfyo1XqIAvjbyHaznWH4ieQ0HBjI&usp=sharing" target="_blank" rel="noopener noreferrer" title="Map" style={{color: "#005c99", fontWeight: "bold"}}>[link]</a>
                     <p>
                       Old timer bus parade featuring all attending vehicles in
                       the picturesque Káli-basin on the

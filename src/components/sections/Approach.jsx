@@ -4,6 +4,7 @@ import React from "react";
 import roundTrip from "../../felvonulas26_hu.png";
 import cityMapEn from "../../city_map_en.jpg";
 import underConst from "../../under_const.jpg";
+import nosztalgiaTerkep from "../../nosztalgia_jaratok.png";
 import { useLang } from "../../context/LanguageContext";
 // import cityTripEn from "../city_trip_en.jpg";
 // import bus25059 from "../25059.JPG";
@@ -75,7 +76,6 @@ const Approach = () => {
 
             {/* <br /> */}
             <strong>Nosztalgia különjáratokkal</strong>
-            <p>Autóbusz különjáratok egyeztetés alatt...</p>
             {/* <p>
               Az alábbiakban felsorolt buszokkal van lehetőség eljutni a
               Találkozó helyszínére. A "Részletek és foglalás" résznél lehet
@@ -147,19 +147,6 @@ const Approach = () => {
           </div>
           <div hidden={false}>
           <div className="boxes">
-            <div>
-            {/* <a
-              href="https://www.google.com/maps/d/u/0/viewer?mid=1gRK6n2cPKwoKXMb4NW-8lyedSLpEWs0N&ll=46.88090011481434%2C17.436230000000002&z=16"
-              target="_blank"
-              rel="noopener noreferrer"
-            > */}
-              <div className="sidebarStyle">
-                <div>Tapolca belváros</div>
-              </div>
-              {/* <img src={cityMapHu} alt="megkozelites" className="mapImg" /> */}
-            <img src={underConst} alt="varosijarat" className="mapImg" />
-            {/* </a> */}
-              </div>
             <a
               // href="https://www.google.com/maps/d/u/0/viewer?mid=10wK4wL-BFe8fUO6bL8LwXSR066l40WBC&ll=46.86826900882221%2C17.524713850000005&z=13"
               href="https://www.google.com/maps/d/u/0/edit?mid=1zBUVfyo1XqIAvjbyHaznWH4ieQ0HBjI&usp=sharing"
@@ -180,7 +167,7 @@ const Approach = () => {
               <div className="sidebarStyle">
                 <div>Nosztalgia autóbusz körjáratok</div>
               </div>
-              <img src={underConst} alt="varosijarat" className="mapImg" />
+              <img src={nosztalgiaTerkep} alt="varosijarat" className="mapImg" />
             {/* </a> */}
               </div>
           </div>
@@ -364,7 +351,7 @@ const Approach = () => {
                 <div>Nostalgia bus tours</div>
               </div>
               <img
-                src={underConst}
+                src={nosztalgiaTerkep}
                 alt="varosijaraten"
                 className="mapImg"
               ></img>

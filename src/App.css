@@ -226,6 +226,42 @@ td {
   padding-bottom: 15px;
 }
 
+#prices td {
+  vertical-align: top;
+  padding-right: 20px;
+}
+
+.menetrend-title {
+  color: #005c99;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.menetrend-wrapper {
+  overflow-x: auto;
+  margin-bottom: 15px;
+}
+
+.menetrend-table {
+  font-size: 0.85rem;
+  border-collapse: collapse;
+}
+
+.menetrend-table td,
+.menetrend-table th {
+  padding: 4px 12px;
+  border: 1px solid #d0dce6;
+  white-space: nowrap;
+}
+
+.menetrend-table th {
+  background-color: #d9edfa;
+  text-align: left;
+  color: #005c99;
+}
+
 .program h4 {
   min-width: 100px;
   text-align: center;

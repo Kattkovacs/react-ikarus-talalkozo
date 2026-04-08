@@ -14,22 +14,20 @@ const Prices = () => {
                 <td>
                   <strong>Belépés a rendezvényre</strong>
                 </td>
-                <td>2000 Ft/fő</td>
-              </tr>
-              <tr>
-                <td colSpan="2">
-                  <small>
-                    Ha veterán autóval érkezel (az autó kora 30 éves felett van), 
-            akkor 2 fő részére ingyenes a belépés és a buszos kiállítótérre be lehet parkolni. 
-                  </small>
+                <td>2000 Ft/fő<br />
+                  <small>Ha veterán autóval érkezel (az autó kora 30 éves felett van),<br />
+                    akkor 2 fő részére ingyenes a belépés <br />és a buszos kiállítótérre be lehet parkolni.</small>
                 </td>
               </tr>
               <tr>
                 <td>
                   <strong>Városi nosztalgia körjáratok</strong>
                 </td>
-                <td>Egyeztetés alatt</td>
-                {/* <td>1500 Ft/fő (6 éves korig ingyenes)</td> */}
+                <td>
+                  2000 Ft/fő [előre váltott jeggyel]<br />
+                  <small>6 év alatt (ölben ülve) ingyenes</small><br />
+                  <small>A járatokra nem érvényes semmilyen tömegközlekedési kedvezmény, vagy bérlet!</small>
+                </td>
               </tr>
               {/* <tr>
                 <td>
@@ -41,14 +39,10 @@ const Prices = () => {
                 <td>
                   <strong>Káli-medencei busz felvonulás</strong>
                 </td>
-              </tr>
-              <tr>
-                <td>- Ikarus 30, 311, 55, 66 típusú buszokkal</td>
-                <td>Egyeztetés alatt</td>
-              </tr>
-              <tr>
-                <td>- Egyéb Ikarus típusú buszokkal</td>
-                <td>Egyeztetés alatt</td>
+                <td>
+                  3000 Ft/fő [előre váltott jeggyel]<br />
+                  <small>A járatokra nem érvényes semmilyen tömegközlekedési kedvezmény, vagy bérlet!</small>
+                </td>
               </tr>
               {/* <tr>
                 <td colSpan="2">
@@ -61,19 +55,68 @@ const Prices = () => {
               </tr> */}
               <tr>
                 <td>
-                  <strong>Tombola sorsjegy</strong>        
+                  <strong>Ingajáratok vasút- és autóbusz-állomás között</strong><br />
+                  <small>Menetrend alább</small>
                 </td>
-                <td>Egyeztetés alatt</td>
+                <td>500 Ft/fő [az autóbusz-vezetőnél váltható!]<br />
+                  <small>A járatokra nem érvényes semmilyen tömegközlekedési kedvezmény, vagy bérlet!</small>
+                </td>
               </tr>
               <tr>
-                <td colSpan="2">
-                  <small>
-                    A Tombola főnyereménye: Egyeztetés alatt
-                  </small>
+                <td>
+                  <strong>Tombola sorsjegy</strong>        
                 </td>
-              </tr>
+                <td>Egyeztetés alatt<br />
+                  <small>A Tombola főnyereménye: Egyeztetés alatt</small>
+                </td>
+              </tr>              
             </tbody>
           </table>
+          <h3 className="menetrend-title">Ingajáratok vasút- és autóbusz-állomás között – Menetrend</h3>
+          <div className="menetrend-wrapper">
+            <table className="menetrend-table">
+              <tbody>
+                <tr>
+                  <th colSpan="8">Vasútállomás – Autóbusz-állomás – Kinizsi laktanya</th>
+                </tr>
+                <tr>
+                  <td><strong>IK280</strong></td>
+                  <td>8:00</td><td>9:00</td><td>10:00</td><td>11:00</td><td>12:20</td><td>13:20</td><td></td>
+                </tr>
+                <tr>
+                  <td><strong>IK260</strong></td>
+                  <td>8:20</td><td>9:20</td><td>10:20</td><td>11:20</td><td>12:40</td><td>13:40</td><td></td>
+                </tr>
+                <tr>
+                  <td><strong>IK266</strong></td>
+                  <td>8:40</td><td>9:40</td><td>10:40</td><td>11:40</td><td>13:00</td><td>14:00</td><td></td>
+                </tr>
+                <tr>
+                  <td><strong>IK256</strong></td>
+                  <td>12:00</td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                  <th colSpan="8">Kinizsi laktanya – Autóbusz-állomás – Vasútállomás</th>
+                </tr>
+                <tr>
+                  <td><strong>IK280</strong></td>
+                  <td>8:30</td><td>9:30</td><td>10:30</td><td>11:50</td><td>12:50</td><td>16:40</td><td>17:10</td>
+                </tr>
+                <tr>
+                  <td><strong>IK260</strong></td>
+                  <td>8:50</td><td>9:50</td><td>10:50</td><td>12:10</td><td>13:10</td><td>16:50</td><td></td>
+                </tr>
+                <tr>
+                  <td><strong>IK266</strong></td>
+                  <td>9:10</td><td>10:10</td><td>11:10</td><td>12:30</td><td>13:30</td><td>17:00</td><td></td>
+                </tr>
+                <tr>
+                  <td><strong>IK256</strong></td>
+                  <td>11:30</td><td>16:30</td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       ) : (
         <div className="container">

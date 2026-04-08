@@ -421,7 +421,7 @@ label {
 }
 
 @media (max-width: 990px) {
-  .container .ffu8bod {
+  .container .carousel-wrapper {
     display: none;
   }
 
@@ -517,6 +517,35 @@ label {
 .mapImg {
   width: 300px;
   padding: 5px;
+}
+
+.carousel-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  width: max-content;
+  animation: logo-marquee 28s linear infinite;
+}
+
+.carousel-track:hover {
+  animation-play-state: paused;
+}
+
+.carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 180px;
+  height: 100px;
+  padding: 0 15px;
+}
+
+@keyframes logo-marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 
 .logoBox{

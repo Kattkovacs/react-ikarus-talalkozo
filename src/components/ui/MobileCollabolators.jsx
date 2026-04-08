@@ -14,6 +14,7 @@ import nosztalgiabusz from "../../noszbusz.jpg";
 // import opti from "../../opti.jpg";
 // import gyoribuszok from "../../gyoribuszok.jpg";
 import beaver from "../../beaver.jpg";
+import mavSzeza from "../../MAV__Szesza logo_kek teli.png";
 
 const MobileCollabolators = () => {
   const customers = {
@@ -91,6 +92,11 @@ const MobileCollabolators = () => {
       id: 13,
       image: smithgift,
       src: "https://www.smithgift.hu/",
+    },
+    mavSzeza: {
+      id: 14,
+      image: mavSzeza,
+      src: "#",
     },
   };
 

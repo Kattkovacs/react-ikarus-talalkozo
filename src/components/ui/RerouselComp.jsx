@@ -1,5 +1,4 @@
 import React from "react";
-import volan from "../../volanbusz_logo.jpg";
 import smithgift from "../../smithgift.png";
 import ferrocar from "../../Ferrocar.jpg";
 import nosztalgiabusz from "../../noszbusz.jpg";
@@ -7,7 +6,6 @@ import beaver from "../../beaver.jpg";
 import mavSzeza from "../../MAV__Szesza logo_kek teli.png";
 
 const customers = [
-  { id: 1,  image: volan,         src: "https://www.volanbusz.hu" },
   { id: 5,  image: nosztalgiabusz,src: "https://www.facebook.com/nosztalgiabusz" },
   { id: 11, image: ferrocar,      src: "https://ferrocar.hu/" },
   { id: 12, image: beaver,        src: "https://beavertradition.com/" },

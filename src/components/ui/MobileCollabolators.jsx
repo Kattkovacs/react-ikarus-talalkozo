@@ -1,5 +1,4 @@
 import React from "react";
-import volan from "../../volanbusz_logo.jpg";
 import smithgift from "../../smithgift.png";
 // import tapolca from "../../tapolca.png";
 // import tapolcaOnkormanyzat from "../../TapolcaOnk.jpg";
@@ -18,11 +17,11 @@ import mavSzeza from "../../MAV__Szesza logo_kek teli.png";
 
 const MobileCollabolators = () => {
   const customers = {
-    volan: {
-      id: 1,
-      image: volan,
-      src: "https://www.volanbusz.hu",
-    },
+    // volan: {
+    //   id: 1,
+    //   image: volan,
+    //   src: "https://www.volanbusz.hu",
+    // },
     // tapolca: {
     //   id: 2,
     //   image: tapolca,

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import axios from 'axios';
-import apiKeyData from './Api';
 import { useLang } from '../../context/LanguageContext';
 import { useTranslation } from '../../i18n';
+
+const APPS_SCRIPT_URL = import.meta.env.VITE_APPS_SCRIPT_URL;
 
 const initialForm = { name: '', email: '', bus: '', phone: '', year: '' };
 const initialStatus = { image: '', loading: false, sent: false, dataLoading: false, error: false };
@@ -43,19 +43,15 @@ const BusRegistration = ({ open }) => {
         const time = new Date().toLocaleString();
         const objt = { time, ...form, image: status.image };
 
-        const sheetName = "Sheet1";
-        const spreadsheetId = "1KMt7SjGP8deo2ZXrnzE9Yrx51Vu2-2S0uvb2K2FL4Hc";
-        const url = `https://api.sheetson.com/v2/sheets/${sheetName}`;
+        const formData = new URLSearchParams();
+        Object.entries(objt).forEach(([key, val]) => formData.append(key, val ?? ''));
 
-        axios.post(url, objt, {
-            headers: {
-                "Authorization": `Bearer ${apiKeyData}`,
-                "X-Spreadsheet-Id": spreadsheetId,
-                "Content-Type": "application/json",
-            },
+        fetch(APPS_SCRIPT_URL, {
+            method: 'POST',
+            mode: 'no-cors',
+            body: formData,
         })
-        .then((response) => {
-            console.log(response);
+        .then(() => {
             setForm(initialForm);
             setStatus({ image: '', loading: false, sent: true, dataLoading: false, error: false });
             setTimeout(() => setStatus(initialStatus), 30000);

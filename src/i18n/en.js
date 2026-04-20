@@ -24,6 +24,7 @@ const en = {
       'Registration is mandatory for all exhibitors! In absence of registration we can not guarantee exhibition place for your vehicle.',
     button: 'Bus registration',
     startsSoon: 'Registration starts on 1st February 2026!',
+    closed: 'Bus registration is closed!',
   },
   rules: {
     title: 'RULES',

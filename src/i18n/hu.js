@@ -24,6 +24,7 @@ const hu = {
       'A kiállítóknak kötelező regisztráció van, ennek hiányában nem tudjuk garantálni a helyet.',
     button: 'Regisztráció',
     startsSoon: 'A regisztráció hamarosan indul!',
+    closed: 'A busz regisztráció lezárult!',
   },
   rules: {
     title: 'SZABÁLYOK',

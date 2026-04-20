@@ -23,13 +23,14 @@ const Registration = () => {
           <br></br>
           {/* <strong>A regisztráció 2026. február 1-én indul!</strong> */}
           {/* <strong>A regisztráció hamarosan indul!</strong> */}
-          <div className="center">
+          <strong>{t.registration.closed}</strong>
+          {/* <div className="center">
             <button onClick={onClickHandle} className="flex items-center gap-2" style={{ fontSize: '16px' }}>
               <BiBus className="biBus" size="18px" />
               {t.registration.button}
             </button>
           </div>
-          <BusRegistration open={open} />
+          <BusRegistration open={open} /> */}
         </div>
       ) : (
         <div className="box boxEn" id="reg">
